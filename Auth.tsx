@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   Text,
   View,
@@ -16,7 +16,13 @@ const Auth = () => {
       token, // Access token, if available
       logout, // The logout function - Logs the user out
     } = useKeycloak();
-    if (!ready) return <ActivityIndicator />;
+    useEffect(() => {
+      if(!isLoggedIn && ready) {
+        login()
+      }
+    },  [isLoggedIn])
+
+    if (!ready || !isLoggedIn) return <ActivityIndicator />;
     // TODO(j/MVP-30): If it takes longer than N seconds to become ready -- show an alert to the user
     // TODO(j/MVP-29): Enable PKCE support
     if (!isLoggedIn)
