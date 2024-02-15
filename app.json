@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "parrygg",
     "name": "parrygg",
     "slug": "parrygg",
     "version": "1.0.0",

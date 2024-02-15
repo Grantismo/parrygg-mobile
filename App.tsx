@@ -1,20 +1,36 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { HTMLAttributes } from "react";
+import { View } from "react-native";
+import AppConfig from "./app.json";
+import Constants from "expo-constants";
+import { KeycloakProvider } from "expo-keycloak-auth";
+import Auth from './Auth';
 
-export default function App() {
+interface KeycloakProps extends React.HTMLAttributes<HTMLButtonElement> {
+  clientId: string,
+  realm: string,
+  url: string,
+  schema: string,
+  extraParams: any;
+}
+
+const App = () => {
+  const keyCloakUrl = `http://${Constants?.expoConfig?.hostUri?.split(`:`)?.shift()?.concat(`:8089`)}`
+
+  const keycloakConfiguration = {
+    clientId: "mobile",
+    realm: "parrygg",
+    url: keyCloakUrl,
+    scheme: AppConfig.expo.scheme,
+    extraParams: {},
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <KeycloakProvider {...keycloakConfiguration}>
+      <View>
+        <Auth />
+      </View>
+    </KeycloakProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

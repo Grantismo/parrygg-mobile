@@ -9,8 +9,12 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "1.21.0",
     "expo": "~50.0.4",
+    "expo-keycloak-auth": "github:Grantismo/expo-keycloak-auth",
+    "expo-random": "~13.6.0",
     "expo-status-bar": "~1.11.1",
+    "expo-web-browser": "~12.8.2",
     "react": "18.2.0",
     "react-native": "0.73.2"
   },
