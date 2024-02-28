@@ -1,26 +1,31 @@
 import React from "react";
-import { View } from "react-native";
 import AppConfig from "./app.json";
 import Constants from "expo-constants";
 import { KeycloakProvider } from "expo-keycloak-auth";
-import Auth from './Auth';
+import View from "./src/components/base/View";
+import Auth from "./src/Auth";
+import Register from "./src/screens/Register";
 
 const App = () => {
-  const keyCloakUrl = `http://${Constants?.expoConfig?.hostUri?.split(`:`)?.shift()?.concat(`:8089`)}`
+  const keyCloakUrl = `http://${Constants?.expoConfig?.hostUri?.split(`:`)?.shift()?.concat(`.nip.io:8089`)}`
   const keycloakConfiguration = {
     clientId: "mobile",
     realm: "parrygg",
     url: keyCloakUrl,
     scheme: AppConfig.expo.scheme,
-    extraParams: {}, // TODO: missing openid scope
+    extraParams: {
+      scopes: ["openid", "offline_access"]
+    },
+    onDiscoveryError: (error: Error) => {console.error(error)}
   }
 
   return (
-    <KeycloakProvider {...keycloakConfiguration}>
-      <View>
-        <Auth />
-      </View>
-    </KeycloakProvider>
+    <Register></Register>
+    // <KeycloakProvider {...keycloakConfiguration}>
+    //   <View> 
+    //     <Auth></Auth>
+    //   </View>
+    // </KeycloakProvider>
   );
 }
 

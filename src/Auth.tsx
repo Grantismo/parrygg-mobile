@@ -16,14 +16,16 @@ const Auth = () => {
       token, // Access token, if available
       logout, // The logout function - Logs the user out
     } = useKeycloak();
+    
     useEffect(() => {
       if(!isLoggedIn && ready) {
         login()
       }
-    },  [isLoggedIn])
+    },  [isLoggedIn, ready])
+
     if (!ready || !isLoggedIn) return <ActivityIndicator />;
+    
     // TODO(j/MVP-30): If it takes longer than N seconds to become ready -- show an alert to the user
-    // TODO(j/MVP-29): Enable PKCE support
       
     return (
       <View style={{ margin: 24 }}>
