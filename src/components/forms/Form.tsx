@@ -1,14 +1,14 @@
 import React, { useRef, createElement, useEffect } from 'react';
 import { TextInput } from 'react-native';
-import { FieldErrors, FieldValues } from 'react-hook-form';
+import { FieldErrors, FieldValues, PathValue } from 'react-hook-form';
 import { UseFormRegister, UseFormSetValue, RegisterOptions } from "react-hook-form"
 
 interface Props<T extends FieldValues> {
-  children: JSX.Element | JSX.Element[];
-  register: UseFormRegister<T>;
-  errors: FieldErrors<T>;
-  validation: RegisterOptions[];
-  setValue: UseFormSetValue<T>;
+  children: JSX.Element | JSX.Element[]
+  register: UseFormRegister<T>
+  errors: FieldErrors<T>
+  validation: RegisterOptions[]
+  setValue: UseFormSetValue<T>
 }
 
 const Form = <T extends FieldValues>({    
@@ -38,8 +38,8 @@ const Form = <T extends FieldValues>({
                   ref: (e: TextInput) => {
                     inputs.current[i] = e
                   },
-                  onChangeText: (v: string) =>
-                    setValue(child.props.name, v, true),
+                  onChangeText: (v: PathValue<T, any>) =>
+                    setValue(child.props.name, v, {shouldValidate: true}),
                   onSubmitEditing: () => {
                     inputs.current[i + 1]
                       ? inputs.current[i + 1].focus()
