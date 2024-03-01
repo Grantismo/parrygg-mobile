@@ -3,21 +3,16 @@ import AppConfig from "./app.json";
 import Constants from "expo-constants";
 import { KeycloakProvider } from "expo-keycloak-auth";
 import Auth from "./src/Auth";
-import Register from "./src/screens/Register";
+import Register from "./src/screens/AccountStep1";
 import * as SplashScreen from 'expo-splash-screen';
 import { View } from "react-native";
 import {
   useFonts,
-  Inter_100Thin,
-  Inter_200ExtraLight,
-  Inter_300Light,
-  Inter_400Regular,
   Inter_500Medium,
   Inter_600SemiBold,
-  Inter_700Bold,
-  Inter_800ExtraBold,
-  Inter_900Black,
+
 } from '@expo-google-fonts/inter';
+import AccountStep2 from "./src/screens/AccountStep2";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -52,7 +47,7 @@ const App = () => {
   }
 
   return (
-    <Register onLayout={onLayoutRootView}></Register>
+    <AccountStep2 onLayout={onLayoutRootView}></AccountStep2>
     // <KeycloakProvider {...keycloakConfiguration}>
     //   <View> 
     //     <Auth></Auth>
