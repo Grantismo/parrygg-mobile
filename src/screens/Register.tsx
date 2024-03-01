@@ -4,16 +4,15 @@ import View from "../components/base/View"
 import Form from "../components/forms/Form"
 import Input from "../components/forms/Input"
 import Button from "../components/base/Button"
-import Text from "../components/base/Text"
+import Title from "../components/base/Title"
 import tw from 'twrnc';
 import { ViewProps } from "react-native"
-import Title from "../components/base/Title"
-
 
 type FormData = {
     tag: string
     firstName: string
     lastName: string
+    bio: string
     pronouns: string
 }
   

@@ -5,18 +5,18 @@ import {
     TextStyle,
     StyleProp,
 } from 'react-native'
-import tw from 'twrnc';
 import { styles } from './styles';
+import tw from 'twrnc';
 
 interface Props  {
     style?: StyleProp<TextStyle>
     children: ReactNode
-  }
+}
 
-const Text = ({style, children, ...textProps}: Props) => {
+const Title = ({style, children, ...textProps}: Props) => {
     return (
-      <NativeText style={[styles.mediumWeightFont, tw`text-xl mb-6`, style]} {...textProps}>{children}</NativeText>
+        <NativeText style={[styles.mediumWeightFont, tw`text-xl mb-6`, style]} {...textProps}>{children}</NativeText>
     )
 }
 
-export default Text;
+export default Title;

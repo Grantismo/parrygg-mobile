@@ -12,10 +12,10 @@ interface Props  {
     children: ReactNode
   }
 
-const Title = ({style, children, ...textProps}: Props) => {
+const Text = ({style, children, ...textProps}: Props) => {
     return (
       <NativeText style={[styles.defaultWeightFont, style]} {...textProps}>{children}</NativeText>
     )
 }
 
-export default Title;
+export default Text;
