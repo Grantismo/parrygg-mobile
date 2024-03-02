@@ -12,7 +12,7 @@ import {
   Inter_600SemiBold,
 
 } from '@expo-google-fonts/inter';
-import AccountStep2 from "./src/screens/AccountStep2";
+import AccountStep3 from "./src/screens/AccountStep3";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -47,7 +47,7 @@ const App = () => {
   }
 
   return (
-    <AccountStep2 onLayout={onLayoutRootView}></AccountStep2>
+    <AccountStep3 onLayout={onLayoutRootView}></AccountStep3>
     // <KeycloakProvider {...keycloakConfiguration}>
     //   <View> 
     //     <Auth></Auth>

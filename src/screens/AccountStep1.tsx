@@ -1,6 +1,6 @@
 import React from "react"
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form"
-import View from "../components/base/View"
+import View from "../components/base/Background"
 import Form from "../components/forms/Form"
 import Input from "../components/forms/Input"
 import Button from "../components/base/Button"
@@ -16,7 +16,7 @@ type FormData = {
     pronouns: string
 }
   
-const Register = (props: ViewProps) => {
+const AccountStep1 = (props: ViewProps) => {
     const errors: FieldErrors<FormData> = {}
 
     const validation: RegisterOptions[] = [];
@@ -41,4 +41,4 @@ const Register = (props: ViewProps) => {
     )
   }
 
-  export default Register;
+  export default AccountStep1;
