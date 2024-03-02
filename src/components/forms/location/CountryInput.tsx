@@ -9,6 +9,7 @@ const LOCATION_CLIENT = new LocationClient();
 interface Props {
     label: string
     required?: boolean
+    onChange?: (value: any) => void
 
     // For react-hook-form register
     name: string
@@ -21,9 +22,9 @@ const CountryInput = (props: Props) => {
     useEffect(() => {
       if(!countries.length) {
         LOCATION_CLIENT.getCountries().then((data) => {
-          const countries = data.map(d => {return {label: d.name, value: d.iso2}})
-          countries.unshift({label: "United States", value: "US"}, {label: "Canada", value: "CA"}, {label: "Mexico", value: "MX"})
-          setCountries(countries)
+          const loadedCountries = data.map(d => {return {label: d.name, value: d.iso2}})
+          loadedCountries.unshift({label: "United States", value: "US"}, {label: "Canada", value: "CA"}, {label: "Mexico", value: "MX"})
+          setCountries(loadedCountries)
         })
       }
     }, [countries])

@@ -16,15 +16,16 @@ interface Props {
     placeholder: string
     data: Item[]
     required?: boolean
+    onChange?: (value: any) => void
 
     // For react-hook-form register
     name: string
     control: Control<any>
 }
 
-const DropdownInput = (({ required, label, placeholder, data, name, control }: Props) => {
+const DropdownInput = (({ required, label, placeholder, data, onChange: onChangeProp, name, control }: Props) => {
     const [isFocus, setIsFocus] = useState(false);
-    const { field: {value, onBlur, onChange}, } = useController({ name, control, rules: { required } });
+    const { field: { value, onBlur, onChange }, } = useController({ name, control, rules: { required } });
     return (
         <View style={tw`px-6 mb-6 w-full`}>
             <LinearGradient style={tw`rounded-xl`} colors={["#0C0C0C", "#161616"]}>
@@ -40,6 +41,7 @@ const DropdownInput = (({ required, label, placeholder, data, name, control }: P
                     inputSearchStyle={tw`rounded-xl text-[#6F6F6F]`}
                     containerStyle={tw`bg-[#0C0C0C] border border-white`}
                     itemTextStyle={[styles.defaultWeightFont, tw`text-white`]}
+                    activeColor={"#161616"}
                     iconStyle={tw``}
                     data={data}
                     search
@@ -49,7 +51,8 @@ const DropdownInput = (({ required, label, placeholder, data, name, control }: P
                     placeholder={!isFocus ? placeholder : ''}
                     searchPlaceholder="Search..."
                     value={value}
-                    onFocus={() =>  setIsFocus(true)}
+                    searchQuery={(keyword: string, labelValue: string) => labelValue.toLowerCase().startsWith(keyword.toLowerCase())}
+                    onFocus={() => setIsFocus(true)}
                     onBlur={() => {
                         setIsFocus(false)
                         onBlur()
@@ -57,6 +60,9 @@ const DropdownInput = (({ required, label, placeholder, data, name, control }: P
                     onChange={(item: any) => {
                         setIsFocus(false);
                         onChange(item.value)
+                        if (onChangeProp) {
+                            onChangeProp(item.value)
+                        }
                     }}
                 />
             </LinearGradient>

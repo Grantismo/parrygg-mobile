@@ -10,6 +10,7 @@ interface Props {
     label: string
     countryIso?: string
     required?: boolean
+    onChange?: (value: any) => void
 
     // For react-hook-form register
     name: string
@@ -17,20 +18,15 @@ interface Props {
 }
 
 const StateInput = ({countryIso, ...props}: Props) => {
+
     const [states, setStates] = useState<Item[]>([])
 
-    useEffect(() => {
-      if(!countryIso) {
-        return
-      }
-      
-      if(!states.length) {
-        LOCATION_CLIENT.getStates(countryIso).then((data) => {
-          setStates(data.map(d => {return {label: d.name, value: d.iso2}}))
-        })
-      }
-    }, [states, countryIso])
-  
+    if(countryIso && states.length === 0) {
+      LOCATION_CLIENT.getStates(countryIso).then((data) => {
+        setStates(data.map(d => {return {label: d.name, value: d.iso2}}))
+      })
+    }
+
     return <DropdownInput data={states} placeholder="Colorado" {...props} />
   }
 

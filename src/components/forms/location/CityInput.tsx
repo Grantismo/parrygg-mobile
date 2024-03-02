@@ -11,29 +11,29 @@ interface Props {
     countryIso?: string
     stateIso?: string
     required?: boolean
+    onChange?: (value: any) => void
 
     // For react-hook-form register
     name: string
     control: Control<any>
 }
 
-const CityInput = ({countryIso, stateIso, ...props}: Props) => {
+const CityInput = ({ countryIso, stateIso, ...props }: Props) => {
     const [cities, setCities] = useState<Item[]>([])
 
     useEffect(() => {
-      if(!countryIso || !stateIso) {
-        return
-      }
-      
-      if(!cities.length) {
-        LOCATION_CLIENT.getCities(countryIso, stateIso).then((data) => {
-          const cities = data.map(d => {return {label: d.name, value: d.name}})
-          setCities(cities)
-        })
-      }
-    }, [cities, countryIso, stateIso])
-  
-    return <DropdownInput data={cities} placeholder="Denver" {...props} />
-  }
+        if (!countryIso || !stateIso) {
+            return
+        }
 
-  export default CityInput;
+        if (!cities.length) {
+            LOCATION_CLIENT.getCities(countryIso, stateIso).then((data) => {
+                setCities(data.map(d => { return { label: d.name, value: d.name } }))
+            })
+        }
+    }, [cities, countryIso, stateIso])
+
+    return <DropdownInput data={cities} placeholder="Denver" {...props} />
+}
+
+export default CityInput;

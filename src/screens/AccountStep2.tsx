@@ -35,22 +35,28 @@ const AccountStep2 = (props: ViewProps) => {
 
     const country = watch('country')
     const state = watch('state')
-
-    console.log('country:' + country)
-    console.log('state:' + state)
+    
+    // TODO: if country or state changes, clear the child fields
 
     const onSubmit = (data: FormData) => {
       console.log(JSON.stringify(data))
+    }
+
+    const onCountryChange = () => {
+      setValue("state", "")
+      setValue("city", "")
+    }
+
+    const onStateChange = () => {
+      setValue("city", "")
     }
   
     return (<View {...props}>
         <Title style={tw`text-[#FFC93F]`}>Set up <Title style={tw`text-white`}>Location</Title></Title>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
-            <CountryInput name="country" label="Country" required={true} control={control} />
-            <StateInput name="state" label="State" countryIso={country} control={control} />
-            <CityInput name="city" label="City" countryIso={country} stateIso={state} control={control} />
-
-
+            <CountryInput name="country" label="Country" required={true} onChange={onCountryChange} control={control} />
+            <StateInput key={country} name="state" label="State" countryIso={country} onChange={onStateChange} control={control} />
+            <CityInput key={state} name="city" label="City" countryIso={country} stateIso={state} control={control} />
             <Button title="Next: Set up Location" onPress={handleSubmit(onSubmit)} />
           </Form>
       </View>
