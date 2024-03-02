@@ -11,7 +11,7 @@ interface Props<T extends FieldValues> {
   setValue: UseFormSetValue<T>
 }
 
-const Form = <T extends FieldValues>({    
+const Form = <T extends FieldValues>({
   register,
   errors,
   setValue,
@@ -22,6 +22,9 @@ const Form = <T extends FieldValues>({
 
   useEffect(() => {
     (Array.isArray(children) ? [...children] : [children]).forEach((child) => {
+      if (child.props.control) {
+        return
+      }
       if (child.props.name) {
         register(child.props.name, validation[child.props.name]);
       }
@@ -32,25 +35,28 @@ const Form = <T extends FieldValues>({
     <>
       {(Array.isArray(children) ? children : [children]).map(
         (child, i) => {
-          return child.props.name
-            ? createElement(child.type, {
-                  ...child.props,
-                  ref: (e: TextInput) => {
-                    inputs.current[i] = e
-                  },
-                  onChangeText: (v: PathValue<T, any>) =>
-                    setValue(child.props.name, v, {shouldValidate: true}),
-                  onSubmitEditing: () => {
-                    inputs.current[i + 1]
-                      ? inputs.current[i + 1].focus()
-                      : inputs.current[i].blur()
-                  },
-                  blurOnSubmit: false,
-                  key: child.props.name,
-                  error: errors[child.props.name],
-                },
-              )
-            : child
+          if (!child.props.name || child.props.control) {
+            return child
+          }
+          if (child.props.name) {
+            return createElement(child.type, {
+              ...child.props,
+              ref: (e: TextInput) => {
+                inputs.current[i] = e
+              },
+              onChangeText: (v: PathValue<T, any>) =>
+                setValue(child.props.name, v, { shouldValidate: true }),
+              onSubmitEditing: () => {
+                inputs.current[i + 1]
+                  ? inputs.current[i + 1].focus()
+                  : inputs.current[i].blur()
+              },
+              blurOnSubmit: false,
+              key: child.props.name,
+              error: errors[child.props.name],
+            }
+            )
+          }
         }
       )}
     </>

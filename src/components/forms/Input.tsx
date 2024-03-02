@@ -9,6 +9,7 @@ import Text from '../base/Text';
 import tw from 'twrnc';
 import { LinearGradient } from 'expo-linear-gradient'
 import { styles } from '../base/styles';
+import { forwardRef, useState } from 'react';
 
 
 interface Props extends TextInputProps {
@@ -19,8 +20,10 @@ interface Props extends TextInputProps {
     required?: boolean
 }
 
-const Input = React.forwardRef<any, Props>(
+const Input = forwardRef<any, Props>(
     ({ label, error, required, placeholder, ...inputProps }: Props, ref): React.ReactElement => {
+
+        const [isFocus, setIsFocus] = useState(false);
         return (
             <View style={tw`px-6 mb-2 w-full`}>
                 <LinearGradient style={tw`rounded-xl`} colors={["#0C0C0C", "#161616"]}>
@@ -32,10 +35,11 @@ const Input = React.forwardRef<any, Props>(
                         autoCapitalize="none"
                         placeholder={placeholder}
                         placeholderTextColor={"#6F6F6F"}
+                        onFocus={() => setIsFocus(true)}
+                        onBlur={() => setIsFocus(false)}
                         ref={ref}
                         style={[styles.defaultWeightFont, tw`text-[16px] pt-[12px] pb-[14px] px-[18px]  text-white 
-                                border border-white rounded-xl sm:text-sm 
-                                focus:border focus:border-[#FFC93F] focus:!ring-0`]}
+                                border border-white rounded-xl sm:text-sm`, isFocus && tw`border border-[#FFC93F]`]}
                         {...inputProps}
                     />
                 </LinearGradient>
