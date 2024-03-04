@@ -22,10 +22,20 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/imgs/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.parrygg.app"
     },
     "web": {
       "favicon": "./assets/imgs/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "514ca26a-97d4-486e-bf5e-7578123536e7"
+      }
+    },
+    "owner": "blorppppp",
+    "plugins": [
+      // "expo-router"
+    ]
   }
 }

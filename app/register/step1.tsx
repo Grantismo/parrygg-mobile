@@ -1,12 +1,13 @@
 import React from "react"
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form"
-import View from "../components/base/Background"
-import Form from "../components/forms/Form"
-import Input from "../components/forms/Input"
-import Button from "../components/base/Button"
-import Title from "../components/base/Title"
+import Background from "../../src/components/base/Background"
+import Form from "../../src/components/forms/Form"
+import Input from "../../src/components/forms/Input"
+import Button from "../../src/components/base/Button"
+import Title from "../../src/components/base/Title"
 import tw from 'twrnc';
-import { ViewProps } from "react-native"
+import { router } from 'expo-router';
+
 
 type FormData = {
     tag: string
@@ -15,8 +16,9 @@ type FormData = {
     bio: string
     pronouns: string
 }
-  
-const AccountStep1 = (props: ViewProps) => {
+
+
+const Step1 = () => {
     const errors: FieldErrors<FormData> = {}
 
     const validation: RegisterOptions[] = [];
@@ -24,10 +26,10 @@ const AccountStep1 = (props: ViewProps) => {
     const { handleSubmit, register, setValue } = useForm<FormData>({errors})
   
     const onSubmit = (data: FormData) => {
-      console.log(JSON.stringify(data))
+      router.navigate('/register/step2')
     }
   
-    return (<View {...props}>
+    return (<Background>
         <Title style={tw`text-[#FFC93F]`}>Set up <Title style={tw`text-white`}>Your Account</Title></Title>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
             <Input name="tag" label="Tag" placeholder="e.g. blorppppp" required={true}  />
@@ -37,8 +39,8 @@ const AccountStep1 = (props: ViewProps) => {
             <Input name="pronouns" label="Pronouns" placeholder="e.g. they/them"/>
             <Button title="Next: Set up Location" onPress={handleSubmit(onSubmit)} />
           </Form>
-      </View>
+      </Background>
     )
   }
 
-  export default AccountStep1;
+export default Step1;

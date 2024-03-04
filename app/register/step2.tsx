@@ -1,15 +1,15 @@
 import React from "react"
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form"
-import View from "../components/base/Background"
-import Form from "../components/forms/Form"
-import Button from "../components/base/Button"
-import Title from "../components/base/Title"
+import Background from "../../src/components/base/Background"
+import Form from "../../src/components/forms/Form"
+import Button from "../../src/components/base/Button"
+import Title from "../../src/components/base/Title"
 import tw from 'twrnc';
-import { ViewProps } from "react-native"
-import { LocationClient } from "../libs/location"
-import CountryInput from "../components/forms/location/CountryInput"
-import StateInput from "../components/forms/location/StateInput"
-import CityInput from "../components/forms/location/CityInput"
+import { LocationClient } from "../../src/libs/location"
+import CountryInput from "../../src/components/forms/location/CountryInput"
+import StateInput from "../../src/components/forms/location/StateInput"
+import CityInput from "../../src/components/forms/location/CityInput"
+import { router } from 'expo-router';
 
 type FormData = {
     country: string
@@ -24,8 +24,8 @@ type CountryData = {
 }
 
 const LOCATION_CLIENT = new LocationClient();
-  
-const AccountStep2 = (props: ViewProps) => {
+
+const Step2 = () => {
 
     const errors: FieldErrors<FormData> = {}
 
@@ -38,8 +38,8 @@ const AccountStep2 = (props: ViewProps) => {
     
     // TODO: if country or state changes, clear the child fields
 
-    const onSubmit = (data: FormData) => {
-      console.log(JSON.stringify(data))
+    const onSubmit = () => {
+      router.navigate('/register/step3')
     }
 
     const onCountryChange = () => {
@@ -50,17 +50,19 @@ const AccountStep2 = (props: ViewProps) => {
     const onStateChange = () => {
       setValue("city", "")
     }
+
+    // TODO: Handle Submit not working onPress
   
-    return (<View {...props}>
+    return (<Background>
         <Title style={tw`text-[#FFC93F]`}>Set up <Title style={tw`text-white`}>Location</Title></Title>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
             <CountryInput name="country" label="Country" required={true} onChange={onCountryChange} control={control} />
-            <StateInput key={country} name="state" label="State" countryIso={country} onChange={onStateChange} control={control} />
-            <CityInput key={state} name="city" label="City" countryIso={country} stateIso={state} control={control} />
-            <Button title="Next: Set up Location" onPress={handleSubmit(onSubmit)} />
+            {/* <StateInput key={country} name="state" label="State" countryIso={country} onChange={onStateChange} control={control} />
+            <CityInput key={state} name="city" label="City" countryIso={country} stateIso={state} control={control} /> */}
+            <Button title="Next: Set Profile Images" onPress={onSubmit} />
           </Form>
-      </View>
+      </Background>
     )
   }
 
-  export default AccountStep2;
+  export default Step2;

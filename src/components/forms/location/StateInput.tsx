@@ -21,7 +21,7 @@ const StateInput = ({countryIso, ...props}: Props) => {
 
     const [states, setStates] = useState<Item[]>([])
 
-    if(countryIso && states.length === 0) {
+    if(countryIso && !states.length) {
       LOCATION_CLIENT.getStates(countryIso).then((data) => {
         setStates(data.map(d => {return {label: d.name, value: d.iso2}}))
       })
