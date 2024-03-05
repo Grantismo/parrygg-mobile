@@ -6175,7 +6175,7 @@ react-is@^17.0.1:
 
 "react-native-element-dropdown@github:Grantismo/react-native-element-dropdown":
   version "2.10.1"
-  resolved "https://codeload.github.com/Grantismo/react-native-element-dropdown/tar.gz/549508acabe862a9051b7b06dd1409fc50a075e8"
+  resolved "https://codeload.github.com/Grantismo/react-native-element-dropdown/tar.gz/eb0d7b686a04645c2800a370b211f5a2510bfa75"
   dependencies:
     lodash "^4.17.21"
 

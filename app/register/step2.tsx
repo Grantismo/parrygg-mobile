@@ -57,8 +57,8 @@ const Step2 = () => {
         <Title style={tw`text-[#FFC93F]`}>Set up <Title style={tw`text-white`}>Location</Title></Title>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
             <CountryInput name="country" label="Country" required={true} onChange={onCountryChange} control={control} />
-            {/* <StateInput key={country} name="state" label="State" countryIso={country} onChange={onStateChange} control={control} />
-            <CityInput key={state} name="city" label="City" countryIso={country} stateIso={state} control={control} /> */}
+            <StateInput key={country} name="state" label="State" countryIso={country} onChange={onStateChange} control={control} />
+            <CityInput key={state} name="city" label="City" countryIso={country} stateIso={state} control={control} />
             <Button title="Next: Set Profile Images" onPress={onSubmit} />
           </Form>
       </Background>

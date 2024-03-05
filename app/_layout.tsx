@@ -27,8 +27,8 @@ SplashScreen.preventAutoHideAsync();
 
 const Layout = () => {
   let [fontsLoaded, fontError] = useFonts({
-    // Inter_500Medium,
-    // Inter_600SemiBold,
+    Inter_500Medium,
+    Inter_600SemiBold,
   });
 
   useEffect(() => {

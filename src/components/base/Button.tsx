@@ -13,7 +13,7 @@ interface Props extends PressableProps {
 }
 
 const Button = ({ title, ...pressableProps }: Props) => {
-    //focus:from-[#FFC123] focus:to-[#F5B612]
+    // Negative z-index hack to display behind drop down elements
     return (
         <View style={tw`px-6 mb-2 w-full`}>
             <LinearGradient style={tw`rounded-[14px]`} colors={["#EFB31A", "#FFCB46"]}>

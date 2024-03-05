@@ -28,9 +28,9 @@ const Input = forwardRef<any, Props>(
 
         const [isFocus, setIsFocus] = useState(false);
         return (
-            <View style={[tw`px-6 mb-2 w-full`, containerStyle]}>
+            <View style={[tw`px-6 mb-2 w-full z-0`, containerStyle]}>
                 <LinearGradient style={tw`rounded-xl`} colors={["#0C0C0C", "#161616"]}>
-                    {label && <Text style={tw`px-[0.45rem] py-[0.1rem] text-[12px] font-normal z-20 ml-4 -top-3 absolute rounded bg-[#161616] text-white`}>
+                    {label && <Text style={tw`px-[0.45rem] py-[0.1rem] text-[12px] font-normal z-10 ml-4 -top-3 absolute rounded bg-[#161616] text-white`}>
                         {label}
                         {required && <Text style={tw`ml-1 text-[#FFC93F]`}> *</Text>}
                     </Text>}
