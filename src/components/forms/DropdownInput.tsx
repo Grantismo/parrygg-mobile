@@ -28,6 +28,9 @@ interface Props {
 const DropdownInput = (({ required, label, placeholder, data, onChange: onChangeProp, name, control }: Props) => {
     const [isFocus, setIsFocus] = useState(false);
     const { field: { value, onBlur, onChange }, } = useController({ name, control, rules: { required } });
+
+    // TODO: Fix blur handling
+    // TODO: Fix scrolling search results
     return (
         <View style={[tw`px-6 mb-6 w-full`, isFocus && tw`z-10`]}>
             <Dropdown
@@ -63,6 +66,7 @@ const DropdownInput = (({ required, label, placeholder, data, onChange: onChange
                 renderContainer={({ style, ...props }: ViewProps) => {
                     return <LinearGradient style={[tw`bg-[#0C0C0C] rounded-b-xl border border-white border-t-0 -mt-3 pb-3`]} colors={["#0C0C0C", "#161616"]} {...props} />
                 }}
+                activeColor={"#0C0C0C"}
                 data={data}
                 search
                 maxHeight={300}

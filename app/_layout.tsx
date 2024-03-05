@@ -5,6 +5,8 @@ import {
   Inter_600SemiBold,
 } from '@expo-google-fonts/inter';
 import { Slot, SplashScreen } from "expo-router";
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
 
 //   const keyCloakUrl = `http://${Constants?.expoConfig?.hostUri?.split(`:`)?.shift()?.concat(`.nip.io:8089`)}`
 //   const keycloakConfiguration = {

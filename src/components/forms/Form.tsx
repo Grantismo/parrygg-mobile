@@ -31,6 +31,8 @@ const Form = <T extends FieldValues>({
     });
   }, [register]);
 
+
+  // TODO configure this so it handles blur/focus management for multiselects too
   return (
     <>
       {(Array.isArray(children) ? children : [children]).map(
