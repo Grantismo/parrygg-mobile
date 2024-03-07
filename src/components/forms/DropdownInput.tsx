@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import { View, ViewProps } from 'react-native';
 import tw from 'twrnc';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -19,21 +19,45 @@ interface Props {
     data: Item[]
     required?: boolean
     onChange?: (value: any) => void
+    onFocus?: () => void
 
     // For react-hook-form register
     name: string
     control: Control<any>
 }
 
-const DropdownInput = (({ required, label, placeholder, data, onChange: onChangeProp, name, control }: Props) => {
+const DropdownInput = forwardRef<any, Props>(({ required, label, placeholder, data, onChange: onChangeProp, name, control, onFocus }: Props, ref) => {
     const [isFocus, setIsFocus] = useState(false);
     const { field: { value, onBlur, onChange }, } = useController({ name, control, rules: { required } });
+    const dropdownRef = useRef<Dropdown>()
+
+    const onFocusWrapper = () => {
+        setIsFocus(true)
+        if (onFocus) {
+            onFocus()
+        }
+    }
 
     // TODO: Fix blur handling
-    // TODO: Fix scrolling search results
+    useImperativeHandle(ref, () => {
+        return {
+            focus() {
+                onFocusWrapper()
+            },
+            blur() {
+                // fires the onBlur event on the dropdown below
+                dropdownRef.current?.close();
+            },
+            isFocused() {
+                return isFocus
+            }
+        };
+    }, [isFocus]);
+
     return (
         <View style={[tw`px-6 mb-6 w-full`, isFocus && tw`z-10`]}>
             <Dropdown
+                ref={dropdownRef}
                 placeholderStyle={tw`text-[#6F6F6F]`}
                 placeholder={placeholder}
                 selectedTextStyle={[styles.defaultWeightFont, tw`text-white`]}
@@ -75,7 +99,7 @@ const DropdownInput = (({ required, label, placeholder, data, onChange: onChange
                 searchPlaceholder="Search..."
                 value={value}
                 searchQuery={(keyword: string, labelValue: string) => labelValue.toLowerCase().startsWith(keyword.toLowerCase())}
-                onFocus={() => setIsFocus(true)}
+                onFocus={onFocusWrapper}
                 onBlur={() => {
                     setIsFocus(false)
                     onBlur()

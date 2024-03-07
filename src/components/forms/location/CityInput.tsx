@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { forwardRef, useEffect, useState } from "react"
 
 import { Control } from "react-hook-form";
 import { LocationClient } from "../../../libs/location";
@@ -18,7 +18,7 @@ interface Props {
     control: Control<any>
 }
 
-const CityInput = ({ countryIso, stateIso, ...props }: Props) => {
+const CityInput = forwardRef<any, Props>(({ countryIso, stateIso, ...props }: Props, ref) => {
     const [cities, setCities] = useState<Item[]>([])
 
     useEffect(() => {
@@ -33,7 +33,7 @@ const CityInput = ({ countryIso, stateIso, ...props }: Props) => {
         }
     }, [cities, countryIso, stateIso])
 
-    return <DropdownInput data={cities} placeholder="Denver" {...props} />
-}
+    return <DropdownInput ref={ref} data={cities} placeholder="Denver" {...props} />
+})
 
 export default CityInput;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { forwardRef, useEffect, useState } from "react"
 
 import { Control } from "react-hook-form";
 import { LocationClient } from "../../../libs/location";
@@ -16,7 +16,7 @@ interface Props {
     control: Control<any>
 }
 
-const CountryInput = (props: Props) => {
+const CountryInput = forwardRef<any, Props>((props: Props, ref) => {
     const [countries, setCountries] = useState<Item[]>([])
 
     useEffect(() => {
@@ -29,7 +29,7 @@ const CountryInput = (props: Props) => {
       }
     }, [countries])
   
-    return <DropdownInput data={countries} placeholder="United States" {...props} />
-  }
+    return <DropdownInput ref={ref} data={countries} placeholder="United States" {...props} />
+  })
 
   export default CountryInput;

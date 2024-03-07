@@ -24,7 +24,7 @@ interface Props extends TextInputProps {
 }
 
 const Input = forwardRef<any, Props>(
-    ({ label, error, required, placeholder, containerStyle, ...inputProps }: Props, ref): React.ReactElement => {
+    ({ label, error, required, placeholder, containerStyle, onFocus, ...inputProps }: Props, ref): React.ReactElement => {
 
         const [isFocus, setIsFocus] = useState(false);
         return (
@@ -38,7 +38,12 @@ const Input = forwardRef<any, Props>(
                         autoCapitalize="none"
                         placeholder={placeholder}
                         placeholderTextColor={"#6F6F6F"}
-                        onFocus={() => setIsFocus(true)}
+                        onFocus={(e) => {
+                            setIsFocus(true)
+                            if (onFocus) {
+                                onFocus(e)
+                            }
+                        }}
                         onBlur={() => setIsFocus(false)}
                         ref={ref}
                         style={[styles.defaultWeightFont, tw`text-[16px] pt-[12px] pb-[14px] px-[18px]  text-white 
