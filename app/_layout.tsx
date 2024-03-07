@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
 import {
   useFonts,
   Inter_500Medium,
   Inter_600SemiBold,
-} from '@expo-google-fonts/inter';
+} from "@expo-google-fonts/inter";
 import { Slot, SplashScreen } from "expo-router";
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-
+import React, { useEffect } from "react";
 
 //   const keyCloakUrl = `http://${Constants?.expoConfig?.hostUri?.split(`:`)?.shift()?.concat(`.nip.io:8089`)}`
 //   const keycloakConfiguration = {
@@ -28,7 +26,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 SplashScreen.preventAutoHideAsync();
 
 const Layout = () => {
-  let [fontsLoaded, fontError] = useFonts({
+  const [fontsLoaded, fontError] = useFonts({
     Inter_500Medium,
     Inter_600SemiBold,
   });
@@ -40,10 +38,10 @@ const Layout = () => {
   }, [fontsLoaded, fontError]);
 
   if (!fontsLoaded && !fontError) {
-    return null
+    return null;
   }
 
-  return <Slot />
-}
+  return <Slot />;
+};
 
 export default Layout;

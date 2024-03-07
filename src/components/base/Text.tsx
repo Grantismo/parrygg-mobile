@@ -1,21 +1,20 @@
-import * as React from 'react'
-import { ReactNode } from 'react';
-import {
-    Text as NativeText,
-    TextStyle,
-    StyleProp,
-} from 'react-native'
-import { styles } from './styles';
+import * as React from "react";
+import { ReactNode } from "react";
+import { Text as NativeText, TextStyle, StyleProp } from "react-native";
 
-interface Props  {
-    style?: StyleProp<TextStyle>
-    children: ReactNode
-  }
+import { styles } from "./styles";
 
-const Text = ({style, children, ...textProps}: Props) => {
-    return (
-      <NativeText style={[styles.defaultWeightFont, style]} {...textProps}>{children}</NativeText>
-    )
+interface Props {
+  style?: StyleProp<TextStyle>;
+  children: ReactNode;
 }
+
+const Text = ({ style, children, ...textProps }: Props) => {
+  return (
+    <NativeText style={[styles.defaultWeightFont, style]} {...textProps}>
+      {children}
+    </NativeText>
+  );
+};
 
 export default Text;
