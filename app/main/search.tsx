@@ -19,6 +19,8 @@ import Button from "../../src/components/base/Button";
 import Sep from "../../src/components/base/Sep";
 import Text from "../../src/components/base/Text";
 import Title from "../../src/components/base/Title";
+import SearchBox from "../../src/components/base/SearchBox";
+import PlayerTournamentSearchBox from "../../src/components/base/PlayerTournamentSearchBox";
 
 type ToggleState = "Trending" | "Favorites";
 
@@ -201,6 +203,7 @@ const Search = () => {
       <Title color="accent">
         Tournaments <Title>and</Title> Players
       </Title>
+      <PlayerTournamentSearchBox />
       <View style={tw`w-full mb-14`}>
         <View style={tw`w-full flex flex-row justify-between mb-5`}>
           <ToggleStateButton state="Trending" />
