@@ -13,7 +13,7 @@ const Background = ({ style, children, ...viewProps }: Props) => {
   return (
     <View
       style={[
-        tw`w-full h-full flex-1 bg-[#1b1b1b] items-center justify-center`,
+        tw`w-full h-full flex-1 bg-[#1b1b1b] items-center justify-center px-6`,
         style,
       ]}
       {...viewProps}

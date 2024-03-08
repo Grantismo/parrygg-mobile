@@ -5,15 +5,21 @@ import tw from "twrnc";
 
 import { styles } from "./styles";
 
+type TitleColor = "primary" | "accent";
 interface Props {
   style?: StyleProp<TextStyle>;
   children: ReactNode;
+  color?: TitleColor;
 }
 
-const Title = ({ style, children, ...textProps }: Props) => {
+const Title = ({ style, children, color = "primary", ...textProps }: Props) => {
+  const textColor = {
+    primary: tw`text-white`,
+    accent: tw`text-[#FFC93F]`,
+  }[color];
   return (
     <NativeText
-      style={[styles.mediumWeightFont, tw`text-xl mb-6`, style]}
+      style={[styles.mediumWeightFont, textColor, tw`text-xl mb-6`, style]}
       {...textProps}
     >
       {children}

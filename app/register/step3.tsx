@@ -9,6 +9,7 @@ import FileUpload from "../../assets/icons/FileUpload";
 import Pin from "../../assets/icons/Pin";
 import Background from "../../src/components/base/Background";
 import Button from "../../src/components/base/Button";
+import Sep from "../../src/components/base/Sep";
 import Text from "../../src/components/base/Text";
 import Title from "../../src/components/base/Title";
 
@@ -17,16 +18,14 @@ const Step3 = () => {
     router.navigate("/register/step1");
   };
 
-  const Sep = () => <View style={tw`border-b border-[#262626]`} />;
-
   // TODO: skip/back buttons
 
   return (
     <Background>
-      <Title style={tw`text-[#FFC93F]`}>
-        Profile <Title style={tw`text-white`}>Pictures</Title>
+      <Title color="accent">
+        Profile <Title>Pictures</Title>
       </Title>
-      <View style={tw`px-6 mb-14 w-full`}>
+      <View style={tw`mb-14 w-full`}>
         <View style={tw`p-5 rounded-xl border border-[#3E3E3E] bg-[#151515]`}>
           <View
             style={tw`h-32 rounded-xl border border-dashed border-[#FFC93F] flex items-center justify-center`}
@@ -45,28 +44,26 @@ const Step3 = () => {
               </LinearGradient>
             </View>
             <View style={tw`ml-3 mt-3`}>
-              <Text style={tw`text-white`}>blorppppp</Text>
-              <Text style={tw`text-[#777]`}>John D. (he/him)</Text>
+              <Text>blorppppp</Text>
+              <Text color="secondary">John D. (he/him)</Text>
             </View>
           </View>
           <View style={tw`flex flex-row items-center`}>
             <Calendar />
-            <Text style={tw`ml-2.5 text-[#777] py-[0.69rem]`}>
+            <Text color="secondary" style={tw`ml-2.5 py-[0.69rem]`}>
               Dec 18th, 2023
             </Text>
           </View>
           <Sep />
           <View style={tw`flex flex-row items-center`}>
             <Pin />
-            <Text style={tw`ml-2.5 text-[#777] py-[0.69rem]`}>
+            <Text color="secondary" style={tw`ml-2.5 py-[0.69rem]`}>
               Lakewood, CO, United States
             </Text>
           </View>
           <Sep />
-          <Title style={tw`text-base text-white mt-[0.69rem] mb-0.5`}>
-            Bio
-          </Title>
-          <Text style={tw` text-[#777]`}>
+          <Title style={tw`text-base mt-[0.69rem] mb-0.5`}>Bio</Title>
+          <Text color="secondary">
             In publishing and graphic design, Lorem ipsum is a placeholder text
             commonly used.
           </Text>

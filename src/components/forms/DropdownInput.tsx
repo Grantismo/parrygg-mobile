@@ -7,7 +7,7 @@ import React, {
 } from "react";
 import { Control, useController } from "react-hook-form";
 import { View, ViewProps } from "react-native";
-import { Dropdown } from "react-native-element-dropdown";
+import { Dropdown, IDropdownRef } from "react-native-element-dropdown";
 import tw from "twrnc";
 
 import DownArrow from "../../../assets/icons/DownArrow";
@@ -50,7 +50,7 @@ const DropdownInput = forwardRef<any, Props>(
     const {
       field: { value, onBlur, onChange },
     } = useController({ name, control, rules: { required } });
-    const dropdownRef = useRef<Dropdown>();
+    const dropdownRef = useRef<IDropdownRef>(null);
 
     const onFocusWrapper = () => {
       setIsFocus(true);
@@ -75,11 +75,11 @@ const DropdownInput = forwardRef<any, Props>(
           },
         };
       },
-      [isFocus],
+      [],
     );
 
     return (
-      <View style={[tw`px-6 mb-6 w-full`, isFocus && tw`z-10`]}>
+      <View style={[tw`mb-6 w-full`, isFocus && tw`z-10`]}>
         <Dropdown
           ref={dropdownRef}
           placeholderStyle={tw`text-[#6F6F6F]`}
@@ -116,7 +116,7 @@ const DropdownInput = forwardRef<any, Props>(
               </LinearGradient>
             );
           }}
-          renderItem={(item: Item, selected: boolean) => (
+          renderItem={(item: Item, selected?: boolean) => (
             <View
               style={[
                 tw`px-[18px] pt-[8px] pb-[11px] bg-transparent`,

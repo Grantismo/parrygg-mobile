@@ -30,8 +30,8 @@ const Step1 = () => {
 
   return (
     <Background>
-      <Title style={tw`text-[#FFC93F]`}>
-        Set up <Title style={tw`text-white`}>Your Account</Title>
+      <Title color="accent">
+        Set up <Title>Your Account</Title>
       </Title>
       <Form<FormData> {...{ register, setValue, validation, errors }}>
         <Input name="tag" label="Tag" placeholder="e.g. blorppppp" required />
