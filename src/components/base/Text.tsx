@@ -5,7 +5,7 @@ import tw from "twrnc";
 
 import { styles } from "./styles";
 
-type TextColor = "primary" | "secondary" | "green" | "red" | "accent";
+type TextColor = "primary" | "secondary" | "green" | "red" | "accent" | "black";
 interface Props {
   style?: StyleProp<TextStyle>;
   children: ReactNode;
@@ -19,6 +19,7 @@ const Text = ({ style, children, color = "primary", ...textProps }: Props) => {
     green: tw`text-[#39D83F]`,
     red: tw`text-[#FA3024]`,
     accent: tw`text-[#FFC93F]`,
+    black: tw`text-black`,
   }[color];
   return (
     <NativeText

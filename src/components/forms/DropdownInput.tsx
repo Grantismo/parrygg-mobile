@@ -88,7 +88,10 @@ const DropdownInput = forwardRef<any, Props>(
           inputSearchContainerStyle={tw`border-0 px-3`}
           inputSearchStyle={tw`py-2 text-[#6F6F6F] border-b border-[#262626]`}
           renderRightIcon={(visible?: boolean) => (
-            <DownArrow style={visible && { transform: [{ scaleY: -1 }] }} />
+            <DownArrow
+              color="#777777"
+              style={visible && { transform: [{ scaleY: -1 }] }}
+            />
           )}
           renderDropdown={({ ...props }: ViewProps) => {
             return (

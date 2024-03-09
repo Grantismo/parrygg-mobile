@@ -50,7 +50,9 @@ const Form = <T extends FieldValues>({
   }, [register]);
 
   const updateFocus = (i: number) => {
-    inputs.current[i + 1].focus();
+    if (i < inputs.current.length - 1) {
+      inputs.current[i + 1].focus();
+    }
     inputs.current[i].blur();
   };
 

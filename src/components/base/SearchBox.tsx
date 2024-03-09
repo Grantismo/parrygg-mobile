@@ -74,7 +74,7 @@ const SearchBox: <T>(
             colors={["#0C0C0C", "#161616"]}
           >
             <View style={tw`flex-row items-center`}>
-              <Search style={tw`mr-2`} />
+              <Search color="#777777" style={tw`mr-2`} />
               <TextInput
                 autoCapitalize="none"
                 autoCorrect={false}

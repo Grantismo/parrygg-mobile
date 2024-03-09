@@ -5,7 +5,7 @@ const Index = () => {
   const rootNavigationState = useRootNavigationState();
 
   if (!rootNavigationState?.key) return null;
-  return <Redirect href="/main/search" />;
+  return <Redirect href="/main/myplayers" />;
 };
 
 export default Index;

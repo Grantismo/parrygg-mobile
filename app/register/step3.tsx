@@ -49,14 +49,14 @@ const Step3 = () => {
             </View>
           </View>
           <View style={tw`flex flex-row items-center`}>
-            <Calendar />
+            <Calendar color="#777777" />
             <Text color="secondary" style={tw`ml-2.5 py-[0.69rem]`}>
               Dec 18th, 2023
             </Text>
           </View>
           <Sep />
           <View style={tw`flex flex-row items-center`}>
-            <Pin />
+            <Pin color="#6F6F6F" />
             <Text color="secondary" style={tw`ml-2.5 py-[0.69rem]`}>
               Lakewood, CO, United States
             </Text>

@@ -29,7 +29,7 @@ const Button = ({ title, style, children, ...pressableProps }: Props) => {
         <Pressable
           style={[
             tw`rounded-[14px] pt-[13px] pb-[15px] border-2 border-[#ffd978]
-                     text-black flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2`,
+                     text-black flex flex-row items-center justify-center`,
             style,
           ]}
           {...pressableProps}

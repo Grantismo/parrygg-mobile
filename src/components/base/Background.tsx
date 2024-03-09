@@ -1,5 +1,15 @@
-import React, { ReactNode } from "react";
-import { View, StyleProp, ViewProps, ViewStyle, Image } from "react-native";
+import React, { ReactNode, useCallback } from "react";
+import {
+  View,
+  StyleProp,
+  ViewProps,
+  ViewStyle,
+  Image,
+  ScrollView,
+  SafeAreaView,
+  Platform,
+  StatusBar,
+} from "react-native";
 import tw from "twrnc";
 
 import { Images } from "../../../assets/assets";
@@ -7,24 +17,45 @@ import { Images } from "../../../assets/assets";
 interface Props extends ViewProps {
   style?: StyleProp<ViewStyle>;
   children: ReactNode;
+  scroll?: boolean;
+  showFooter?: boolean;
 }
 
-const Background = ({ style, children, ...viewProps }: Props) => {
+const ScrollContentView = ({ style, ...props }: Props) => {
+  return <ScrollView contentContainerStyle={style} {...props} />;
+};
+
+const DefaultView = ({ style, ...props }: Props) => {
+  return <View style={[tw`w-full h-full`, style]} {...props} />;
+};
+
+const Background = ({
+  scroll,
+  showFooter,
+  style: bgStyle,
+  children: bgChildren,
+  ...bgProps
+}: Props) => {
+  const ContentView = scroll ? ScrollContentView : DefaultView;
+
   return (
-    <View
-      style={[
-        tw`w-full h-full flex-1 bg-[#1b1b1b] items-center justify-center px-6`,
-        style,
-      ]}
-      {...viewProps}
-    >
+    <View style={tw`bg-[#1b1b1b]`} {...bgProps}>
       <View style={tw`absolute inset-x-0 top-0 h-full`}>
         <Image
           style={{ resizeMode: "cover", opacity: 0.03 }}
           source={Images.TournamentPoster}
         />
       </View>
-      {children}
+      <SafeAreaView
+        style={[
+          bgStyle,
+          Platform.OS === "android" && { paddingTop: StatusBar.currentHeight },
+        ]}
+      >
+        <ContentView style={tw`px-6 flex flex-col items-center justify-center`}>
+          {bgChildren}
+        </ContentView>
+      </SafeAreaView>
     </View>
   );
 };
