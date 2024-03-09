@@ -3,8 +3,8 @@ import React from "react";
 import { Pressable, View } from "react-native";
 import tw from "twrnc";
 
-import Text from "./Text";
-import Title from "./Title";
+import Text from "@/components/base/Text";
+import Title from "@/components/base/Title";
 
 interface Props {
   title: string;

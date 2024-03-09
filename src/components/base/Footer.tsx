@@ -1,16 +1,15 @@
-import { LinearGradient } from "expo-linear-gradient";
 import { router, usePathname } from "expo-router";
 import React, { Children, ReactElement } from "react";
 import { Pressable, View, ViewProps } from "react-native";
 import tw from "twrnc";
 
-import Calendar from "../../../assets/icons/Calendar";
-import FooterButtonBackground from "../../../assets/icons/FooterButtonBackground";
-import Gear from "../../../assets/icons/Gear";
-import Profile from "../../../assets/icons/Profile";
-import { IconProps } from "../../../assets/icons/Props";
-import SearchFlame from "../../../assets/icons/SearchFlame";
-import Trophy from "../../../assets/icons/Trophy";
+import Calendar from "@assets/icons/Calendar";
+import FooterButtonBackground from "@assets/icons/FooterButtonBackground";
+import Gear from "@assets/icons/Gear";
+import Profile from "@assets/icons/Profile";
+import { IconProps } from "@assets/icons/Props";
+import SearchFlame from "@assets/icons/SearchFlame";
+import Trophy from "@assets/icons/Trophy";
 
 interface FooterButtonProps extends ViewProps {
   path: string;
@@ -61,7 +60,7 @@ const Footer = () => {
       <Pressable
         style={[tw`h-14 w-14 items-center justify-center`, style]}
         onPress={() => {
-          router.navigate(path);
+          router.push(path);
         }}
         {...props}
       >
@@ -87,7 +86,7 @@ const Footer = () => {
       >
         <SearchFlame color="white" />
       </FooterButton>
-      <FooterButton path="">
+      <FooterButton path="/main/settings">
         <Gear />
       </FooterButton>
       <FooterButton path="/main/myplayers">

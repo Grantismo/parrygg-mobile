@@ -1,6 +1,7 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-import { IconProps } from "./Props";
+
+import { IconProps } from "@assets/icons/Props";
 
 const RightArrow = ({ color, ...props }: IconProps) => (
   <Svg

@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import tw from "twrnc";
 
-import Text from "./Text";
+import Text from "@/components/base/Text";
 
 interface Props extends PressableProps {
   title?: string;

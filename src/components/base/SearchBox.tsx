@@ -16,9 +16,9 @@ import {
 } from "react-native";
 import tw from "twrnc";
 
-import Sep from "./Sep";
-import Search from "../../../assets/icons/Search";
-import { styles } from "../base/styles";
+import Sep from "@/components/base/Sep";
+import { styles } from "@/components/base/styles";
+import Search from "@assets/icons/Search";
 
 interface Props<T> extends TextInputProps {
   name: string;

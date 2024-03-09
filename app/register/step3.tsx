@@ -4,14 +4,14 @@ import React from "react";
 import { View } from "react-native";
 import tw from "twrnc";
 
-import Calendar from "../../assets/icons/Calendar";
-import FileUpload from "../../assets/icons/FileUpload";
-import Pin from "../../assets/icons/Pin";
-import Background from "../../src/components/base/Background";
-import Button from "../../src/components/base/Button";
-import Sep from "../../src/components/base/Sep";
-import Text from "../../src/components/base/Text";
-import Title from "../../src/components/base/Title";
+import Background from "@/components/base/Background";
+import Button from "@/components/base/Button";
+import Sep from "@/components/base/Sep";
+import Text from "@/components/base/Text";
+import Title from "@/components/base/Title";
+import Calendar from "@assets/icons/Calendar";
+import FileUpload from "@assets/icons/FileUpload";
+import Pin from "@assets/icons/Pin";
 
 const Step3 = () => {
   const onSubmit = (event: any) => {

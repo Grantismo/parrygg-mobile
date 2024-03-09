@@ -2,10 +2,10 @@ import React from "react";
 import { View } from "react-native";
 import tw from "twrnc";
 
-import SearchBox from "./SearchBox";
-import Text from "./Text";
-import SF6 from "../../../assets/icons/SF6";
-import SSBU from "../../../assets/icons/SSBU";
+import SearchBox from "@/components/base/SearchBox";
+import Text from "@/components/base/Text";
+import SF6 from "@assets/icons/SF6";
+import SSBU from "@assets/icons/SSBU";
 
 const PlayerTournamentSearchBox = () => {
   const data = [

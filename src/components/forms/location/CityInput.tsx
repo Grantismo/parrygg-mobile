@@ -1,8 +1,8 @@
 import React, { forwardRef, useEffect, useState } from "react";
 import { Control } from "react-hook-form";
 
-import { LocationClient } from "../../../libs/location";
-import DropdownInput, { Item } from "../DropdownInput";
+import DropdownInput, { Item } from "@/components/forms/DropdownInput";
+import { LocationClient } from "@/libs/location";
 
 const LOCATION_CLIENT = new LocationClient();
 

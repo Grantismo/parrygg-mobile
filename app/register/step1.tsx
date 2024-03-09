@@ -1,13 +1,12 @@
 import { router } from "expo-router";
 import React from "react";
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form";
-import tw from "twrnc";
 
-import Background from "../../src/components/base/Background";
-import Button from "../../src/components/base/Button";
-import Title from "../../src/components/base/Title";
-import Form from "../../src/components/forms/Form";
-import Input from "../../src/components/forms/Input";
+import Background from "@/components/base/Background";
+import Button from "@/components/base/Button";
+import Title from "@/components/base/Title";
+import Form from "@/components/forms/Form";
+import Input from "@/components/forms/Input";
 
 type FormData = {
   tag: string;

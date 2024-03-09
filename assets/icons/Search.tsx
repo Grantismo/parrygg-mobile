@@ -1,7 +1,7 @@
 import * as React from "react";
-import Svg, { SvgProps, Path } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-import { IconProps } from "./Props";
+import { IconProps } from "@assets/icons/Props";
 
 const Search = ({ color, ...props }: IconProps) => (
   <Svg

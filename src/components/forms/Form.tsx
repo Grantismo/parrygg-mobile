@@ -8,11 +8,11 @@ import {
   RegisterOptions,
 } from "react-hook-form";
 
-import DropdownInput from "./DropdownInput";
-import Input from "./Input";
-import CityInput from "./location/CityInput";
-import CountryInput from "./location/CountryInput";
-import StateInput from "./location/StateInput";
+import DropdownInput from "@/components/forms/DropdownInput";
+import Input from "@/components/forms/Input";
+import CityInput from "@/components/forms/location/CityInput";
+import CountryInput from "@/components/forms/location/CountryInput";
+import StateInput from "@/components/forms/location/StateInput";
 
 interface Props<T extends FieldValues> {
   children: JSX.Element | JSX.Element[];

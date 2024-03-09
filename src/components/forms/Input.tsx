@@ -11,8 +11,8 @@ import {
 } from "react-native";
 import tw from "twrnc";
 
-import Text from "../base/Text";
-import { styles } from "../base/styles";
+import Text from "@/components/base/Text";
+import { styles } from "@/components/base/styles";
 
 interface Props extends TextInputProps {
   name: string;

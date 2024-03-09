@@ -10,9 +10,9 @@ import { View, ViewProps } from "react-native";
 import { Dropdown, IDropdownRef } from "react-native-element-dropdown";
 import tw from "twrnc";
 
-import DownArrow from "../../../assets/icons/DownArrow";
-import Text from "../base/Text";
-import { styles } from "../base/styles";
+import Text from "@/components/base/Text";
+import { styles } from "@/components/base/styles";
+import DownArrow from "@assets/icons/DownArrow";
 
 export interface Item {
   label: string;

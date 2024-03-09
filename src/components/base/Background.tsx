@@ -1,4 +1,4 @@
-import React, { ReactNode, useCallback } from "react";
+import React, { ReactNode } from "react";
 import {
   View,
   StyleProp,
@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import tw from "twrnc";
 
-import { Images } from "../../../assets/assets";
+import { Images } from "@assets/assets";
 
 interface Props extends ViewProps {
   style?: StyleProp<ViewStyle>;

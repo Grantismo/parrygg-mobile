@@ -1,12 +1,12 @@
 import React from "react";
 import tw from "twrnc";
 
-import Plus from "../../assets/icons/Plus";
-import Background from "../../src/components/base/Background";
-import Button from "../../src/components/base/Button";
-import Nav from "../../src/components/base/Nav";
-import Text from "../../src/components/base/Text";
-import PlayerResult from "../../src/components/player/PlayerResult";
+import Background from "@/components/base/Background";
+import Button from "@/components/base/Button";
+import Nav from "@/components/base/Nav";
+import Text from "@/components/base/Text";
+import PlayerResult from "@/components/player/PlayerResult";
+import Plus from "@assets/icons/Plus";
 
 const MyPlayers = () => {
   return (

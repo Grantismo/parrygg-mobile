@@ -1,15 +1,14 @@
 import { router } from "expo-router";
 import React from "react";
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form";
-import tw from "twrnc";
 
-import Background from "../../src/components/base/Background";
-import Button from "../../src/components/base/Button";
-import Title from "../../src/components/base/Title";
-import Form from "../../src/components/forms/Form";
-import CityInput from "../../src/components/forms/location/CityInput";
-import CountryInput from "../../src/components/forms/location/CountryInput";
-import StateInput from "../../src/components/forms/location/StateInput";
+import Background from "@/components/base/Background";
+import Button from "@/components/base/Button";
+import Title from "@/components/base/Title";
+import Form from "@/components/forms/Form";
+import CityInput from "@/components/forms/location/CityInput";
+import CountryInput from "@/components/forms/location/CountryInput";
+import StateInput from "@/components/forms/location/StateInput";
 
 type FormData = {
   country: string;
