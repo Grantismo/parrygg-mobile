@@ -3,7 +3,7 @@ import React from "react";
 import { View } from "react-native";
 import tw from "twrnc";
 
-import Footer from "@/components/base/Footer";
+import Footer from "@/components/base/navigation/Footer";
 
 const Layout = () => {
   return (

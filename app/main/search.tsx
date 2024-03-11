@@ -7,7 +7,7 @@ import Button from "@/components/base/Button";
 import PlayerTournamentSearchBox from "@/components/base/PlayerTournamentSearchBox";
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
-import PlayerResult from "@/components/player/PlayerResult";
+import PlayerResult from "@/components/player/Result";
 import RightArrow from "@assets/icons/RightArrow";
 
 type ToggleState = "Trending" | "Favorites";
@@ -26,7 +26,7 @@ const Search = () => {
 
   const TrendingButton = ({ title, src }: { title: string; src: string }) => {
     return (
-      <Button style={tw`justify-start flex-row p-2`}>
+      <Button pressableStyle={tw`justify-start flex-row p-2`}>
         <Image style={tw`h-8 w-8 rounded mr-2`} src={src} />
         <Text color="black">{title}</Text>
       </Button>

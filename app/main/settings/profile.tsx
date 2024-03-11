@@ -4,7 +4,7 @@ import { Button, View } from "react-native";
 import tw from "twrnc";
 
 import Background from "@/components/base/Background";
-import Nav from "@/components/base/Nav";
+import Nav from "@/components/base/navigation/Nav";
 import Input from "@/components/forms/Input";
 
 const Profile = () => {

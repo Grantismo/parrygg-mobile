@@ -6,7 +6,9 @@ import {
   View,
   StyleProp,
   ViewStyle,
+  ColorValue,
 } from "react-native";
+import { ViewProps } from "react-native-svg/lib/typescript/fabric/utils";
 import tw from "twrnc";
 
 import Text from "@/components/base/Text";
@@ -14,23 +16,44 @@ import Text from "@/components/base/Text";
 interface Props extends PressableProps {
   title?: string;
   style?: StyleProp<ViewStyle>;
+  pressableStyle?: StyleProp<ViewStyle>;
+  color?: Color;
 }
+type Color = "primary" | "secondary";
 
-const Button = ({ title, style, children, ...pressableProps }: Props) => {
-  // Negative z-index hack to display behind drop down elements
-  //
+const LinearGradientWrapper = ({ ...props }: ViewProps) => {
+  return <LinearGradient colors={["#EFB31A", "#FFCB46"]} {...props} />;
+};
+
+const PassthroughWrapper = ({ ...props }: ViewProps) => {
+  return <View {...props} />;
+};
+
+const Button = ({
+  title,
+  style,
+  pressableStyle,
+  color = "primary",
+  children,
+  ...pressableProps
+}: Props) => {
+  const PressableWrapper =
+    color === "primary" ? LinearGradientWrapper : PassthroughWrapper;
 
   return (
-    <View style={tw`mb-4 w-full`}>
-      <LinearGradient
-        style={tw`rounded-[14px]`}
-        colors={["#EFB31A", "#FFCB46"]}
+    <View style={[tw`mb-4`, style]}>
+      <PressableWrapper
+        style={[
+          tw`rounded-[14px]`,
+          { backgroundColor: "rgba(56, 52, 42, 0.38)" },
+        ]}
       >
         <Pressable
           style={[
-            tw`rounded-[14px] pt-[13px] pb-[15px] border-2 border-[#ffd978]
+            tw`rounded-[14px] px-6 pt-[13px] pb-[15px] border-2 border-[#ffd978]
                      text-black flex flex-row items-center justify-center`,
-            style,
+            color === "secondary" && tw`border pt-[14px] pb-[16px]`,
+            pressableStyle,
           ]}
           {...pressableProps}
         >
@@ -43,7 +66,7 @@ const Button = ({ title, style, children, ...pressableProps }: Props) => {
             </>
           )}
         </Pressable>
-      </LinearGradient>
+      </PressableWrapper>
     </View>
   );
 };

@@ -3,9 +3,9 @@ import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
-import Nav from "@/components/base/Nav";
 import Text from "@/components/base/Text";
-import PlayerResult from "@/components/player/PlayerResult";
+import Nav from "@/components/base/navigation/Nav";
+import PlayerResult from "@/components/player/Result";
 import Plus from "@assets/icons/Plus";
 
 const MyPlayers = () => {

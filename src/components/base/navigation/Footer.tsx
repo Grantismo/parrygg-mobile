@@ -71,9 +71,9 @@ const Footer = () => {
 
   return (
     <View
-      style={tw`grow w-full flex flex-row items-center justify-between bg-[#0A0A0A] p-4`}
+      style={tw`grow w-full flex flex-row items-center justify-between bg-[#0A0A0A] px-4 py-2.5`}
     >
-      <FooterButton path="">
+      <FooterButton path="/main/profile">
         <Profile />
       </FooterButton>
       <FooterButton path="">

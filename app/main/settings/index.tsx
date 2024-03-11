@@ -6,8 +6,8 @@ import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
-import Nav from "@/components/base/Nav";
 import Text from "@/components/base/Text";
+import Nav from "@/components/base/navigation/Nav";
 import Profile from "@/components/player/Profile";
 import ProfileIcon from "@assets/icons/Profile";
 import RightArrow from "@assets/icons/RightArrow";
