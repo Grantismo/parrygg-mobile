@@ -96,10 +96,17 @@ const Profile = () => {
             src="https://i.imgur.com/WmEKpAF.png"
           />
           <View style={tw`absolute bottom-0 right-0 flex-row pr-6`}>
-            <Button color="secondary" style={tw`h-10 w-10 rounded-lg mr-2`}>
+            <Button
+              color="secondary"
+              style={tw`mr-3`}
+              pressableStyle={tw`h-10 w-10 p-3 rounded-lg`}
+            >
               <Twitch color="white" />
             </Button>
-            <Button color="secondary" style={tw`h-10 w-10 rounded-lg`}>
+            <Button
+              color="secondary"
+              pressableStyle={tw`h-10 w-10 p-3 rounded-lg`}
+            >
               <Twitter color="white" />
             </Button>
           </View>
