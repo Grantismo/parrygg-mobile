@@ -1,26 +1,26 @@
-import * as React from 'react'
+import { LinearGradient } from "expo-linear-gradient";
+import * as React from "react";
+import { forwardRef, useState } from "react";
+import { FieldError } from "react-hook-form";
 import {
-    View,
-    TextInput,
-    TextInputProps,
-    StyleProp,
-    ViewStyle,
-} from 'react-native'
-import { FieldError } from 'react-hook-form'
-import Text from '../base/Text';
-import tw from 'twrnc';
-import { LinearGradient } from 'expo-linear-gradient'
-import { styles } from '../base/styles';
-import { forwardRef, useState } from 'react';
+  View,
+  TextInput,
+  TextInputProps,
+  StyleProp,
+  ViewStyle,
+} from "react-native";
+import tw from "twrnc";
 
+import Text from "@/components/base/Text";
+import { styles } from "@/components/base/styles";
 
 interface Props extends TextInputProps {
-    name: string
-    label?: string
-    placeholder?: string
-    error?: FieldError
-    required?: boolean
-    containerStyle?: StyleProp<ViewStyle>
+  name: string;
+  label?: string;
+  placeholder?: string;
+  error?: FieldError;
+  required?: boolean;
+  containerStyle?: StyleProp<ViewStyle>;
 }
 
 const Input = forwardRef<any, Props>(

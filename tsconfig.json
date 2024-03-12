@@ -3,6 +3,15 @@
   "compilerOptions": {
     "jsx": "react",
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ]
+    },
   },
 }
