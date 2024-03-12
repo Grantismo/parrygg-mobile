@@ -18,7 +18,7 @@ const Button = ({ title, ...pressableProps }: Props) => {
         <View style={tw`px-6 mb-2 w-full`}>
             <LinearGradient style={tw`rounded-[14px]`} colors={["#EFB31A", "#FFCB46"]}>
                 <Pressable
-                    style={tw`rounded-[14px] pt-[13px] pb-[15px] border-2 border-[#ffd978]
+                    style={tw`rounded-[14px] pt-[15px] pb-[17px] border-2 border-[#ffd978]
                      text-black flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2`}
                     {...pressableProps}>
                     <Text style={tw`text-black`}>{title}</Text>

@@ -59,7 +59,7 @@ const Step2 = () => {
             <CountryInput name="country" label="Country" required={true} onChange={onCountryChange} control={control} />
             <StateInput key={country} name="state" label="State" countryIso={country} onChange={onStateChange} control={control} />
             <CityInput key={state} name="city" label="City" countryIso={country} stateIso={state} control={control} />
-            <Button title="Next: Set Profile Images" onPress={onSubmit} />
+            <Button title="Next: Set Profile Images" onPress={onSubmit}  />
           </Form>
       </Background>
     )

@@ -42,7 +42,7 @@ const Input = forwardRef<any, Props>(
                         onBlur={() => setIsFocus(false)}
                         ref={ref}
                         style={[styles.defaultWeightFont, tw`text-[16px] pt-[12px] pb-[14px] px-[18px]  text-white 
-                                border border-white rounded-xl sm:text-sm`, isFocus && tw`border border-[#FFC93F]`]}
+                                border border-white rounded-[14px] sm:text-sm`, isFocus && tw`border border-[#FFC93F]`]}
                         {...inputProps}
                     />
                 </LinearGradient>

@@ -32,24 +32,26 @@ const DropdownInput = (({ required, label, placeholder, data, onChange: onChange
     // TODO: Fix blur handling
     // TODO: Fix scrolling search results
     return (
-        <View style={[tw`px-6 mb-6 w-full`, isFocus && tw`z-10`]}>
-            <Dropdown
-                placeholderStyle={tw`text-[#6F6F6F]`}
+        <View style={[tw`px-6 mb-7 w-full `, isFocus && tw`z-10`]} >
+
+
+            <Dropdown 
+                placeholderStyle={tw`text-[#777777]`}
                 placeholder={placeholder}
                 selectedTextStyle={[styles.defaultWeightFont, tw`text-white`]}
-                inputSearchContainerStyle={tw`border-0 px-3`}
-                inputSearchStyle={tw`py-2 text-[#6F6F6F] border-b border-[#262626]`}
+                inputSearchContainerStyle={tw`border-0 px-3 mt-3`}
+                inputSearchStyle={tw`py-1 mt-3  text-[#777777] border-b border-[#262626]`}
                 renderRightIcon={(visible?: boolean) => (
                     <DownArrow style={visible && { transform: [{ scaleY: -1 }] }} />
                 )}
                 renderDropdown={({ ...props }: ViewProps) => {
                     return (
-                        <LinearGradient style={tw`relative rounded-xl z-20`} colors={["#0C0C0C", "#161616"]}>
+                        <LinearGradient style={tw`relative rounded-[14px] z-20`} colors={["#0C0C0C", "#161616"]}>
                             {label && <Text style={tw`px-[0.45rem] py-[0.1rem] text-[12px] font-normal z-20 ml-4 -top-3 absolute rounded bg-[#161616] text-white`}>
                                 {label}
                                 {required && <Text style={tw`ml-1 text-[#FFC93F]`}> *</Text>}
                             </Text>}
-                            <View style={[tw`flex-row items-center justify-between text-[16px] pt-[12px] pb-[14px] px-[18px] text-white border border-white rounded-xl sm:text-sm`,
+                            <View style={[tw`flex-row items-center justify-between text-[16px] pt-[15px] pb-[17px] px-[18px] text-white border border-white rounded-[14px] sm:text-sm`,
                             isFocus && tw`border border-[#FFC93F]`]}
                                 {...props}>
                             </View>
@@ -57,14 +59,14 @@ const DropdownInput = (({ required, label, placeholder, data, onChange: onChange
                     )
                 }}
                 renderItem={(item: Item, selected: boolean) => (
-                    <View style={[tw`px-[18px] pt-[8px] pb-[11px] bg-transparent`, selected && tw`bg-[#161616]`]}>
+                    <View style={[tw`px-[18px] pt-[12px] pb-[12px] bg-transparent`, selected && tw`bg-[#161616]`]}>
                         <Text style={tw`text-white`}>
                             {item.label}
                         </Text>
                     </View>
                 )}
                 renderContainer={({ style, ...props }: ViewProps) => {
-                    return <LinearGradient style={[tw`bg-[#0C0C0C] rounded-b-xl border border-white border-t-0 -mt-3 pb-3`]} colors={["#0C0C0C", "#161616"]} {...props} />
+                    return <LinearGradient style={[tw`rounded-b-xl border border-[#777777] border-t-0 -mt-3 pb-3 `]} colors={["#0C0C0C", "#161616"]} {...props} />
                 }}
                 activeColor={"#0C0C0C"}
                 data={data}
