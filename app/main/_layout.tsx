@@ -5,7 +5,7 @@ import tw from "twrnc";
 
 import Footer from "@/components/base/navigation/Footer";
 
-const Layout = () => {
+const MainLayout = () => {
   return (
     <View style={tw`h-full`}>
       <View style={tw`shrink`}>
@@ -16,4 +16,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default MainLayout;

@@ -76,7 +76,7 @@ const Footer = () => {
       <FooterButton path="/main/profile">
         <Profile />
       </FooterButton>
-      <FooterButton path="">
+      <FooterButton path="/main/calendar">
         <Calendar />
       </FooterButton>
       <FooterButton

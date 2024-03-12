@@ -11,7 +11,7 @@ import Result from "@/components/player/Result";
 import Bracket from "@assets/icons/Bracket";
 import Calendar from "@assets/icons/Calendar";
 import Pin from "@assets/icons/Pin";
-import ProfileIcon from "@assets/icons/Profile";
+import Profile from "@assets/icons/Profile";
 import SSBU from "@assets/icons/SSBU";
 import Twitch from "@assets/icons/Twitch";
 import Twitter from "@assets/icons/Twitter";
@@ -48,7 +48,7 @@ const UpcomingEvent = () => {
         <Sep />
         <View style={tw`flex-row items-center pt-6`}>
           <Button style={tw`mr-2 flex-1`}>
-            <ProfileIcon color="black" height={14} style={tw`mr-2`} />
+            <Profile color="black" height={14} style={tw`mr-2`} />
             <Text color="black">Dashboard</Text>
           </Button>
           <Button style={tw`flex-1`} color="secondary">
@@ -86,7 +86,7 @@ const EventResult = () => {
   );
 };
 
-const Profile = () => {
+const ProfilePage = () => {
   return (
     <ScrollView>
       <View style={tw`bg-[#151515] items-center min-h-[900px]`}>
@@ -162,4 +162,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ProfilePage;

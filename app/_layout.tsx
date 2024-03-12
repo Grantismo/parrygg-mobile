@@ -5,7 +5,6 @@ import {
 } from "@expo-google-fonts/inter";
 import { Slot, SplashScreen } from "expo-router";
 import React, { useEffect } from "react";
-import { StatusBar } from "react-native";
 
 //   const keyCloakUrl = `http://${Constants?.expoConfig?.hostUri?.split(`:`)?.shift()?.concat(`.nip.io:8089`)}`
 //   const keycloakConfiguration = {
@@ -26,7 +25,7 @@ import { StatusBar } from "react-native";
 
 SplashScreen.preventAutoHideAsync();
 
-const Layout = () => {
+const RootLayout = () => {
   const [fontsLoaded, fontError] = useFonts({
     Inter_500Medium,
     Inter_600SemiBold,
@@ -45,4 +44,4 @@ const Layout = () => {
   return <Slot />;
 };
 
-export default Layout;
+export default RootLayout;

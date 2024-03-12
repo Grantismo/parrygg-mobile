@@ -7,7 +7,7 @@ import Background from "@/components/base/Background";
 import Nav from "@/components/base/navigation/Nav";
 import Input from "@/components/forms/Input";
 
-const Profile = () => {
+const ProfileSettingsPage = () => {
   const errors: FieldErrors<FormData> = {};
 
   const validation: RegisterOptions[] = [];
@@ -42,4 +42,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ProfileSettingsPage;

@@ -1,6 +1,7 @@
 import { router } from "expo-router";
 import React from "react";
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form";
+import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
@@ -16,7 +17,7 @@ type FormData = {
   city: string;
 };
 
-const Step2 = () => {
+const RegistrationStep2Page = () => {
   const errors: FieldErrors<FormData> = {};
 
   const validation: RegisterOptions[] = [];
@@ -74,6 +75,7 @@ const Step2 = () => {
           control={control}
         />
         <Button
+          style={tw`w-full`}
           title="Next: Set Profile Images"
           onPress={handleSubmit(onSubmit)}
         />
@@ -82,4 +84,4 @@ const Step2 = () => {
   );
 };
 
-export default Step2;
+export default RegistrationStep2Page;

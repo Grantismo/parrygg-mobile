@@ -5,7 +5,7 @@ const Index = () => {
   const rootNavigationState = useRootNavigationState();
 
   if (!rootNavigationState?.key) return null;
-  return <Redirect href="/main/profile" />;
+  return <Redirect href="/main/calendar" />;
 };
 
 export default Index;

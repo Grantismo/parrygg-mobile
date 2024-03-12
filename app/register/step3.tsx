@@ -13,7 +13,7 @@ import Calendar from "@assets/icons/Calendar";
 import FileUpload from "@assets/icons/FileUpload";
 import Pin from "@assets/icons/Pin";
 
-const Step3 = () => {
+const RegistrationStep3Page = () => {
   const onSubmit = (event: any) => {
     router.navigate("/register/step1");
   };
@@ -69,9 +69,9 @@ const Step3 = () => {
           </Text>
         </View>
       </View>
-      <Button title="Finish Editing" onPress={onSubmit} />
+      <Button style={tw`w-full`} title="Finish Editing" onPress={onSubmit} />
     </Background>
   );
 };
 
-export default Step3;
+export default RegistrationStep3Page;

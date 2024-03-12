@@ -12,7 +12,7 @@ import Profile from "@/components/player/Profile";
 import ProfileIcon from "@assets/icons/Profile";
 import RightArrow from "@assets/icons/RightArrow";
 
-const Index = () => {
+const SettingsPage = () => {
   interface SettingButtonProps {
     title: string;
     icon: JSX.Element;
@@ -66,4 +66,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default SettingsPage;

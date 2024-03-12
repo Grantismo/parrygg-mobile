@@ -6,7 +6,6 @@ import {
   View,
   StyleProp,
   ViewStyle,
-  ColorValue,
 } from "react-native";
 import { ViewProps } from "react-native-svg/lib/typescript/fabric/utils";
 import tw from "twrnc";
@@ -19,10 +18,18 @@ interface Props extends PressableProps {
   pressableStyle?: StyleProp<ViewStyle>;
   color?: Color;
 }
-type Color = "primary" | "secondary";
+type Color = "primary" | "secondary" | "green" | "gray";
 
-const LinearGradientWrapper = ({ ...props }: ViewProps) => {
+const PrimaryWrapper = ({ ...props }: ViewProps) => {
   return <LinearGradient colors={["#EFB31A", "#FFCB46"]} {...props} />;
+};
+
+const GreenWrapper = ({ ...props }: ViewProps) => {
+  return <LinearGradient colors={["#27BB2D", "#2EBB33"]} {...props} />;
+};
+
+const GrayWrapper = ({ ...props }: ViewProps) => {
+  return <LinearGradient colors={["#636363", "#727272"]} {...props} />;
 };
 
 const PassthroughWrapper = ({ ...props }: ViewProps) => {
@@ -37,8 +44,12 @@ const Button = ({
   children,
   ...pressableProps
 }: Props) => {
-  const PressableWrapper =
-    color === "primary" ? LinearGradientWrapper : PassthroughWrapper;
+  const PressableWrapper = {
+    primary: PrimaryWrapper,
+    secondary: PassthroughWrapper,
+    green: GreenWrapper,
+    gray: GrayWrapper,
+  }[color];
 
   return (
     <View style={[tw`mb-4`, style]}>
@@ -50,9 +61,12 @@ const Button = ({
       >
         <Pressable
           style={[
-            tw`rounded-[14px] px-6 pt-[13px] pb-[15px] border-2 border-[#ffd978]
+            tw`rounded-[14px] px-6 pt-[13px] pb-[15px] border-2 
                      text-black flex flex-row items-center justify-center`,
+            color === "primary" && tw`border-[#ffd978]`,
             color === "secondary" && tw`border pt-[14px] pb-[16px]`,
+            color === "gray" && tw`border-[#8A8A8A]`,
+            color === "green" && tw`border-[#56E75C]`,
             pressableStyle,
           ]}
           {...pressableProps}
@@ -62,7 +76,16 @@ const Button = ({
               {typeof children === "function"
                 ? children({ pressed })
                 : children}
-              {title && <Text style={tw`text-black`}>{title}</Text>}
+              {title && (
+                <Text
+                  style={[
+                    tw`text-black`,
+                    new Set(["green", "gray"]).has(color) && tw`text-white`,
+                  ]}
+                >
+                  {title}
+                </Text>
+              )}
             </>
           )}
         </Pressable>

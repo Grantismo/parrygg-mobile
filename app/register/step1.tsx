@@ -1,6 +1,7 @@
 import { router } from "expo-router";
 import React from "react";
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form";
+import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
@@ -16,7 +17,7 @@ type FormData = {
   pronouns: string;
 };
 
-const Step1 = () => {
+const RegistrationStep1Page = () => {
   const errors: FieldErrors<FormData> = {};
 
   const validation: RegisterOptions[] = [];
@@ -44,6 +45,7 @@ const Step1 = () => {
         <Input name="bio" label="Bio" placeholder="e.g. I love smash" />
         <Input name="pronouns" label="Pronouns" placeholder="e.g. they/them" />
         <Button
+          style={tw`w-full`}
           title="Next: Set up Location"
           onPress={handleSubmit(onSubmit)}
         />
@@ -52,4 +54,4 @@ const Step1 = () => {
   );
 };
 
-export default Step1;
+export default RegistrationStep1Page;

@@ -12,7 +12,7 @@ import RightArrow from "@assets/icons/RightArrow";
 
 type ToggleState = "Trending" | "Favorites";
 
-const Search = () => {
+const SearchPage = () => {
   const [toggleState, setToggleState] = useState<ToggleState>("Trending");
   const ToggleStateButton = ({ state }: { state: ToggleState }) => {
     return (
@@ -82,4 +82,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default SearchPage;
