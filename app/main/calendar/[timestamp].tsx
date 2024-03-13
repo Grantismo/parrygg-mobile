@@ -1,8 +1,7 @@
 import { format } from "date-fns";
 import { useLocalSearchParams } from "expo-router";
 import React from "react";
-import { Pressable, View, Image } from "react-native";
-import tw from "twrnc";
+import { View, Image } from "react-native";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
@@ -10,6 +9,7 @@ import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
 import CalanderArrow from "@/components/base/calendar/CalanderArrow";
 import Nav from "@/components/base/navigation/Nav";
+import tw from "@/lib/tailwind";
 import Calendar from "@assets/icons/Calendar";
 import Profile from "@assets/icons/Profile";
 import RightArrow from "@assets/icons/RightArrow";

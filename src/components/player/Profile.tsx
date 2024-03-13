@@ -1,9 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import tw from "twrnc";
 
 import Text from "@/components/base/Text";
 import ProfilePicture from "@/components/player/ProfilePicture";
+import tw from "@/lib/tailwind";
 
 const Profile = () => {
   return (

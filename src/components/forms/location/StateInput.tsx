@@ -2,7 +2,7 @@ import React, { forwardRef, useState } from "react";
 import { Control } from "react-hook-form";
 
 import DropdownInput, { Item } from "@/components/forms/DropdownInput";
-import { LocationClient } from "@/libs/location";
+import { LocationClient } from "@/lib/location";
 
 const LOCATION_CLIENT = new LocationClient();
 

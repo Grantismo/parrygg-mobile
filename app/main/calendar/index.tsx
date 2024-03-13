@@ -2,11 +2,11 @@ import { router } from "expo-router";
 import React from "react";
 import { View } from "react-native";
 import { DateData } from "react-native-calendars";
-import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Calendar from "@/components/base/calendar/Calander";
 import Nav from "@/components/base/navigation/Nav";
+import tw from "@/lib/tailwind";
 
 const CalendarPage = () => {
   const onDayPress = (date: DateData) => {

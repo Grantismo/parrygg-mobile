@@ -1,6 +1,7 @@
 import React from "react";
 import { Image, ImageStyle, StyleProp } from "react-native";
-import tw from "twrnc";
+
+import tw from "@/lib/tailwind";
 
 const ProfilePicture = ({ style }: { style?: StyleProp<ImageStyle> }) => {
   return (

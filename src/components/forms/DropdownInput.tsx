@@ -8,10 +8,10 @@ import React, {
 import { Control, useController } from "react-hook-form";
 import { View, ViewProps } from "react-native";
 import { Dropdown, IDropdownRef } from "react-native-element-dropdown";
-import tw from "twrnc";
 
 import Text from "@/components/base/Text";
 import { styles } from "@/components/base/styles";
+import tw from "@/lib/tailwind";
 import DownArrow from "@assets/icons/DownArrow";
 
 export interface Item {

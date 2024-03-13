@@ -1,13 +1,13 @@
 import { router } from "expo-router";
 import React from "react";
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form";
-import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
 import Title from "@/components/base/Title";
 import Form from "@/components/forms/Form";
 import Input from "@/components/forms/Input";
+import tw from "@/lib/tailwind";
 
 type FormData = {
   tag: string;

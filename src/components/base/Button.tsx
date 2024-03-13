@@ -8,9 +8,9 @@ import {
   ViewStyle,
 } from "react-native";
 import { ViewProps } from "react-native-svg/lib/typescript/fabric/utils";
-import tw from "twrnc";
 
 import Text from "@/components/base/Text";
+import tw from "@/lib/tailwind";
 
 interface Props extends PressableProps {
   title?: string;

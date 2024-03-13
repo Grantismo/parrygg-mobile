@@ -2,10 +2,10 @@ import React from "react";
 import { View } from "react-native";
 import { Calendar as NativeCalendar } from "react-native-calendars";
 import { DateData, Direction } from "react-native-calendars/src/types";
-import tw from "twrnc";
 
 import Text from "@/components/base/Text";
 import CalanderArrow from "@/components/base/calendar/CalanderArrow";
+import tw from "@/lib/tailwind";
 import CalendarIcon from "@assets/icons/Calendar";
 
 interface Props {

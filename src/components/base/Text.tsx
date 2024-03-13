@@ -1,9 +1,9 @@
 import * as React from "react";
 import { ReactNode } from "react";
 import { Text as NativeText, TextStyle, StyleProp } from "react-native";
-import tw from "twrnc";
 
 import { styles } from "@/components/base/styles";
+import tw from "@/lib/tailwind";
 
 type TextColor = "primary" | "secondary" | "green" | "red" | "accent" | "black";
 interface Props {
@@ -23,7 +23,7 @@ const Text = ({ style, children, color = "primary", ...textProps }: Props) => {
   }[color];
   return (
     <NativeText
-      style={[styles.defaultWeightFont, textColor, style]}
+      style={[styles.defaultWeightFont, tw`text-base`, textColor, style]}
       {...textProps}
     >
       {children}

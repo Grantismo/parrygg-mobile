@@ -1,9 +1,9 @@
 import { Slot } from "expo-router";
 import React from "react";
 import { View } from "react-native";
-import tw from "twrnc";
 
 import Footer from "@/components/base/navigation/Footer";
+import tw from "@/lib/tailwind";
 
 const MainLayout = () => {
   return (

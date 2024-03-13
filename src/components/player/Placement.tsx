@@ -1,9 +1,9 @@
 import React from "react";
 import { TextProps } from "react-native";
-import tw from "twrnc";
 
 import Text from "@/components/base/Text";
-import { numberWithOrdinal } from "@/libs/utils";
+import tw from "@/lib/tailwind";
+import { numberWithOrdinal } from "@/lib/utils";
 import Trophy from "@assets/icons/Trophy";
 
 interface Props extends TextProps {

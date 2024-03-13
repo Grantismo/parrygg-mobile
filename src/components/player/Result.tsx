@@ -1,12 +1,12 @@
 import React from "react";
 import { View } from "react-native";
-import tw from "twrnc";
 
 import Sep from "@/components/base/Sep";
 import Text from "@/components/base/Text";
 import { styles } from "@/components/base/styles";
 import Placement from "@/components/player/Placement";
 import ProfilePicture from "@/components/player/ProfilePicture";
+import tw from "@/lib/tailwind";
 import RightArrow from "@assets/icons/RightArrow";
 import Seed from "@assets/icons/Seed";
 

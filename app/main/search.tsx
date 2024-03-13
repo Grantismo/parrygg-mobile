@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Pressable, View, Image } from "react-native";
-import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
 import PlayerTournamentSearchBox from "@/components/base/PlayerTournamentSearchBox";
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
-import PlayerResult from "@/components/player/Result";
+import PlayerResult from "@/components/player/PlayerResult";
+import tw from "@/lib/tailwind";
 import RightArrow from "@assets/icons/RightArrow";
 
 type ToggleState = "Trending" | "Favorites";

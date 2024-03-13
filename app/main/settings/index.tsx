@@ -2,13 +2,13 @@ import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import React from "react";
 import { Pressable, View } from "react-native";
-import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
 import Text from "@/components/base/Text";
 import Nav from "@/components/base/navigation/Nav";
 import Profile from "@/components/player/Profile";
+import tw from "@/lib/tailwind";
 import ProfileIcon from "@assets/icons/Profile";
 import RightArrow from "@assets/icons/RightArrow";
 

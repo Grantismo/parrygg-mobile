@@ -1,11 +1,11 @@
 import React from "react";
 import { FieldErrors, Form, RegisterOptions, useForm } from "react-hook-form";
 import { Button, View } from "react-native";
-import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Nav from "@/components/base/navigation/Nav";
 import Input from "@/components/forms/Input";
+import tw from "@/lib/tailwind";
 
 const ProfileSettingsPage = () => {
   const errors: FieldErrors<FormData> = {};

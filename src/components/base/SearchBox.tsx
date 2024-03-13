@@ -14,10 +14,10 @@ import {
   FlatList,
   ListRenderItemInfo,
 } from "react-native";
-import tw from "twrnc";
 
 import Sep from "@/components/base/Sep";
 import { styles } from "@/components/base/styles";
+import tw from "@/lib/tailwind";
 import Search from "@assets/icons/Search";
 
 interface Props<T> extends TextInputProps {

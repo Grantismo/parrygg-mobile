@@ -10,8 +10,8 @@ import {
   Platform,
   StatusBar,
 } from "react-native";
-import tw from "twrnc";
 
+import tw from "@/lib/tailwind";
 import { Images } from "@assets/assets";
 
 interface Props extends ViewProps {

@@ -1,11 +1,11 @@
 import React from "react";
-import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
 import Text from "@/components/base/Text";
 import Nav from "@/components/base/navigation/Nav";
 import PlayerResult from "@/components/player/PlayerResult";
+import tw from "@/lib/tailwind";
 import Plus from "@assets/icons/Plus";
 
 const MyPlayersPage = () => {

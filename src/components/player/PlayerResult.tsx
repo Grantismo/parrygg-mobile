@@ -1,9 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import tw from "twrnc";
 
 import Profile from "@/components/player/Profile";
 import Result from "@/components/player/Result";
+import tw from "@/lib/tailwind";
 import Close from "@assets/icons/Close";
 
 const PlayerResult = () => {

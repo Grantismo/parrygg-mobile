@@ -1,8 +1,8 @@
 import { router, usePathname } from "expo-router";
 import React, { Children, ReactElement } from "react";
 import { Pressable, View, ViewProps } from "react-native";
-import tw from "twrnc";
 
+import tw from "@/lib/tailwind";
 import Calendar from "@assets/icons/Calendar";
 import FooterButtonBackground from "@assets/icons/FooterButtonBackground";
 import Gear from "@assets/icons/Gear";

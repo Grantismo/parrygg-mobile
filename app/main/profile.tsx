@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Image, ScrollView } from "react-native";
-import tw from "twrnc";
 
 import Button from "@/components/base/Button";
 import Sep from "@/components/base/Sep";
@@ -8,6 +7,7 @@ import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
 import Placement from "@/components/player/Placement";
 import Result from "@/components/player/Result";
+import tw from "@/lib/tailwind";
 import Bracket from "@assets/icons/Bracket";
 import Calendar from "@assets/icons/Calendar";
 import Pin from "@assets/icons/Pin";

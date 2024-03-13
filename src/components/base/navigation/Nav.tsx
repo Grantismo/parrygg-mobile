@@ -1,10 +1,10 @@
 import { router } from "expo-router";
 import React from "react";
 import { Pressable, View } from "react-native";
-import tw from "twrnc";
 
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
+import tw from "@/lib/tailwind";
 
 interface Props {
   title: string;

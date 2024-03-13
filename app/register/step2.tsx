@@ -1,7 +1,6 @@
 import { router } from "expo-router";
 import React from "react";
 import { useForm, FieldErrors, RegisterOptions } from "react-hook-form";
-import tw from "twrnc";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
@@ -10,6 +9,7 @@ import Form from "@/components/forms/Form";
 import CityInput from "@/components/forms/location/CityInput";
 import CountryInput from "@/components/forms/location/CountryInput";
 import StateInput from "@/components/forms/location/StateInput";
+import tw from "@/lib/tailwind";
 
 type FormData = {
   country: string;

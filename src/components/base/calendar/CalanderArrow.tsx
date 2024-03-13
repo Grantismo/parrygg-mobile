@@ -1,10 +1,10 @@
+import React from "react";
 import { View } from "react-native";
 
+import tw from "@/lib/tailwind";
 import CalendarButtonBackground from "@assets/icons/CalendarButtonBackground";
 import LeftNavArrow from "@assets/icons/LeftNavArrow";
 import RightNavArrow from "@assets/icons/RightNavArrow";
-import React from "react";
-import tw from "twrnc"
 
 const Arrow = ({ direction }: { direction: "left" | "right" }) => {
   const arrowProps = {
