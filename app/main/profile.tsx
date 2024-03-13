@@ -19,7 +19,7 @@ import Twitter from "@assets/icons/Twitter";
 const UpcomingEvent = () => {
   return (
     <View
-      style={tw`flex flex-col border border-[#323232] w-full rounded-[14px] overflow-hidden`}
+      style={tw`flex flex-col border border-[#323232] w-full rounded-lg overflow-hidden`}
     >
       <Image
         style={tw`w-full h-40 rounded-t-[14px]`}
@@ -67,7 +67,7 @@ const UpcomingEvent = () => {
 const EventResult = () => {
   return (
     <View
-      style={tw`flex flex-col border border-[#FFC93F] w-full rounded-[14px] overflow-hidden`}
+      style={tw`flex flex-col border border-[#FFC93F] w-full rounded-lg overflow-hidden`}
     >
       <Image
         style={tw`w-full h-30 rounded-t-[14px]`}

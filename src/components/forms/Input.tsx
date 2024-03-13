@@ -57,7 +57,7 @@ const Input = forwardRef<any, Props>(
             style={[
               styles.defaultWeightFont,
               tw`text-[16px] pt-[12px] pb-[14px] px-[18px]  text-white 
-                                border border-white rounded-[14px] sm:text-sm`,
+                                border border-white rounded-lg sm:text-sm`,
               isFocus && tw`border border-[#FFC93F]`,
             ]}
             {...inputProps}

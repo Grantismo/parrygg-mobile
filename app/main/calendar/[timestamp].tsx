@@ -16,7 +16,7 @@ import RightArrow from "@assets/icons/RightArrow";
 
 const UpcomingOpenEvent = () => (
   <View
-    style={tw`flex flex-col border border-[#323232] w-full rounded-[14px] overflow-hidden mb-4`}
+    style={tw`flex flex-col border border-[#323232] w-full rounded-lg overflow-hidden mb-4`}
   >
     <Image
       style={tw`w-full h-40 rounded-t-[14px]`}
@@ -40,7 +40,7 @@ const UpcomingOpenEvent = () => (
 
 const UpcomingLiveEvent = () => (
   <View
-    style={tw`flex flex-col border border-[#323232] w-full rounded-[14px] overflow-hidden mb-4`}
+    style={tw`flex flex-col border border-[#323232] w-full rounded-lg overflow-hidden mb-4`}
   >
     <Image
       style={tw`w-full h-40 rounded-t-[14px]`}
@@ -65,7 +65,7 @@ const UpcomingLiveEvent = () => (
 
 const EndedEvent = () => (
   <View
-    style={tw`flex flex-col border border-[#323232] w-full rounded-[14px] overflow-hidden mb-4`}
+    style={tw`flex flex-col border border-[#323232] w-full rounded-lg overflow-hidden mb-4`}
   >
     <Image
       style={tw`w-full h-40 rounded-t-[14px]`}

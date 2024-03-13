@@ -55,13 +55,13 @@ const Button = ({
     <View style={[tw`mb-4`, style]}>
       <PressableWrapper
         style={[
-          tw`rounded-[14px]`,
+          tw`rounded-lg`,
           { backgroundColor: "rgba(56, 52, 42, 0.38)" },
         ]}
       >
         <Pressable
           style={[
-            tw`rounded-[14px] px-6 pt-[13px] pb-[15px] border-2 
+            tw`rounded-lg px-6 pt-[13px] pb-[15px] border-2 
                      text-black flex flex-row items-center justify-center`,
             color === "primary" && tw`border-[#ffd978]`,
             color === "secondary" && tw`border pt-[14px] pb-[16px]`,
