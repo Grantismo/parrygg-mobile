@@ -72,8 +72,8 @@ const RegistrationStep3Page = () => {
             commonly used.
           </Text>
         </View>
+        <Button style={tw`w-full`} title="Finish Editing" onPress={onSubmit} />
       </View>
-      <Button style={tw`w-full`} title="Finish Editing" onPress={onSubmit} />
     </Background>
   );
 };

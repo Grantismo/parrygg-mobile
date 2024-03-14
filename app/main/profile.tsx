@@ -134,25 +134,25 @@ const ProfilePage = () => {
           <Sep />
           <View style={tw`flex flex-row items-center`}>
             <Pin color="#6F6F6F" width="14" />
-            <Text color="secondary" style={tw`ml-2.5 py-[0.69rem]`}>
+            <Text color="secondary" style={tw`ml-2.5 py-[0.8rem]`}>
               Lakewood, CO, United States
             </Text>
           </View>
           <Sep />
-          <Title style={tw`text-base mt-[0.69rem] mb-0.5`}>Bio</Title>
-          <Text color="secondary">
+          <Title style={tw`text-base mt-[0.69rem] mb-0.5 `}>Bio</Title>
+          <Text color="secondary" style={tw`leading-5`}>
             In publishing and graphic design, Lorem ipsum is a placeholder text
             commonly used.
           </Text>
           <Title style={tw`text-base mt-[0.69rem] mb-0.5`}>Ratings</Title>
-          <View style={tw`flex-row items-center`}>
+          <View style={tw`flex-row items-center mb-2`}>
             <Placement place={28} />
             <Text color="secondary"> Smash Bros. Ultimate: </Text>
             <Text>Singles</Text>
           </View>
         </View>
         <View style={tw`bg-[#1B1B1B] w-full px-6 pb-6`}>
-          <Title style={tw`text-base pt-6`}>Registered Upcoming Events</Title>
+          <Title style={tw`text-base pt-6 `}>Registered Upcoming Events</Title>
           <UpcomingEvent />
           <Title style={tw`text-base pt-6`}>Results</Title>
           <EventResult />

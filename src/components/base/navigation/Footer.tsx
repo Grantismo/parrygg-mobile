@@ -82,7 +82,7 @@ const Footer = () => {
       <FooterButton
         path="/main/search"
         unselectedArgs={{ flameColor: "#FFC93F" }}
-        selectedArgs={{ flameColor: "white" }}
+        selectedArgs={{ flameColor: "#0A0A0A" }}
       >
         <SearchFlame color="white" />
       </FooterButton>
