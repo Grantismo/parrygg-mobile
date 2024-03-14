@@ -61,7 +61,7 @@ const Button = ({
             tw`rounded-lg px-6 pt-[13px] pb-[15px] border-2 
                      text-black flex flex-row items-center justify-center`,
             color === "primary" && tw`border-[#ffd978]`,
-            color === "secondary" && tw`border pt-[14px] pb-[16px]`,
+            color === "secondary" && tw`border border-[#FFC93F]  rounded-[11px]  pt-[14px] pb-[16px] bg-[#151515]`,
             color === "gray" && tw`border-[#8A8A8A]`,
             color === "green" && tw`border-[#56E75C]`,
             pressableStyle,

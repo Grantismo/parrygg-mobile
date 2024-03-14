@@ -41,10 +41,10 @@ const Input = forwardRef<any, Props>(
         <LinearGradient style={tw`rounded-xl`} colors={["#0C0C0C", "#161616"]}>
           {label && (
             <Text
-              style={tw`px-[0.45rem] py-[0.1rem] text-[12px] font-normal z-10 ml-4 -top-3 absolute rounded bg-[#161616] text-white`}
+              style={tw`px-[0.45rem] py-[0.1rem] text-[12px] font-normal z-10 ml-4 -top-3 absolute rounded-sm bg-[#161616] text-white`}
             >
               {label}
-              {required && <Text style={tw`ml-1 text-[#FFC93F]`}> *</Text>}
+              {required && <Text style={tw`ml-1 text-[#FFC93F] text-[12px] `}> *</Text>}
             </Text>
           )}
           <TextInput
@@ -56,7 +56,7 @@ const Input = forwardRef<any, Props>(
             ref={ref}
             style={[
               styles.defaultWeightFont,
-              tw`text-[16px] pt-[12px] pb-[14px] px-[18px]  text-white 
+              tw`text-base pt-[12px] pb-[14px] px-[18px]  text-white 
                                 border border-white rounded-lg sm:text-sm`,
               isFocus && tw`border border-[#FFC93F]`,
             ]}
