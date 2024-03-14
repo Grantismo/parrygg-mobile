@@ -22,17 +22,17 @@ const SettingsPage = () => {
   const SettingButton = ({ title, icon, path }: SettingButtonProps) => {
     return (
       <Pressable
-        style={tw`w-full rounded-xl border border-[#777777]  mb-6 bg-[#151515]`}
+        style={tw`w-full rounded-lg border border-[#777777]  mb-6 bg-[#151515]`}
         onPress={() => router.push(path)}
       >
         <LinearGradient
-          style={tw`w-full p-6 rounded-xl flex-row items-center justify-between`}
+          style={tw`w-full p-[1.1rem] rounded-lg flex-row items-center justify-between`}
           start={[0, 1]}
           end={[1, 0]}
           colors={["#121212", "#1b1b1b"]}
         >
           <View style={tw`flex-row`}>
-            {React.cloneElement(icon, { style: tw`mr-2`, color: "white" })}
+            {React.cloneElement(icon, { style: tw`mr-3`, color: "white" })}
             <Text>{title}</Text>
           </View>
           <RightArrow color="#FFC93F" />
@@ -45,11 +45,11 @@ const SettingsPage = () => {
       <Nav title="Settings" showBack />
       <View style={tw`grow w-full pb-2`}>
         <View
-          style={tw`w-full rounded-xl border border-white  mb-6 bg-[#151515]`}
+          style={tw`w-full rounded-lg border border-white  mb-6 bg-[#151515]`}
         >
           <LinearGradient
-            style={tw`w-full p-6 rounded-xl`}
-            colors={["#0C0C0C", "#161616"]}
+            style={tw`w-full p-6 rounded-lg`}
+            colors={["#121212", "#1E1E1E"]}
           >
             <Profile />
           </LinearGradient>

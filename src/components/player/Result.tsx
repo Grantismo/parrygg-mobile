@@ -31,7 +31,7 @@ const ResultRow = ({
           {!result && <Text>TBD</Text>} vs
         </Text>
         <View style={tw`flex-row items-center`}>
-          <ProfilePicture style={tw`h-4 w-4 border-[1px] ml-2 mr-1`} />
+          <ProfilePicture style={tw`h-4 w-4 border-[1px] ml-1 mr-1`} />
           <Text color="accent" style={tw`text-sm`}>{name}</Text>
         </View>
       </View>
@@ -51,7 +51,7 @@ const Result = () => {
       <Sep />
       <View style={tw`flex-row items-center justify-between my-4 `}>
         <View style={tw`flex-row items-center`}>
-          <Placement place={23} style={styles.mediumWeightFont} />
+          <Placement place={1} style={styles.mediumWeightFont} />
         </View>
         <View style={tw`flex-row items-center `}>
           <Text>
@@ -103,6 +103,8 @@ const Result = () => {
           opponent={{ name: "Bread", seed: 1422, place: 1300 }}
         />
       </View>
+
+      
     </>
   );
 };

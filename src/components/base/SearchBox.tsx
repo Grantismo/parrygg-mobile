@@ -67,7 +67,7 @@ const SearchBox: <T>(
         >
           <LinearGradient
             style={[
-              tw`rounded-lg pt-[12px] pb-[14px] px-[18px] 
+              tw`rounded-lg pt-[13px] pb-[15px] px-[18px] 
                                 border border-white sm:text-sm `,
               isFocus && tw`border border-[#FFC93F]`,
             ]}
