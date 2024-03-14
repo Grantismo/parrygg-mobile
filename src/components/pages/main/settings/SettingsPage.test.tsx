@@ -2,11 +2,11 @@ import { describe, expect, it } from "@jest/globals";
 import React from "react";
 import renderer from "react-test-renderer";
 
-import SearchPage from "./search";
+import SettingsPage from "@/components/pages/main/settings/SettingsPage";
 
-describe("SearchPage", () => {
+describe("SettingsPage", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<SearchPage />).toJSON();
+    const tree = renderer.create(<SettingsPage />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

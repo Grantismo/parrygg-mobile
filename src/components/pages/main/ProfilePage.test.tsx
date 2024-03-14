@@ -2,11 +2,11 @@ import { describe, expect, it } from "@jest/globals";
 import React from "react";
 import renderer from "react-test-renderer";
 
-import RegistrationStep1Page from "./step1";
+import ProfilePage from "@/components/pages/main/ProfilePage";
 
-describe("RegistrationStep1Page", () => {
+describe("ProfilePage", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<RegistrationStep1Page />).toJSON();
+    const tree = renderer.create(<ProfilePage />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

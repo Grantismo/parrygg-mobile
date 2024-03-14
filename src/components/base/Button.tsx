@@ -54,10 +54,7 @@ const Button = ({
   return (
     <View style={[tw`mb-4`, style]}>
       <PressableWrapper
-        style={[
-          tw`rounded-lg`,
-          { backgroundColor: "rgba(56, 52, 42, 0.38)" },
-        ]}
+        style={[tw`rounded-lg`, { backgroundColor: "rgba(56, 52, 42, 0.38)" }]}
       >
         <Pressable
           style={[
