@@ -93,6 +93,13 @@ interface Props {
 
 const CalendarDatePage = ({ timestamp }: Props) => {
   const date = new Date(parseInt(timestamp, 10));
+  const formatDate = (d: Date) => {
+    return new Date(
+      new Date(d).setMinutes(
+        new Date(d).getMinutes() + new Date(d).getTimezoneOffset(),
+      ),
+    );
+  };
 
   return (
     <Background scroll>
@@ -103,7 +110,9 @@ const CalendarDatePage = ({ timestamp }: Props) => {
         <CalanderArrow direction="left" />
         <View style={tw`flex-row items-center justify-center`}>
           <Calendar color="white" style={tw`mr-2`} />
-          <Text style={tw`text-lg`}>{format(date, "dd MMMM yyyy")}</Text>
+          <Text style={tw`text-lg`}>
+            {format(formatDate(date), "dd MMMM yyyy")}
+          </Text>
         </View>
         <CalanderArrow direction="right" />
       </View>
