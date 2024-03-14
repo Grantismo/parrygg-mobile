@@ -37,7 +37,7 @@ const Input = forwardRef<any, Props>(
   ): React.ReactElement => {
     const [isFocus, setIsFocus] = useState(false);
     return (
-      <View style={[tw`mb-1.5 w-full z-0`, containerStyle]}>
+      <View style={[tw`mb-1 w-full z-0`, containerStyle]}>
         <LinearGradient style={tw`rounded-xl`} colors={["#0C0C0C", "#161616"]}>
           {label && (
             <Text
@@ -56,7 +56,7 @@ const Input = forwardRef<any, Props>(
             ref={ref}
             style={[
               styles.defaultWeightFont,
-              tw`text-base pt-[12px] pb-[14px] px-[18px]  text-white 
+              tw`text-base pt-[13px] pb-[15px] px-[18px]  text-white 
                                 border border-white rounded-lg sm:text-sm`,
               isFocus && tw`border border-[#FFC93F]`,
             ]}
