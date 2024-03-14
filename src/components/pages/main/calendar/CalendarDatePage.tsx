@@ -4,6 +4,7 @@ import { View, Image } from "react-native";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
+import Card from "@/components/base/Card";
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
 import CalanderArrow from "@/components/base/calendar/CalanderArrow";
@@ -14,11 +15,9 @@ import Profile from "@assets/icons/Profile";
 import RightArrow from "@assets/icons/RightArrow";
 
 const UpcomingOpenEvent = () => (
-  <View
-    style={tw`flex flex-col border border-[#323232] w-full rounded-lg overflow-hidden mb-4`}
-  >
+  <Card>
     <Image
-      style={tw`w-full h-40 rounded-t-[14px]`}
+      style={tw`w-full h-40 rounded-t-lg`}
       src="https://imgur.com/o3yTFTq.png"
     />
     <View style={tw`flex-col p-6 bg-[#151515]`}>
@@ -34,18 +33,16 @@ const UpcomingOpenEvent = () => (
       </View>
       <Button title="Registration Open" style={tw`w-full`} />
     </View>
-  </View>
+  </Card>
 );
 
 const UpcomingLiveEvent = () => (
-  <View
-    style={tw`flex flex-col border border-[#323232] w-full rounded-lg overflow-hidden mb-4`}
-  >
+  <Card>
     <Image
-      style={tw`w-full h-40 rounded-t-[14px]`}
+      style={tw`w-full h-40 rounded-t-lg`}
       src="https://imgur.com/8ny13Be.png"
     />
-    <View style={tw`flex-col p-6 bg-[#151515]`}>
+    <View style={tw`flex-col p-6`}>
       <View style={tw`items-center justify-center pb-6`}>
         <Title style={tw`text-base mb-2`}>Battle of BC 6</Title>
         <Text color="secondary" style={tw`text-center`}>
@@ -59,18 +56,16 @@ const UpcomingLiveEvent = () => (
       </View>
       <Button color="green" title="Live Event Stats" style={tw`w-full`} />
     </View>
-  </View>
+  </Card>
 );
 
 const EndedEvent = () => (
-  <View
-    style={tw`flex flex-col border border-[#323232] w-full rounded-lg overflow-hidden mb-4`}
-  >
+  <Card>
     <Image
-      style={tw`w-full h-40 rounded-t-[14px]`}
+      style={tw`w-full h-40 rounded-t-lg`}
       src="https://imgur.com/Sm54xX7.png"
     />
-    <View style={tw`flex-col p-6 bg-[#151515]`}>
+    <View style={tw`flex-col p-6`}>
       <View style={tw`items-center justify-center pb-6`}>
         <Title style={tw`text-base mb-2`}>Battle of BC 6</Title>
         <Text color="secondary" style={tw`text-center`}>
@@ -84,7 +79,7 @@ const EndedEvent = () => (
       </View>
       <Button color="gray" title="Event Ended" style={tw`w-full`} />
     </View>
-  </View>
+  </Card>
 );
 
 interface Props {

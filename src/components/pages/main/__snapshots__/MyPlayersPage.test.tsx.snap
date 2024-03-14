@@ -322,17 +322,24 @@ exports[`ProfilePage renders correctly 1`] = `
         </View>
         <View
           style={
-            {
-              "backgroundColor": "#151515",
-              "borderColor": "#FFC93F",
-              "borderRadius": 14,
-              "borderWidth": 1,
-              "marginBottom": 24,
-              "paddingBottom": 24,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 24,
-            }
+            [
+              {
+                "backgroundColor": "#151515",
+                "borderRadius": 14,
+                "borderWidth": 1,
+                "marginBottom": 24,
+                "overflow": "hidden",
+              },
+              {
+                "borderColor": "#FFC93F",
+              },
+              {
+                "paddingBottom": 24,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 24,
+              },
+            ]
           }
         >
           <View
@@ -1873,17 +1880,24 @@ exports[`ProfilePage renders correctly 1`] = `
         </View>
         <View
           style={
-            {
-              "backgroundColor": "#151515",
-              "borderColor": "#FFC93F",
-              "borderRadius": 14,
-              "borderWidth": 1,
-              "marginBottom": 24,
-              "paddingBottom": 24,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 24,
-            }
+            [
+              {
+                "backgroundColor": "#151515",
+                "borderRadius": 14,
+                "borderWidth": 1,
+                "marginBottom": 24,
+                "overflow": "hidden",
+              },
+              {
+                "borderColor": "#FFC93F",
+              },
+              {
+                "paddingBottom": 24,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 24,
+              },
+            ]
           }
         >
           <View

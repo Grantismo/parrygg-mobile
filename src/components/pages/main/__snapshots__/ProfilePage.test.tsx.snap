@@ -846,15 +846,19 @@ exports[`ProfilePage renders correctly 1`] = `
         </Text>
         <View
           style={
-            {
-              "borderColor": "#323232",
-              "borderRadius": 14,
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "column",
-              "overflow": "hidden",
-              "width": "100%",
-            }
+            [
+              {
+                "backgroundColor": "#151515",
+                "borderRadius": 14,
+                "borderWidth": 1,
+                "marginBottom": 24,
+                "overflow": "hidden",
+              },
+              {
+                "borderColor": "#3D3D3D",
+              },
+              undefined,
+            ]
           }
         >
           <Image
@@ -871,7 +875,6 @@ exports[`ProfilePage renders correctly 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#151515",
                 "flexDirection": "column",
                 "paddingBottom": 24,
                 "paddingLeft": 24,
@@ -1566,15 +1569,19 @@ exports[`ProfilePage renders correctly 1`] = `
         </Text>
         <View
           style={
-            {
-              "borderColor": "#FFC93F",
-              "borderRadius": 14,
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "column",
-              "overflow": "hidden",
-              "width": "100%",
-            }
+            [
+              {
+                "backgroundColor": "#151515",
+                "borderRadius": 14,
+                "borderWidth": 1,
+                "marginBottom": 24,
+                "overflow": "hidden",
+              },
+              {
+                "borderColor": "#FFC93F",
+              },
+              undefined,
+            ]
           }
         >
           <Image
@@ -1591,7 +1598,6 @@ exports[`ProfilePage renders correctly 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#151515",
                 "borderColor": "#FFC93F",
                 "borderTopWidth": 1,
                 "flexDirection": "column",

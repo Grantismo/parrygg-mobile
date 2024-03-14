@@ -647,16 +647,19 @@ exports[`CalendarDatePage renders correctly 1`] = `
           </View>
           <View
             style={
-              {
-                "borderColor": "#323232",
-                "borderRadius": 14,
-                "borderWidth": 1,
-                "display": "flex",
-                "flexDirection": "column",
-                "marginBottom": 16,
-                "overflow": "hidden",
-                "width": "100%",
-              }
+              [
+                {
+                  "backgroundColor": "#151515",
+                  "borderRadius": 14,
+                  "borderWidth": 1,
+                  "marginBottom": 24,
+                  "overflow": "hidden",
+                },
+                {
+                  "borderColor": "#3D3D3D",
+                },
+                undefined,
+              ]
             }
           >
             <Image
@@ -934,16 +937,19 @@ exports[`CalendarDatePage renders correctly 1`] = `
           </View>
           <View
             style={
-              {
-                "borderColor": "#323232",
-                "borderRadius": 14,
-                "borderWidth": 1,
-                "display": "flex",
-                "flexDirection": "column",
-                "marginBottom": 16,
-                "overflow": "hidden",
-                "width": "100%",
-              }
+              [
+                {
+                  "backgroundColor": "#151515",
+                  "borderRadius": 14,
+                  "borderWidth": 1,
+                  "marginBottom": 24,
+                  "overflow": "hidden",
+                },
+                {
+                  "borderColor": "#3D3D3D",
+                },
+                undefined,
+              ]
             }
           >
             <Image
@@ -960,7 +966,6 @@ exports[`CalendarDatePage renders correctly 1`] = `
             <View
               style={
                 {
-                  "backgroundColor": "#151515",
                   "flexDirection": "column",
                   "paddingBottom": 24,
                   "paddingLeft": 24,
@@ -1223,16 +1228,19 @@ exports[`CalendarDatePage renders correctly 1`] = `
           </View>
           <View
             style={
-              {
-                "borderColor": "#323232",
-                "borderRadius": 14,
-                "borderWidth": 1,
-                "display": "flex",
-                "flexDirection": "column",
-                "marginBottom": 16,
-                "overflow": "hidden",
-                "width": "100%",
-              }
+              [
+                {
+                  "backgroundColor": "#151515",
+                  "borderRadius": 14,
+                  "borderWidth": 1,
+                  "marginBottom": 24,
+                  "overflow": "hidden",
+                },
+                {
+                  "borderColor": "#3D3D3D",
+                },
+                undefined,
+              ]
             }
           >
             <Image
@@ -1249,7 +1257,6 @@ exports[`CalendarDatePage renders correctly 1`] = `
             <View
               style={
                 {
-                  "backgroundColor": "#151515",
                   "flexDirection": "column",
                   "paddingBottom": 24,
                   "paddingLeft": 24,

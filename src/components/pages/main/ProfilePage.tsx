@@ -2,6 +2,7 @@ import React from "react";
 import { View, Image, ScrollView } from "react-native";
 
 import Button from "@/components/base/Button";
+import Card from "@/components/base/Card";
 import Sep from "@/components/base/Sep";
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
@@ -18,14 +19,12 @@ import Twitter from "@assets/icons/Twitter";
 
 const UpcomingEvent = () => {
   return (
-    <View
-      style={tw`flex flex-col border border-[#323232] w-full rounded-lg overflow-hidden`}
-    >
+    <Card>
       <Image
         style={tw`w-full h-40 rounded-t-[14px]`}
         src="https://imgur.com/o3yTFTq.png"
       />
-      <View style={tw`flex-col p-6 bg-[#151515]`}>
+      <View style={tw`flex-col p-6`}>
         <View style={tw`items-center justify-center pb-6`}>
           <Title style={tw`text-base mb-2`}>Michael's Melee Monday #49</Title>
           <Text color="secondary" style={tw`text-center`}>
@@ -60,20 +59,18 @@ const UpcomingEvent = () => {
           2 days : 15 hours : 24 minutes
         </Text>
       </View>
-    </View>
+    </Card>
   );
 };
 
 const EventResult = () => {
   return (
-    <View
-      style={tw`flex flex-col border border-[#FFC93F] w-full rounded-lg overflow-hidden`}
-    >
+    <Card color="accent">
       <Image
         style={tw`w-full h-30 rounded-t-[14px]`}
         src="https://imgur.com/o3yTFTq.png"
       />
-      <View style={tw`flex-col p-6 bg-[#151515] border-t border-[#FFC93F]`}>
+      <View style={tw`flex-col p-6 border-t border-[#FFC93F]`}>
         <View style={tw`items-center justify-center pb-6`}>
           <Title style={tw`text-base mb-2`}>Michael's Melee Monday #49</Title>
           <Text color="secondary" style={tw`text-center`}>
@@ -82,7 +79,7 @@ const EventResult = () => {
         </View>
         <Result />
       </View>
-    </View>
+    </Card>
   );
 };
 
