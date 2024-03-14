@@ -40,7 +40,7 @@ const Form = <T extends FieldValues>({
 
   useEffect(() => {
     (Array.isArray(children) ? [...children] : [children]).forEach((child) => {
-      if (child.props.control) {
+      if (child.props?.control) {
         return;
       }
       if (child.props.name) {

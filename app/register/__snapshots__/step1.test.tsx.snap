@@ -1,0 +1,800 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationStep1Page renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#1b1b1b",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        {
+          "opacity": 0.03,
+          "resizeMode": "cover",
+        }
+      }
+    />
+  </View>
+  <RCTSafeAreaView
+    style={
+      [
+        undefined,
+        false,
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "height": "100%",
+            "width": "100%",
+          },
+          {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "paddingLeft": 24,
+            "paddingRight": 24,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Inter_600SemiBold",
+            },
+            {
+              "color": "#fff",
+            },
+            {
+              "fontSize": 20,
+              "lineHeight": 28,
+              "marginBottom": 24,
+            },
+            undefined,
+          ]
+        }
+      >
+        Set up 
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Inter_600SemiBold",
+              },
+              {
+                "color": "#fff",
+              },
+              {
+                "fontSize": 20,
+                "lineHeight": 28,
+                "marginBottom": 24,
+              },
+              undefined,
+            ]
+          }
+        >
+          Your Account
+        </Text>
+      </Text>
+      <View
+        style={
+          [
+            {
+              "marginBottom": 8,
+              "width": "100%",
+              "zIndex": 0,
+            },
+            undefined,
+          ]
+        }
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          colors={
+            [
+              4278979596,
+              4279637526,
+            ]
+          }
+          style={
+            {
+              "borderRadius": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "fontSize": 16,
+                },
+                {
+                  "color": "#fff",
+                },
+                {
+                  "backgroundColor": "#161616",
+                  "borderRadius": 10,
+                  "color": "#fff",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "marginLeft": 16,
+                  "paddingBottom": 1.6,
+                  "paddingLeft": 7.2,
+                  "paddingRight": 7.2,
+                  "paddingTop": 1.6,
+                  "position": "absolute",
+                  "top": -12,
+                  "zIndex": 10,
+                },
+              ]
+            }
+          >
+            Tag
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#fff",
+                  },
+                  {
+                    "color": "#FFC93F",
+                    "marginLeft": 4,
+                  },
+                ]
+              }
+            >
+               *
+            </Text>
+          </Text>
+          <TextInput
+            autoCapitalize="none"
+            blurOnSubmit={false}
+            name="tag"
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            onSubmitEditing={[Function]}
+            placeholder="e.g. blorppppp"
+            placeholderTextColor="#6F6F6F"
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "borderColor": "#fff",
+                  "borderRadius": 14,
+                  "borderWidth": 1,
+                  "color": "#fff",
+                  "fontSize": 16,
+                  "paddingBottom": 14,
+                  "paddingLeft": 18,
+                  "paddingRight": 18,
+                  "paddingTop": 12,
+                },
+                false,
+              ]
+            }
+          />
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Inter_500Medium",
+              },
+              {
+                "fontSize": 16,
+              },
+              {
+                "color": "#fff",
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          [
+            {
+              "marginBottom": 8,
+              "width": "100%",
+              "zIndex": 0,
+            },
+            undefined,
+          ]
+        }
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          colors={
+            [
+              4278979596,
+              4279637526,
+            ]
+          }
+          style={
+            {
+              "borderRadius": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "fontSize": 16,
+                },
+                {
+                  "color": "#fff",
+                },
+                {
+                  "backgroundColor": "#161616",
+                  "borderRadius": 10,
+                  "color": "#fff",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "marginLeft": 16,
+                  "paddingBottom": 1.6,
+                  "paddingLeft": 7.2,
+                  "paddingRight": 7.2,
+                  "paddingTop": 1.6,
+                  "position": "absolute",
+                  "top": -12,
+                  "zIndex": 10,
+                },
+              ]
+            }
+          >
+            First name
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#fff",
+                  },
+                  {
+                    "color": "#FFC93F",
+                    "marginLeft": 4,
+                  },
+                ]
+              }
+            >
+               *
+            </Text>
+          </Text>
+          <TextInput
+            autoCapitalize="none"
+            blurOnSubmit={false}
+            name="firstName"
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            onSubmitEditing={[Function]}
+            placeholder="John"
+            placeholderTextColor="#6F6F6F"
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "borderColor": "#fff",
+                  "borderRadius": 14,
+                  "borderWidth": 1,
+                  "color": "#fff",
+                  "fontSize": 16,
+                  "paddingBottom": 14,
+                  "paddingLeft": 18,
+                  "paddingRight": 18,
+                  "paddingTop": 12,
+                },
+                false,
+              ]
+            }
+          />
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Inter_500Medium",
+              },
+              {
+                "fontSize": 16,
+              },
+              {
+                "color": "#fff",
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          [
+            {
+              "marginBottom": 8,
+              "width": "100%",
+              "zIndex": 0,
+            },
+            undefined,
+          ]
+        }
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          colors={
+            [
+              4278979596,
+              4279637526,
+            ]
+          }
+          style={
+            {
+              "borderRadius": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "fontSize": 16,
+                },
+                {
+                  "color": "#fff",
+                },
+                {
+                  "backgroundColor": "#161616",
+                  "borderRadius": 10,
+                  "color": "#fff",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "marginLeft": 16,
+                  "paddingBottom": 1.6,
+                  "paddingLeft": 7.2,
+                  "paddingRight": 7.2,
+                  "paddingTop": 1.6,
+                  "position": "absolute",
+                  "top": -12,
+                  "zIndex": 10,
+                },
+              ]
+            }
+          >
+            Last name
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#fff",
+                  },
+                  {
+                    "color": "#FFC93F",
+                    "marginLeft": 4,
+                  },
+                ]
+              }
+            >
+               *
+            </Text>
+          </Text>
+          <TextInput
+            autoCapitalize="none"
+            blurOnSubmit={false}
+            name="lastName"
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            onSubmitEditing={[Function]}
+            placeholder="Doe"
+            placeholderTextColor="#6F6F6F"
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "borderColor": "#fff",
+                  "borderRadius": 14,
+                  "borderWidth": 1,
+                  "color": "#fff",
+                  "fontSize": 16,
+                  "paddingBottom": 14,
+                  "paddingLeft": 18,
+                  "paddingRight": 18,
+                  "paddingTop": 12,
+                },
+                false,
+              ]
+            }
+          />
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Inter_500Medium",
+              },
+              {
+                "fontSize": 16,
+              },
+              {
+                "color": "#fff",
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          [
+            {
+              "marginBottom": 8,
+              "width": "100%",
+              "zIndex": 0,
+            },
+            undefined,
+          ]
+        }
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          colors={
+            [
+              4278979596,
+              4279637526,
+            ]
+          }
+          style={
+            {
+              "borderRadius": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "fontSize": 16,
+                },
+                {
+                  "color": "#fff",
+                },
+                {
+                  "backgroundColor": "#161616",
+                  "borderRadius": 10,
+                  "color": "#fff",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "marginLeft": 16,
+                  "paddingBottom": 1.6,
+                  "paddingLeft": 7.2,
+                  "paddingRight": 7.2,
+                  "paddingTop": 1.6,
+                  "position": "absolute",
+                  "top": -12,
+                  "zIndex": 10,
+                },
+              ]
+            }
+          >
+            Bio
+          </Text>
+          <TextInput
+            autoCapitalize="none"
+            blurOnSubmit={false}
+            name="bio"
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            onSubmitEditing={[Function]}
+            placeholder="e.g. I love smash"
+            placeholderTextColor="#6F6F6F"
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "borderColor": "#fff",
+                  "borderRadius": 14,
+                  "borderWidth": 1,
+                  "color": "#fff",
+                  "fontSize": 16,
+                  "paddingBottom": 14,
+                  "paddingLeft": 18,
+                  "paddingRight": 18,
+                  "paddingTop": 12,
+                },
+                false,
+              ]
+            }
+          />
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Inter_500Medium",
+              },
+              {
+                "fontSize": 16,
+              },
+              {
+                "color": "#fff",
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          [
+            {
+              "marginBottom": 8,
+              "width": "100%",
+              "zIndex": 0,
+            },
+            undefined,
+          ]
+        }
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          colors={
+            [
+              4278979596,
+              4279637526,
+            ]
+          }
+          style={
+            {
+              "borderRadius": 12,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "fontSize": 16,
+                },
+                {
+                  "color": "#fff",
+                },
+                {
+                  "backgroundColor": "#161616",
+                  "borderRadius": 10,
+                  "color": "#fff",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "marginLeft": 16,
+                  "paddingBottom": 1.6,
+                  "paddingLeft": 7.2,
+                  "paddingRight": 7.2,
+                  "paddingTop": 1.6,
+                  "position": "absolute",
+                  "top": -12,
+                  "zIndex": 10,
+                },
+              ]
+            }
+          >
+            Pronouns
+          </Text>
+          <TextInput
+            autoCapitalize="none"
+            blurOnSubmit={false}
+            name="pronouns"
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            onSubmitEditing={[Function]}
+            placeholder="e.g. they/them"
+            placeholderTextColor="#6F6F6F"
+            style={
+              [
+                {
+                  "fontFamily": "Inter_500Medium",
+                },
+                {
+                  "borderColor": "#fff",
+                  "borderRadius": 14,
+                  "borderWidth": 1,
+                  "color": "#fff",
+                  "fontSize": 16,
+                  "paddingBottom": 14,
+                  "paddingLeft": 18,
+                  "paddingRight": 18,
+                  "paddingTop": 12,
+                },
+                false,
+              ]
+            }
+          />
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Inter_500Medium",
+              },
+              {
+                "fontSize": 16,
+              },
+              {
+                "color": "#fff",
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          [
+            {
+              "marginBottom": 16,
+            },
+            {
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          colors={
+            [
+              4293899034,
+              4294953798,
+            ]
+          }
+          style={
+            [
+              {
+                "borderRadius": 14,
+              },
+              {
+                "backgroundColor": "rgba(56, 52, 42, 0.38)",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 14,
+                  "borderWidth": 2,
+                  "color": "#000",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 15,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 13,
+                },
+                {
+                  "borderColor": "#ffd978",
+                },
+                false,
+                false,
+                false,
+                undefined,
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#fff",
+                  },
+                  [
+                    {
+                      "color": "#000",
+                    },
+                    false,
+                  ],
+                ]
+              }
+            >
+              Next: Set up Location
+            </Text>
+          </View>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
+    </View>
+  </RCTSafeAreaView>
+</View>
+`;

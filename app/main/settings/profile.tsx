@@ -1,16 +1,25 @@
 import React from "react";
-import { FieldErrors, Form, RegisterOptions, useForm } from "react-hook-form";
-import { Button, View } from "react-native";
+import { FieldErrors, RegisterOptions, useForm } from "react-hook-form";
+import { View } from "react-native";
 
 import Background from "@/components/base/Background";
+import Button from "@/components/base/Button";
 import Nav from "@/components/base/navigation/Nav";
+import Form from "@/components/forms/Form";
 import Input from "@/components/forms/Input";
 import tw from "@/lib/tailwind";
 
-const ProfileSettingsPage = () => {
-  const errors: FieldErrors<FormData> = {};
+type FormData = {
+  tag: string;
+  firstName: string;
+  lastName: string;
+  bio: string;
+  pronouns: string;
+};
 
+const ProfileSettingsPage = () => {
   const validation: RegisterOptions[] = [];
+  const errors: FieldErrors<FormData> = {};
 
   const { handleSubmit, register, setValue } = useForm<FormData>({ errors });
 
