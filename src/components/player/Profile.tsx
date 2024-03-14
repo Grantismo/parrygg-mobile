@@ -11,7 +11,7 @@ const Profile = () => {
       <ProfilePicture />
       <View style={tw`ml-3`}>
         <Text>blorppppp</Text>
-        <Text color="secondary">John D. (he/him)</Text>
+        <Text color="secondary" style={tw`text-sm`}>John D. (he/him)</Text>
       </View>
     </View>
   );

@@ -212,7 +212,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                   },
                   {
                     "backgroundColor": "#161616",
-                    "borderRadius": 10,
+                    "borderRadius": 4,
                     "color": "#fff",
                     "fontSize": 12,
                     "fontWeight": "normal",
@@ -243,6 +243,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                     },
                     {
                       "color": "#FFC93F",
+                      "fontSize": 12,
                       "marginLeft": 4,
                     },
                   ]
@@ -338,7 +339,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                   },
                   {
                     "backgroundColor": "#161616",
-                    "borderRadius": 10,
+                    "borderRadius": 4,
                     "color": "#fff",
                     "fontSize": 12,
                     "fontWeight": "normal",
@@ -369,6 +370,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                     },
                     {
                       "color": "#FFC93F",
+                      "fontSize": 12,
                       "marginLeft": 4,
                     },
                   ]
@@ -464,7 +466,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                   },
                   {
                     "backgroundColor": "#161616",
-                    "borderRadius": 10,
+                    "borderRadius": 4,
                     "color": "#fff",
                     "fontSize": 12,
                     "fontWeight": "normal",
@@ -495,6 +497,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                     },
                     {
                       "color": "#FFC93F",
+                      "fontSize": 12,
                       "marginLeft": 4,
                     },
                   ]
@@ -590,7 +593,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                   },
                   {
                     "backgroundColor": "#161616",
-                    "borderRadius": 10,
+                    "borderRadius": 4,
                     "color": "#fff",
                     "fontSize": 12,
                     "fontWeight": "normal",
@@ -695,7 +698,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                   },
                   {
                     "backgroundColor": "#161616",
-                    "borderRadius": 10,
+                    "borderRadius": 4,
                     "color": "#fff",
                     "fontSize": 12,
                     "fontWeight": "normal",

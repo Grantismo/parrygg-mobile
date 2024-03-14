@@ -20,7 +20,7 @@ const ResultRow = ({
   return (
     <View style={tw`flex-row justify-between items-center mb-2`}>
       <View style={tw`flex-row items-center`}>
-        <Text>
+        <Text style={tw`text-sm`}>
           {result && (
             <>
               {result.wins > result.losses && <Text color="green">W</Text>}
@@ -31,11 +31,11 @@ const ResultRow = ({
           {!result && <Text>TBD</Text>} vs
         </Text>
         <View style={tw`flex-row items-center`}>
-          <ProfilePicture style={tw`h-5 w-5 border-[0.5px] ml-2 mr-1`} />
-          <Text color="accent">{name}</Text>
+          <ProfilePicture style={tw`h-4 w-4 border-[1px] ml-2 mr-1`} />
+          <Text color="accent" style={tw`text-sm`}>{name}</Text>
         </View>
       </View>
-      <Text>
+      <Text style={tw`text-sm`}>
         (<Text color="secondary">S</Text>
         {seed} <Text color="secondary">P</Text>
         {place && place}
@@ -49,11 +49,11 @@ const Result = () => {
   return (
     <>
       <Sep />
-      <View style={tw`flex-row items-center justify-between my-4`}>
+      <View style={tw`flex-row items-center justify-between my-4 `}>
         <View style={tw`flex-row items-center`}>
           <Placement place={23} style={styles.mediumWeightFont} />
         </View>
-        <View style={tw`flex-row items-center`}>
+        <View style={tw`flex-row items-center `}>
           <Text>
             W <Text color="green">4</Text> - L <Text color="red">2</Text>
           </Text>
@@ -65,14 +65,14 @@ const Result = () => {
       </View>
       <Sep />
       <View>
-        <View style={tw`flex-row mt-4 mb-2 justify-between`}>
+        <View style={tw`flex-row mt-4 mb-2 justify-between `}>
           <View style={tw`flex-row items-center`}>
             <RightArrow color="white" style={tw`mr-2`} />
-            <Text color="secondary" style={tw`m-0`}>
+            <Text color="secondary" style={tw`m-0 text-sm leading-6`}>
               R2 Pools l517
             </Text>
           </View>
-          <Text color="secondary">Seed \ Place</Text>
+          <Text color="secondary" style={tw`text-sm`}>Seed \ Place</Text>
         </View>
         <ResultRow opponent={{ name: "DSJ", seed: 45 }} />
         <ResultRow
@@ -84,11 +84,11 @@ const Result = () => {
         <View style={tw`flex-row mt-4 mb-2 justify-between`}>
           <View style={tw`flex-row items-center`}>
             <RightArrow color="white" style={tw`mr-2`} />
-            <Text color="secondary" style={tw`m-0`}>
+            <Text color="secondary" style={tw`m-0 text-sm leading-6`}>
               R1 Pools l334
             </Text>
           </View>
-          <Text color="secondary">Seed \ Place</Text>
+          <Text color="secondary" style={tw`text-sm`}>Seed \ Place</Text>
         </View>
         <ResultRow
           result={{ wins: 3, losses: 1 }}

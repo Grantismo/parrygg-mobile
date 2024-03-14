@@ -110,6 +110,9 @@ exports[`ProfilePage renders correctly 1`] = `
                     },
                     false,
                     {
+                      "backgroundColor": "#151515",
+                      "borderColor": "#FFC93F",
+                      "borderRadius": 11,
                       "borderWidth": 1,
                       "paddingBottom": 16,
                       "paddingTop": 14,
@@ -252,6 +255,9 @@ exports[`ProfilePage renders correctly 1`] = `
                     },
                     false,
                     {
+                      "backgroundColor": "#151515",
+                      "borderColor": "#FFC93F",
+                      "borderRadius": 11,
                       "borderWidth": 1,
                       "paddingBottom": 16,
                       "paddingTop": 14,
@@ -1369,6 +1375,9 @@ exports[`ProfilePage renders correctly 1`] = `
                         },
                         false,
                         {
+                          "backgroundColor": "#151515",
+                          "borderColor": "#FFC93F",
+                          "borderRadius": 11,
                           "borderWidth": 1,
                           "paddingBottom": 16,
                           "paddingTop": 14,

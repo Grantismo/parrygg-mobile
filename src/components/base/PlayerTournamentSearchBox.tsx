@@ -21,7 +21,7 @@ const PlayerTournamentSearchBox = () => {
   return (
     <SearchBox
       name="search"
-      placeholder="Search"
+      placeholder="Search.."
       data={data}
       dataKey="name"
       renderItem={({ item }, queryString) => {

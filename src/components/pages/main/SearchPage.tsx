@@ -27,7 +27,7 @@ const SearchPage = () => {
   const TrendingButton = ({ title, src }: { title: string; src: string }) => {
     return (
       <Button pressableStyle={tw`justify-start flex-row p-2`}>
-        <Image style={tw`h-8 w-8 rounded mr-2`} src={src} />
+        <Image style={tw`h-9 w-9 rounded-x2sm mr-2`} src={src} />
         <Text color="black">{title}</Text>
       </Button>
     );
@@ -55,7 +55,7 @@ const SearchPage = () => {
   const FavoritesView = () => {
     return (
       <View>
-        <View style={tw`flex-row items-center my-4`}>
+        <View style={tw`flex-row items-center mb-4`}>
           <RightArrow color="#FFC93F" style={tw`mr-2`} />
           <Title style={tw`text-base m-0`}>Michael's Melee Monday #49</Title>
         </View>
@@ -71,7 +71,7 @@ const SearchPage = () => {
       </Title>
       <PlayerTournamentSearchBox />
       <View style={tw`w-full mb-14`}>
-        <View style={tw`w-full flex flex-row justify-between mb-5`}>
+        <View style={tw`w-full flex flex-row justify-between mb-5 text-base`}>
           <ToggleStateButton state="Trending" />
           <ToggleStateButton state="Favorites" />
         </View>

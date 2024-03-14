@@ -67,14 +67,14 @@ const SearchBox: <T>(
         >
           <LinearGradient
             style={[
-              tw`rounded-xl pt-[12px] pb-[14px] px-[18px] 
-                                border border-white sm:text-sm`,
+              tw`rounded-lg pt-[12px] pb-[14px] px-[18px] 
+                                border border-white sm:text-sm `,
               isFocus && tw`border border-[#FFC93F]`,
             ]}
             colors={["#0C0C0C", "#161616"]}
           >
             <View style={tw`flex-row items-center`}>
-              <Search color="#777777" style={tw`mr-2`} />
+              <Search color="#777777" style={tw`mr-2 -ml-0.5`} />
               <TextInput
                 autoCapitalize="none"
                 autoCorrect={false}
@@ -91,7 +91,7 @@ const SearchBox: <T>(
                 }}
                 onBlur={() => setIsFocus(false)}
                 ref={ref}
-                style={[styles.defaultWeightFont, tw`w-full text-white`]}
+                style={[styles.defaultWeightFont, tw`w-full text-white text-base`]}
                 {...inputProps}
               />
             </View>

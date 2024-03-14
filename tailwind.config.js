@@ -10,7 +10,9 @@ module.exports = {
     },
     borderRadius: {
       ...defaultTheme.borderRadius,
-      sm: "4px",      
+      sm: "4px",   
+      x2sm: "6px",  
+      x3sm: "8px", 
       DEFAULT: "10px",
       md: "12px",
       lg: "14px",
