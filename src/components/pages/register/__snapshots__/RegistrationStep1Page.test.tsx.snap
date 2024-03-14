@@ -99,7 +99,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
         style={
           [
             {
-              "marginBottom": 8,
+              "marginBottom": 4,
               "width": "100%",
               "zIndex": 0,
             },
@@ -195,10 +195,10 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   "borderWidth": 1,
                   "color": "#fff",
                   "fontSize": 16,
-                  "paddingBottom": 14,
+                  "paddingBottom": 15,
                   "paddingLeft": 18,
                   "paddingRight": 18,
-                  "paddingTop": 12,
+                  "paddingTop": 13,
                 },
                 false,
               ]
@@ -226,7 +226,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
         style={
           [
             {
-              "marginBottom": 8,
+              "marginBottom": 4,
               "width": "100%",
               "zIndex": 0,
             },
@@ -322,10 +322,10 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   "borderWidth": 1,
                   "color": "#fff",
                   "fontSize": 16,
-                  "paddingBottom": 14,
+                  "paddingBottom": 15,
                   "paddingLeft": 18,
                   "paddingRight": 18,
-                  "paddingTop": 12,
+                  "paddingTop": 13,
                 },
                 false,
               ]
@@ -353,7 +353,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
         style={
           [
             {
-              "marginBottom": 8,
+              "marginBottom": 4,
               "width": "100%",
               "zIndex": 0,
             },
@@ -449,10 +449,10 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   "borderWidth": 1,
                   "color": "#fff",
                   "fontSize": 16,
-                  "paddingBottom": 14,
+                  "paddingBottom": 15,
                   "paddingLeft": 18,
                   "paddingRight": 18,
-                  "paddingTop": 12,
+                  "paddingTop": 13,
                 },
                 false,
               ]
@@ -480,7 +480,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
         style={
           [
             {
-              "marginBottom": 8,
+              "marginBottom": 4,
               "width": "100%",
               "zIndex": 0,
             },
@@ -554,10 +554,10 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   "borderWidth": 1,
                   "color": "#fff",
                   "fontSize": 16,
-                  "paddingBottom": 14,
+                  "paddingBottom": 15,
                   "paddingLeft": 18,
                   "paddingRight": 18,
-                  "paddingTop": 12,
+                  "paddingTop": 13,
                 },
                 false,
               ]
@@ -585,7 +585,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
         style={
           [
             {
-              "marginBottom": 8,
+              "marginBottom": 4,
               "width": "100%",
               "zIndex": 0,
             },
@@ -659,10 +659,10 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   "borderWidth": 1,
                   "color": "#fff",
                   "fontSize": 16,
-                  "paddingBottom": 14,
+                  "paddingBottom": 15,
                   "paddingLeft": 18,
                   "paddingRight": 18,
-                  "paddingTop": 12,
+                  "paddingTop": 13,
                 },
                 false,
               ]

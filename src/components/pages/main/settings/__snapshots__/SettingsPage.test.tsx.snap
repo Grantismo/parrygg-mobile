@@ -178,7 +178,7 @@ exports[`SettingsPage renders correctly 1`] = `
             {
               "backgroundColor": "#151515",
               "borderColor": "#fff",
-              "borderRadius": 12,
+              "borderRadius": 14,
               "borderWidth": 1,
               "marginBottom": 24,
               "width": "100%",
@@ -188,13 +188,13 @@ exports[`SettingsPage renders correctly 1`] = `
           <ViewManagerAdapter_ExpoLinearGradient
             colors={
               [
-                4278979596,
-                4279637526,
+                4279374354,
+                4280163870,
               ]
             }
             style={
               {
-                "borderRadius": 12,
+                "borderRadius": 14,
                 "paddingBottom": 24,
                 "paddingLeft": 24,
                 "paddingRight": 24,
@@ -267,7 +267,10 @@ exports[`SettingsPage renders correctly 1`] = `
                       {
                         "color": "#777",
                       },
-                      undefined,
+                      {
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                      },
                     ]
                   }
                 >
@@ -311,7 +314,7 @@ exports[`SettingsPage renders correctly 1`] = `
             {
               "backgroundColor": "#151515",
               "borderColor": "#777777",
-              "borderRadius": 12,
+              "borderRadius": 14,
               "borderWidth": 1,
               "marginBottom": 24,
               "width": "100%",
@@ -340,13 +343,13 @@ exports[`SettingsPage renders correctly 1`] = `
             style={
               {
                 "alignItems": "center",
-                "borderRadius": 12,
+                "borderRadius": 14,
                 "flexDirection": "row",
                 "justifyContent": "space-between",
-                "paddingBottom": 24,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 24,
+                "paddingBottom": 17.6,
+                "paddingLeft": 17.6,
+                "paddingRight": 17.6,
+                "paddingTop": 17.6,
                 "width": "100%",
               }
             }
@@ -375,7 +378,7 @@ exports[`SettingsPage renders correctly 1`] = `
                       "borderWidth": 0,
                     },
                     {
-                      "marginRight": 8,
+                      "marginRight": 12,
                     },
                     {
                       "flex": 0,
