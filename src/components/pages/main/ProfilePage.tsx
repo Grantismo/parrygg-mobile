@@ -38,9 +38,9 @@ const UpcomingEvent = () => {
         <Sep />
         <View style={tw`flex-row items-center justify-center py-2`}>
           <SSBU />
-          <Title style={tw`text-base my-2 ml-2`}>
+          <Title style={tw`text-sm my-2 ml-2`}>
             Smash Bros. Ultimate:{" "}
-            <Title color="accent" style={tw`text-base`}>
+            <Title color="accent" style={tw`text-sm`}>
               Singles
             </Title>
           </Title>
