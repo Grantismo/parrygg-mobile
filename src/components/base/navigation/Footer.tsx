@@ -1,11 +1,5 @@
 import { router, usePathname } from "expo-router";
-import React, {
-  Children,
-  ReactElement,
-  Suspense,
-  useEffect,
-  useRef,
-} from "react";
+import React, { Children, ReactElement, useRef } from "react";
 import { Animated, Pressable, View, ViewProps } from "react-native";
 
 import tw from "@/lib/tailwind";
@@ -48,7 +42,7 @@ const Footer = () => {
     ...props
   }: FooterButtonProps) => {
     const child = Children.only(children) as ReactElement;
-    const isSelected = path === pathname;
+    const isSelected = pathname.startsWith(path);
     const unselectedChildArgs = { color: "white", ...unselectedArgs };
     const selectedChildArgs = { color: "#1B1B1B", ...selectedArgs };
     const childProps = {
@@ -84,7 +78,7 @@ const Footer = () => {
   };
 
   return (
-    <Suspense>
+    <View>
       <View
         style={tw`grow w-full flex flex-row items-center justify-between bg-[#0A0A0A] px-4 py-2.5`}
       >
@@ -116,7 +110,7 @@ const Footer = () => {
           <Trophy />
         </FooterButton>
       </View>
-    </Suspense>
+    </View>
   );
 };
 
