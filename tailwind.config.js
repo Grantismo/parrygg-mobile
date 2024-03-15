@@ -7,6 +7,7 @@ module.exports = {
     fontSize: {
       ...defaultTheme.fontSize,
       base: "16px",
+      
     },
     borderRadius: {
       ...defaultTheme.borderRadius,

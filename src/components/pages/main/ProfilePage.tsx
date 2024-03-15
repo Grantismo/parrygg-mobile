@@ -27,11 +27,12 @@ const UpcomingEvent = () => {
       <View style={tw`flex-col p-6`}>
         <View style={tw`items-center justify-center pb-6`}>
           <Title style={tw`text-base mb-2`}>Michael's Melee Monday #49</Title>
-          <Text color="secondary" style={tw`text-center`}>
+          <Text color="secondary" style={tw`text-center text-sm`}>
             1882 S Wadsworth Blvd, Lakewood, CO 80232, USA
           </Text>
-          <View style={tw`mt-2`}>
-            <Text>3,285 Attendees</Text>
+          <View style={tw`mt-2 flex-row items-center justify-center`}>
+          <Profile color="white" height="14" style={tw`mr-1`} />
+            <Text  style={tw`text-sm`}>3,285 Attendees</Text>
           </View>
         </View>
         <Sep />
@@ -46,16 +47,20 @@ const UpcomingEvent = () => {
         </View>
         <Sep />
         <View style={tw`flex-row items-center pt-6`}>
-          <Button style={tw`mr-2 flex-1`}>
-            <Profile color="black" height={14} style={tw`mr-2`} />
-            <Text color="black">Dashboard</Text>
-          </Button>
-          <Button style={tw`flex-1`} color="secondary">
-            <Bracket style={tw`mr-2`} color="white" height={14} />
-            <Text>Brackets</Text>
-          </Button>
-        </View>
-        <Text color="secondary" style={tw`text-center`}>
+              <Button color="secondary" style={tw`flex-1 mr-2`}>
+                <Bracket color="#FFC93F" height={14} style={tw`mr-2`} />
+                <Text color="accent" style={tw`text-sm mr-2`}>
+                  Brackets
+                </Text>
+              </Button>
+              <Button color="secondary" style={tw`flex-1`}>
+                <Profile color="#FFC93F" height={14} style={tw`mr-2`} />
+                <Text color="accent" style={tw`text-sm`}>
+                  My Games
+                </Text>
+              </Button>
+            </View>
+        <Text color="secondary" style={tw`text-center text-sm`}>
           2 days : 15 hours : 24 minutes
         </Text>
       </View>
@@ -72,8 +77,8 @@ const EventResult = () => {
       />
       <View style={tw`flex-col p-6 border-t border-[#FFC93F]`}>
         <View style={tw`items-center justify-center pb-6`}>
-          <Title style={tw`text-base mb-2`}>Michael's Melee Monday #49</Title>
-          <Text color="secondary" style={tw`text-center`}>
+          <Title style={tw`text-base`}>Michael's Melee Monday #49</Title>
+          <Text color="secondary" style={tw`text-center mb-1`}>
             Smash Bros. Ultimate: Singles
           </Text>
         </View>
@@ -95,14 +100,14 @@ const ProfilePage = () => {
           <View style={tw`absolute bottom-0 right-0 flex-row pr-6`}>
             <Button
               color="secondary"
-              style={tw`mr-3`}
-              pressableStyle={tw`h-10 w-10 p-3 rounded-lg`}
+              style={tw`mr-2.5`}
+              pressableStyle={tw`h-10 w-10 p-3 rounded-sm`}
             >
               <Twitch color="white" />
             </Button>
             <Button
               color="secondary"
-              pressableStyle={tw`h-10 w-10 p-3 rounded-lg`}
+              pressableStyle={tw`h-10 w-10 p-3 rounded-sm`}
             >
               <Twitter color="white" />
             </Button>
@@ -124,34 +129,34 @@ const ProfilePage = () => {
           </View>
           <View style={tw`flex flex-row items-center`}>
             <Calendar color="#777777" width="14" />
-            <Text color="secondary" style={tw`ml-2.5 py-[0.69rem]`}>
+            <Text color="secondary" style={tw`ml-2.5 py-[0.8rem] text-sm`}>
               Dec 18th, 2023
             </Text>
           </View>
           <Sep />
           <View style={tw`flex flex-row items-center`}>
             <Pin color="#6F6F6F" width="14" />
-            <Text color="secondary" style={tw`ml-2.5 py-[0.69rem]`}>
+            <Text color="secondary" style={tw`ml-2.5 py-[0.8rem] text-sm`}>
               Lakewood, CO, United States
             </Text>
           </View>
           <Sep />
-          <Title style={tw`text-base mt-[0.69rem] mb-0.5`}>Bio</Title>
-          <Text color="secondary">
+          <Title style={tw`text-base mt-[0.8rem] mb-0.5 `}>Bio</Title>
+          <Text color="secondary" style={tw`leading-[1.4rem] text-sm`}>
             In publishing and graphic design, Lorem ipsum is a placeholder text
             commonly used.
           </Text>
-          <Title style={tw`text-base mt-[0.69rem] mb-0.5`}>Ratings</Title>
-          <View style={tw`flex-row items-center`}>
-            <Placement place={28} />
-            <Text color="secondary"> Smash Bros. Ultimate: </Text>
-            <Text>Singles</Text>
+          <Title style={tw`text-base mt-[0.8rem] mb-0.5`}>Ratings</Title>
+          <View style={tw`flex-row items-center mb-3`}>
+            <Placement place={28} style={tw`text-sm`} />
+            <Text color="secondary" style={tw`text-sm`}> Smash Bros. Ultimate: </Text>
+            <Text style={tw`text-sm`}>Singles</Text>
           </View>
         </View>
         <View style={tw`bg-[#1B1B1B] w-full px-6 pb-6`}>
-          <Title style={tw`text-base py-6`}>Registered Upcoming Events</Title>
+          <Title style={tw`text-base pt-6 pb-4`}>Registered Upcoming Events</Title>
           <UpcomingEvent />
-          <Title style={tw`text-base py-6`}>Results</Title>
+          <Title style={tw`text-base pt-1 pb-4`}>Results</Title>
           <EventResult />
         </View>
       </View>

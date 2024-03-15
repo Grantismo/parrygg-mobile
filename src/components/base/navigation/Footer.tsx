@@ -33,8 +33,8 @@ const Footer = () => {
     router.push(path);
     Animated.spring(currentButtonX, {
       toValue: buttonXCoords.current[path],
-      friction: 4,
-      tension: 3,
+      friction: 44,
+      tension: 31,
       useNativeDriver: true,
     }).start();
   };
