@@ -637,7 +637,6 @@ exports[`ProfilePage renders correctly 1`] = `
               {
                 "fontSize": 20,
                 "lineHeight": 28,
-                "marginBottom": 24,
               },
               {
                 "fontSize": 16,
@@ -679,7 +678,6 @@ exports[`ProfilePage renders correctly 1`] = `
               {
                 "fontSize": 20,
                 "lineHeight": 28,
-                "marginBottom": 24,
               },
               {
                 "fontSize": 16,
@@ -833,10 +831,10 @@ exports[`ProfilePage renders correctly 1`] = `
               {
                 "fontSize": 20,
                 "lineHeight": 28,
-                "marginBottom": 24,
               },
               {
                 "fontSize": 16,
+                "paddingBottom": 24,
                 "paddingTop": 24,
               },
             ]
@@ -904,7 +902,6 @@ exports[`ProfilePage renders correctly 1`] = `
                     {
                       "fontSize": 20,
                       "lineHeight": 28,
-                      "marginBottom": 24,
                     },
                     {
                       "fontSize": 16,
@@ -1086,7 +1083,6 @@ exports[`ProfilePage renders correctly 1`] = `
                     {
                       "fontSize": 20,
                       "lineHeight": 28,
-                      "marginBottom": 24,
                     },
                     {
                       "fontSize": 16,
@@ -1111,7 +1107,6 @@ exports[`ProfilePage renders correctly 1`] = `
                       {
                         "fontSize": 20,
                         "lineHeight": 28,
-                        "marginBottom": 24,
                       },
                       {
                         "fontSize": 16,
@@ -1556,10 +1551,10 @@ exports[`ProfilePage renders correctly 1`] = `
               {
                 "fontSize": 20,
                 "lineHeight": 28,
-                "marginBottom": 24,
               },
               {
                 "fontSize": 16,
+                "paddingBottom": 24,
                 "paddingTop": 24,
               },
             ]
@@ -1629,7 +1624,6 @@ exports[`ProfilePage renders correctly 1`] = `
                     {
                       "fontSize": 20,
                       "lineHeight": 28,
-                      "marginBottom": 24,
                     },
                     {
                       "fontSize": 16,

@@ -1,4 +1,6 @@
 import { LinearGradient } from "expo-linear-gradient";
+import { router } from "expo-router";
+import { Href } from "expo-router/build/link/href";
 import * as React from "react";
 import {
   PressableProps,
@@ -17,6 +19,7 @@ interface Props extends PressableProps {
   style?: StyleProp<ViewStyle>;
   pressableStyle?: StyleProp<ViewStyle>;
   color?: Color;
+  href?: Href;
 }
 type Color = "primary" | "secondary" | "green" | "gray";
 
@@ -42,6 +45,8 @@ const Button = ({
   pressableStyle,
   color = "primary",
   children,
+  href,
+  onPress,
   ...pressableProps
 }: Props) => {
   const PressableWrapper = {
@@ -67,6 +72,14 @@ const Button = ({
             color === "green" && tw`border-[#56E75C]`,
             pressableStyle,
           ]}
+          onPress={(event) => {
+            if (onPress) {
+              onPress(event);
+            }
+            if (href) {
+              router.push(href);
+            }
+          }}
           {...pressableProps}
         >
           {({ pressed }) => (

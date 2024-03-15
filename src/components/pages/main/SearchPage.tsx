@@ -57,7 +57,7 @@ const SearchPage = () => {
       <View>
         <View style={tw`flex-row items-center mb-4`}>
           <RightArrow color="#FFC93F" style={tw`mr-2`} />
-          <Title style={tw`text-base m-0`}>Michael's Melee Monday #49</Title>
+          <Title style={tw`text-base`}>Michael's Melee Monday #49</Title>
         </View>
         <PlayerResult />
       </View>

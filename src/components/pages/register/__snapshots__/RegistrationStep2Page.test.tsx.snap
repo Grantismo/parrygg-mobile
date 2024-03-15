@@ -32,7 +32,6 @@ exports[`RegistrationStep2Page renders correctly 1`] = `
   <RCTSafeAreaView
     style={
       [
-        undefined,
         false,
       ]
     }
@@ -44,14 +43,17 @@ exports[`RegistrationStep2Page renders correctly 1`] = `
             "height": "100%",
             "width": "100%",
           },
-          {
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": "column",
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
+          [
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+            },
+            undefined,
+          ],
         ]
       }
     >
@@ -67,9 +69,10 @@ exports[`RegistrationStep2Page renders correctly 1`] = `
             {
               "fontSize": 20,
               "lineHeight": 28,
+            },
+            {
               "marginBottom": 24,
             },
-            undefined,
           ]
         }
       >
@@ -86,7 +89,6 @@ exports[`RegistrationStep2Page renders correctly 1`] = `
               {
                 "fontSize": 20,
                 "lineHeight": 28,
-                "marginBottom": 24,
               },
               undefined,
             ]

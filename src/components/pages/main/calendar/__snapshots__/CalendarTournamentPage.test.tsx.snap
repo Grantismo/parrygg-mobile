@@ -1,0 +1,1780 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalendarTournamentPage renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#1b1b1b",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        {
+          "opacity": 0.03,
+          "resizeMode": "cover",
+        }
+      }
+    />
+  </View>
+  <RCTSafeAreaView
+    style={
+      [
+        false,
+      ]
+    }
+  >
+    <RCTScrollView
+      contentContainerStyle={
+        [
+          {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "paddingLeft": 24,
+            "paddingRight": 24,
+          },
+          {
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "paddingBottom": 12,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 12,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "width": 56,
+              }
+            }
+          />
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Inter_600SemiBold",
+                },
+                {
+                  "color": "#fff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                undefined,
+              ]
+            }
+          >
+            14 March 2024
+          </Text>
+          <View
+            style={
+              {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "flex-end",
+                "width": 56,
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#777",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                Back
+              </Text>
+            </View>
+          </View>
+        </View>
+        <ViewManagerAdapter_ExpoLinearGradient
+          colors={
+            [
+              4294953279,
+              16763199,
+            ]
+          }
+          endPoint={
+            [
+              1,
+              0,
+            ]
+          }
+          startPoint={
+            [
+              0,
+              1,
+            ]
+          }
+          style={
+            {
+              "height": 2,
+              "width": "100%",
+            }
+          }
+        />
+        <Image
+          src="https://imgur.com/o3yTFTq.png"
+          style={
+            {
+              "borderTopLeftRadius": 14,
+              "borderTopRightRadius": 14,
+              "height": 192,
+              "width": "100%",
+            }
+          }
+        />
+        <ViewManagerAdapter_ExpoLinearGradient
+          colors={
+            [
+              4294953279,
+              16763199,
+            ]
+          }
+          endPoint={
+            [
+              1,
+              0,
+            ]
+          }
+          startPoint={
+            [
+              0,
+              1,
+            ]
+          }
+          style={
+            {
+              "height": 2,
+              "width": "100%",
+            }
+          }
+        />
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#151515",
+              "width": "100%",
+            }
+          }
+        >
+          <Image
+            src="https://imgur.com/TPvwlB3.jpeg"
+            style={
+              {
+                "backgroundColor": "#fff",
+                "borderColor": "#39D83F",
+                "borderRadius": 40,
+                "borderWidth": 2,
+                "display": "flex",
+                "flexDirection": "row",
+                "height": 80,
+                "marginLeft": 12,
+                "marginTop": -56,
+                "width": 80,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "justifyContent": "center",
+                "paddingBottom": 24,
+                "paddingLeft": 48,
+                "paddingRight": 48,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_600SemiBold",
+                  },
+                  {
+                    "color": "#FFC93F",
+                  },
+                  {
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  },
+                  {
+                    "fontSize": 16,
+                    "marginBottom": 8,
+                    "marginTop": 8,
+                  },
+                ]
+              }
+            >
+              Michael's Melee Monday #49
+            </Text>
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#777",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              1882 S Wadsworth Blvd, Lakewood, CO 80232, USA
+            </Text>
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "marginTop": 8,
+                }
+              }
+            >
+              <RNSVGSvgView
+                align="xMidYMid"
+                bbHeight="14"
+                bbWidth="18"
+                fill="none"
+                focusable={false}
+                height="14"
+                meetOrSlice={0}
+                minX={0}
+                minY={0}
+                style={
+                  [
+                    {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    {
+                      "marginRight": 4,
+                    },
+                    {
+                      "flex": 0,
+                      "height": 14,
+                      "width": 18,
+                    },
+                  ]
+                }
+                vbHeight={20}
+                vbWidth={18}
+                width={18}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <RNSVGGroup
+                  fill={null}
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                >
+                  <RNSVGPath
+                    d="M9.08884 9.62201C11.3527 9.62201 13.2738 7.88825 13.2738 5.28171C13.2738 2.73747 11.3423 0.785156 9.08884 0.785156C6.82499 0.785156 4.88306 2.76862 4.89344 5.30248C4.89344 7.88825 6.8146 9.62201 9.08884 9.62201ZM4.89344 19.5606H14.1878C15.9012 19.5606 17.8603 19.3532 17.8603 17.629C17.8603 14.9602 14.4681 11.741 9.07845 11.741C3.69921 11.741 0.824219 14.7981 0.824219 17.4669C0.824219 19.5606 3.17998 19.5606 4.89344 19.5606Z"
+                    fill={
+                      {
+                        "payload": 4294967295,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGGroup>
+              </RNSVGSvgView>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#fff",
+                    },
+                    {
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                    },
+                  ]
+                }
+              >
+                3,285 Attendees
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "backgroundColor": "#1B1B1B",
+                "paddingBottom": 24,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 24,
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#fff",
+                  },
+                  {
+                    "marginBottom": 6,
+                  },
+                ]
+              }
+            >
+              Welcome to Melee Mondays #49
+            </Text>
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#777",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "paddingBottom": 24,
+                  },
+                ]
+              }
+            >
+              Our milestone 10th event is shaping up to be our most expansive yet. With a over 200,000 square feet of gaming space, we're taking things to the next level a over 200,000 square feet. Our milestone 10th event is shaping up to be our most expansive yet.
+            </Text>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#151515",
+                    "borderRadius": 14,
+                    "borderWidth": 1,
+                    "marginBottom": 24,
+                    "overflow": "hidden",
+                  },
+                  {
+                    "borderColor": "#FFC93F",
+                  },
+                  {
+                    "alignItems": "center",
+                    "borderRadius": 14,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginBottom": 12,
+                    "paddingBottom": 17.6,
+                    "paddingLeft": 17.6,
+                    "paddingRight": 17.6,
+                    "paddingTop": 17.6,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_600SemiBold",
+                    },
+                    {
+                      "color": "#FFC93F",
+                    },
+                    {
+                      "fontSize": 20,
+                      "lineHeight": 28,
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              >
+                Please Read!
+              </Text>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#FFC93F",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                +
+              </Text>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#151515",
+                    "borderRadius": 14,
+                    "borderWidth": 1,
+                    "marginBottom": 24,
+                    "overflow": "hidden",
+                  },
+                  {
+                    "borderColor": "#3D3D3D",
+                  },
+                  {
+                    "alignItems": "center",
+                    "borderRadius": 14,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginBottom": 12,
+                    "paddingBottom": 17.6,
+                    "paddingLeft": 17.6,
+                    "paddingRight": 17.6,
+                    "paddingTop": 17.6,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_600SemiBold",
+                    },
+                    {
+                      "color": "#fff",
+                    },
+                    {
+                      "fontSize": 20,
+                      "lineHeight": 28,
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              >
+                Why attend Genesis
+              </Text>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#FFC93F",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                +
+              </Text>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#151515",
+                    "borderRadius": 14,
+                    "borderWidth": 1,
+                    "marginBottom": 24,
+                    "overflow": "hidden",
+                  },
+                  {
+                    "borderColor": "#3D3D3D",
+                  },
+                  {
+                    "alignItems": "center",
+                    "borderRadius": 14,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginBottom": 12,
+                    "paddingBottom": 17.6,
+                    "paddingLeft": 17.6,
+                    "paddingRight": 17.6,
+                    "paddingTop": 17.6,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_600SemiBold",
+                    },
+                    {
+                      "color": "#fff",
+                    },
+                    {
+                      "fontSize": 20,
+                      "lineHeight": 28,
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              >
+                Registration Information
+              </Text>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#FFC93F",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                +
+              </Text>
+            </View>
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#fff",
+                  },
+                  {
+                    "marginBottom": 8,
+                    "marginTop": 8,
+                  },
+                ]
+              }
+            >
+              Events
+            </Text>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#151515",
+                    "borderRadius": 14,
+                    "borderWidth": 1,
+                    "marginBottom": 24,
+                    "overflow": "hidden",
+                  },
+                  {
+                    "borderColor": "#3D3D3D",
+                  },
+                  {
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "flex-start",
+                  }
+                }
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight="22"
+                  bbWidth="22"
+                  fill="none"
+                  focusable={false}
+                  height={22}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    [
+                      {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      {
+                        "marginRight": 8,
+                      },
+                      {
+                        "flex": 0,
+                        "height": 22,
+                        "width": 22,
+                      },
+                    ]
+                  }
+                  vbHeight={22}
+                  vbWidth={22}
+                  width={22}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGMask
+                      fill={
+                        {
+                          "payload": 4278190080,
+                          "type": 0,
+                        }
+                      }
+                      height="22"
+                      maskContentUnits={1}
+                      maskUnits={1}
+                      name="mask0_108_216"
+                      width="22"
+                      x="0"
+                      y="0"
+                    >
+                      <RNSVGPath
+                        d="M0.554688 0.767578H4.69001V12.6375H0.554688M0.554688 14.552H4.69001V21.5974H0.554688M9.36139 0.767578H21.6142V12.6375H9.36139M9.36139 14.552H21.6142V21.5974H9.36139"
+                        fill={
+                          {
+                            "payload": 4294967295,
+                            "type": 0,
+                          }
+                        }
+                        propList={
+                          [
+                            "fill",
+                          ]
+                        }
+                      />
+                    </RNSVGMask>
+                    <RNSVGGroup
+                      fill={
+                        {
+                          "payload": 4278190080,
+                          "type": 0,
+                        }
+                      }
+                      mask="mask0_108_216"
+                    >
+                      <RNSVGPath
+                        d="M11.0452 21.2135C16.5435 21.2135 21.0007 16.7564 21.0007 11.2581C21.0007 5.75992 16.5435 1.30273 11.0452 1.30273C5.54703 1.30273 1.08984 5.75992 1.08984 11.2581C1.08984 16.7564 5.54703 21.2135 11.0452 21.2135Z"
+                        fill={
+                          {
+                            "payload": 4294967295,
+                            "type": 0,
+                          }
+                        }
+                        propList={
+                          [
+                            "fill",
+                          ]
+                        }
+                      />
+                    </RNSVGGroup>
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+                <Text
+                  style={
+                    [
+                      {
+                        "fontFamily": "Inter_600SemiBold",
+                      },
+                      {
+                        "color": "#fff",
+                      },
+                      {
+                        "fontSize": 20,
+                        "lineHeight": 28,
+                      },
+                      {
+                        "fontSize": 16,
+                      },
+                    ]
+                  }
+                >
+                  Smash Bros. Ultimate:
+                   
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Singles
+                  </Text>
+                </Text>
+              </View>
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginBottom": 16,
+                    "marginTop": 16,
+                  }
+                }
+              >
+                <Image
+                  src="https://i.imgur.com/i5JkruJ.jpeg"
+                  style={
+                    {
+                      "borderRadius": 6,
+                      "height": 96,
+                      "width": 64,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    {
+                      "paddingBottom": 12,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#777",
+                        },
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
+                      ]
+                    }
+                  >
+                    March 29th 2024
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#777",
+                        },
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
+                      ]
+                    }
+                  >
+                    Super Smash Bros. Ultimate
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                          "marginTop": 8,
+                        },
+                      ]
+                    }
+                  >
+                    $12.99
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "marginBottom": 16,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <ViewManagerAdapter_ExpoLinearGradient
+                  colors={
+                    [
+                      4293899034,
+                      4294953798,
+                    ]
+                  }
+                  style={
+                    [
+                      {
+                        "borderRadius": 14,
+                      },
+                      {
+                        "backgroundColor": "rgba(56, 52, 42, 0.38)",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        {
+                          "alignItems": "center",
+                          "borderRadius": 14,
+                          "borderWidth": 2,
+                          "color": "#000",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "justifyContent": "center",
+                          "paddingBottom": 15,
+                          "paddingLeft": 24,
+                          "paddingRight": 24,
+                          "paddingTop": 13,
+                        },
+                        {
+                          "borderColor": "#ffd978",
+                        },
+                        false,
+                        false,
+                        false,
+                        undefined,
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "#fff",
+                          },
+                          [
+                            {
+                              "color": "#000",
+                            },
+                            false,
+                          ],
+                        ]
+                      }
+                    >
+                      Join Now
+                    </Text>
+                  </View>
+                </ViewManagerAdapter_ExpoLinearGradient>
+              </View>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#777",
+                    },
+                    {
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 16,
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                Registration closes Mar 23, 2024 8:59 AM UTC+02:00
+              </Text>
+              <View
+                style={
+                  {
+                    "borderBottomWidth": 1,
+                    "borderColor": "#262626",
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "paddingTop": 24,
+                  }
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "marginBottom": 16,
+                      },
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "marginRight": 8,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "borderRadius": 14,
+                        },
+                        {
+                          "backgroundColor": "rgba(56, 52, 42, 0.38)",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      accessibilityState={
+                        {
+                          "busy": undefined,
+                          "checked": undefined,
+                          "disabled": undefined,
+                          "expanded": undefined,
+                          "selected": undefined,
+                        }
+                      }
+                      accessibilityValue={
+                        {
+                          "max": undefined,
+                          "min": undefined,
+                          "now": undefined,
+                          "text": undefined,
+                        }
+                      }
+                      accessible={true}
+                      collapsable={false}
+                      focusable={true}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        [
+                          {
+                            "alignItems": "center",
+                            "borderRadius": 14,
+                            "borderWidth": 2,
+                            "color": "#000",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "paddingBottom": 15,
+                            "paddingLeft": 24,
+                            "paddingRight": 24,
+                            "paddingTop": 13,
+                          },
+                          false,
+                          {
+                            "backgroundColor": "#151515",
+                            "borderColor": "#FFC93F",
+                            "borderRadius": 11,
+                            "borderWidth": 1,
+                            "paddingBottom": 16,
+                            "paddingTop": 14,
+                          },
+                          false,
+                          false,
+                          undefined,
+                        ]
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight="14"
+                        bbWidth="22"
+                        fill="none"
+                        focusable={false}
+                        height={14}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        style={
+                          [
+                            {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            {
+                              "marginRight": 8,
+                            },
+                            {
+                              "flex": 0,
+                              "height": 14,
+                              "width": 22,
+                            },
+                          ]
+                        }
+                        vbHeight={18}
+                        vbWidth={22}
+                        width={22}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <RNSVGGroup
+                          fill={null}
+                          propList={
+                            [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M7.76172 6.5777V5.87185C7.76172 5.76138 7.85128 5.67183 7.96175 5.67185L10.2456 5.67225C10.3561 5.67227 10.4456 5.76181 10.4456 5.87225V13.3545C10.4456 13.4649 10.356 13.5545 10.2456 13.5545L7.96168 13.5541C7.85124 13.554 7.76172 13.4645 7.76172 13.3541L7.76172 12.5925C7.76172 5.50365 7.76172 22.7016 7.76172 15.5999V14.9588C7.76172 14.8483 7.85128 14.7588 7.96175 14.7588L10.4456 14.7592C11.1973 14.7592 11.6018 14.1794 11.6018 13.3448V10.4018C11.6018 10.2913 11.6913 10.2018 11.8018 10.2018H14.4141C14.5246 10.2018 14.6141 10.1122 14.6141 10.0018V9.19701C14.6141 9.08656 14.5246 8.99701 14.4141 8.99701H11.8018C11.6913 8.99701 11.6018 8.90747 11.6018 8.79701V5.82632C11.6018 4.99177 11.1973 4.52358 10.4456 4.52358L7.96168 4.52314C7.85124 4.52312 7.76172 4.43359 7.76172 4.32314L7.76172 2.45758C7.76172 -5.38426 7.76172 13.8237 7.76172 6.5777Z"
+                            fill={
+                              {
+                                "payload": 4294953279,
+                                "type": 0,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGRect
+                            fill={
+                              {
+                                "payload": 4294953279,
+                                "type": 0,
+                              }
+                            }
+                            height="4.34743"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            rx="0.6"
+                            width="7.78422"
+                            x="0.164062"
+                            y="2.8125"
+                          />
+                          <RNSVGRect
+                            fill={
+                              {
+                                "payload": 4294953279,
+                                "type": 0,
+                              }
+                            }
+                            height="4.34743"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            rx="0.6"
+                            width="7.38209"
+                            x="14.2188"
+                            y="7.42969"
+                          />
+                          <RNSVGRect
+                            fill={
+                              {
+                                "payload": 4294953279,
+                                "type": 0,
+                              }
+                            }
+                            height="4.34743"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            rx="0.6"
+                            width="7.78422"
+                            x="0.167969"
+                            y="11.9902"
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontFamily": "Inter_500Medium",
+                            },
+                            {
+                              "fontSize": 16,
+                            },
+                            {
+                              "color": "#FFC93F",
+                            },
+                            {
+                              "fontSize": 14,
+                              "lineHeight": 20,
+                              "marginRight": 8,
+                            },
+                          ]
+                        }
+                      >
+                        Brackets
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "marginBottom": 16,
+                      },
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "borderRadius": 14,
+                        },
+                        {
+                          "backgroundColor": "rgba(56, 52, 42, 0.38)",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      accessibilityState={
+                        {
+                          "busy": undefined,
+                          "checked": undefined,
+                          "disabled": undefined,
+                          "expanded": undefined,
+                          "selected": undefined,
+                        }
+                      }
+                      accessibilityValue={
+                        {
+                          "max": undefined,
+                          "min": undefined,
+                          "now": undefined,
+                          "text": undefined,
+                        }
+                      }
+                      accessible={true}
+                      collapsable={false}
+                      focusable={true}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        [
+                          {
+                            "alignItems": "center",
+                            "borderRadius": 14,
+                            "borderWidth": 2,
+                            "color": "#000",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "paddingBottom": 15,
+                            "paddingLeft": 24,
+                            "paddingRight": 24,
+                            "paddingTop": 13,
+                          },
+                          false,
+                          {
+                            "backgroundColor": "#151515",
+                            "borderColor": "#FFC93F",
+                            "borderRadius": 11,
+                            "borderWidth": 1,
+                            "paddingBottom": 16,
+                            "paddingTop": 14,
+                          },
+                          false,
+                          false,
+                          undefined,
+                        ]
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight="14"
+                        bbWidth="18"
+                        fill="none"
+                        focusable={false}
+                        height={14}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        style={
+                          [
+                            {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            {
+                              "marginRight": 8,
+                            },
+                            {
+                              "flex": 0,
+                              "height": 14,
+                              "width": 18,
+                            },
+                          ]
+                        }
+                        vbHeight={20}
+                        vbWidth={18}
+                        width={18}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <RNSVGGroup
+                          fill={null}
+                          propList={
+                            [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M9.08884 9.62201C11.3527 9.62201 13.2738 7.88825 13.2738 5.28171C13.2738 2.73747 11.3423 0.785156 9.08884 0.785156C6.82499 0.785156 4.88306 2.76862 4.89344 5.30248C4.89344 7.88825 6.8146 9.62201 9.08884 9.62201ZM4.89344 19.5606H14.1878C15.9012 19.5606 17.8603 19.3532 17.8603 17.629C17.8603 14.9602 14.4681 11.741 9.07845 11.741C3.69921 11.741 0.824219 14.7981 0.824219 17.4669C0.824219 19.5606 3.17998 19.5606 4.89344 19.5606Z"
+                            fill={
+                              {
+                                "payload": 4294953279,
+                                "type": 0,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                      <Text
+                        style={
+                          [
+                            {
+                              "fontFamily": "Inter_500Medium",
+                            },
+                            {
+                              "fontSize": 16,
+                            },
+                            {
+                              "color": "#FFC93F",
+                            },
+                            {
+                              "fontSize": 14,
+                              "lineHeight": 20,
+                            },
+                          ]
+                        }
+                      >
+                        My Players
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#fff",
+                  },
+                  {
+                    "marginBottom": 8,
+                    "marginTop": 8,
+                  },
+                ]
+              }
+            >
+              Useful Information
+            </Text>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#151515",
+                    "borderRadius": 14,
+                    "borderWidth": 1,
+                    "marginBottom": 24,
+                    "overflow": "hidden",
+                  },
+                  {
+                    "borderColor": "#3D3D3D",
+                  },
+                  {
+                    "alignItems": "center",
+                    "borderRadius": 14,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginBottom": 12,
+                    "paddingBottom": 17.6,
+                    "paddingLeft": 17.6,
+                    "paddingRight": 17.6,
+                    "paddingTop": 17.6,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_600SemiBold",
+                    },
+                    {
+                      "color": "#fff",
+                    },
+                    {
+                      "fontSize": 20,
+                      "lineHeight": 28,
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              >
+                Attendees
+              </Text>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#FFC93F",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                +
+              </Text>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#151515",
+                    "borderRadius": 14,
+                    "borderWidth": 1,
+                    "marginBottom": 24,
+                    "overflow": "hidden",
+                  },
+                  {
+                    "borderColor": "#3D3D3D",
+                  },
+                  {
+                    "alignItems": "center",
+                    "borderRadius": 14,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginBottom": 12,
+                    "paddingBottom": 17.6,
+                    "paddingLeft": 17.6,
+                    "paddingRight": 17.6,
+                    "paddingTop": 17.6,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_600SemiBold",
+                    },
+                    {
+                      "color": "#fff",
+                    },
+                    {
+                      "fontSize": 20,
+                      "lineHeight": 28,
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              >
+                Contact Info
+              </Text>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#FFC93F",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                +
+              </Text>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#151515",
+                    "borderRadius": 14,
+                    "borderWidth": 1,
+                    "marginBottom": 24,
+                    "overflow": "hidden",
+                  },
+                  {
+                    "borderColor": "#3D3D3D",
+                  },
+                  {
+                    "alignItems": "center",
+                    "borderRadius": 14,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginBottom": 12,
+                    "paddingBottom": 17.6,
+                    "paddingLeft": 17.6,
+                    "paddingRight": 17.6,
+                    "paddingTop": 17.6,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_600SemiBold",
+                    },
+                    {
+                      "color": "#fff",
+                    },
+                    {
+                      "fontSize": 20,
+                      "lineHeight": 28,
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              >
+                Location
+              </Text>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#FFC93F",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                +
+              </Text>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#151515",
+                    "borderRadius": 14,
+                    "borderWidth": 1,
+                    "marginBottom": 24,
+                    "overflow": "hidden",
+                  },
+                  {
+                    "borderColor": "#3D3D3D",
+                  },
+                  {
+                    "alignItems": "center",
+                    "borderRadius": 14,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "marginBottom": 12,
+                    "paddingBottom": 17.6,
+                    "paddingLeft": 17.6,
+                    "paddingRight": 17.6,
+                    "paddingTop": 17.6,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_600SemiBold",
+                    },
+                    {
+                      "color": "#fff",
+                    },
+                    {
+                      "fontSize": 20,
+                      "lineHeight": 28,
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              >
+                Admins
+              </Text>
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "fontSize": 16,
+                    },
+                    {
+                      "color": "#FFC93F",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                +
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </RCTSafeAreaView>
+</View>
+`;

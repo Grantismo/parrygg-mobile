@@ -30,7 +30,7 @@ const RegistrationStep1Page = () => {
 
   return (
     <Background>
-      <Title>
+      <Title style={tw`mb-6`}>
         Set up <Title>Your Account</Title>
       </Title>
       <Form<FormData> {...{ register, setValue, validation, errors }}>

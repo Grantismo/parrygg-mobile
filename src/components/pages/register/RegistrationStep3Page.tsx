@@ -22,7 +22,7 @@ const RegistrationStep3Page = () => {
 
   return (
     <Background>
-      <Title style={tw`text-[#FFC93F]`}>
+      <Title color="accent" style={tw`mb-6`}>
         Profile <Title style={tw`text-white`}>Pictures</Title>
       </Title>
       <View style={tw`px-6 mb-[1.6rem] w-full`}>

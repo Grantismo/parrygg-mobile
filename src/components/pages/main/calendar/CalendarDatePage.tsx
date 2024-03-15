@@ -10,11 +10,12 @@ import Title from "@/components/base/Title";
 import CalanderArrow from "@/components/base/calendar/CalanderArrow";
 import Nav from "@/components/base/navigation/Nav";
 import tw from "@/lib/tailwind";
+import { timestampToDate } from "@/lib/utils";
 import Calendar from "@assets/icons/Calendar";
 import Profile from "@assets/icons/Profile";
 import RightArrow from "@assets/icons/RightArrow";
 
-const UpcomingOpenEvent = () => (
+const UpcomingOpenEvent = ({ timestamp }: Props) => (
   <Card>
     <Image
       style={tw`w-full h-40 rounded-t-lg`}
@@ -31,7 +32,11 @@ const UpcomingOpenEvent = () => (
           <Text>3,285 Attendees</Text>
         </View>
       </View>
-      <Button title="Registration Open" style={tw`w-full`} />
+      <Button
+        title="Registration Open"
+        style={tw`w-full`}
+        href={`/main/calendar/${timestamp}/tournament/123`}
+      />
     </View>
   </Card>
 );
@@ -87,14 +92,7 @@ interface Props {
 }
 
 const CalendarDatePage = ({ timestamp }: Props) => {
-  const date = new Date(parseInt(timestamp, 10));
-  const formatDate = (d: Date) => {
-    return new Date(
-      new Date(d).setMinutes(
-        new Date(d).getMinutes() + new Date(d).getTimezoneOffset(),
-      ),
-    );
-  };
+  const date = timestampToDate(timestamp);
 
   return (
     <Background scroll>
@@ -105,20 +103,16 @@ const CalendarDatePage = ({ timestamp }: Props) => {
         <CalanderArrow direction="left" />
         <View style={tw`flex-row items-center justify-center`}>
           <Calendar color="white" style={tw`mr-2`} />
-          <Text style={tw`text-lg`}>
-            {format(formatDate(date), "dd MMMM yyyy")}
-          </Text>
+          <Text style={tw`text-lg`}>{format(date, "d MMMM yyyy")}</Text>
         </View>
         <CalanderArrow direction="right" />
       </View>
       <View style={tw`grow w-full pb-2`}>
         <View style={tw`flex-row items-center my-4`}>
           <RightArrow color="#FFC93F" style={tw`mr-2`} />
-          <Title style={tw`text-base m-0`}>
-            Smash Bros. Ultimate Tournaments
-          </Title>
+          <Title style={tw`text-base`}>Smash Bros. Ultimate Tournaments</Title>
         </View>
-        <UpcomingOpenEvent />
+        <UpcomingOpenEvent timestamp={timestamp} />
         <UpcomingLiveEvent />
         <EndedEvent />
       </View>

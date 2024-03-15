@@ -37,7 +37,7 @@ const UpcomingEvent = () => {
         <Sep />
         <View style={tw`flex-row items-center justify-center py-2`}>
           <SSBU />
-          <Title style={tw`mb-0 text-base my-2 ml-2`}>
+          <Title style={tw`text-base my-2 ml-2`}>
             Smash Bros. Ultimate:{" "}
             <Title color="accent" style={tw`text-base`}>
               Singles
@@ -149,9 +149,9 @@ const ProfilePage = () => {
           </View>
         </View>
         <View style={tw`bg-[#1B1B1B] w-full px-6 pb-6`}>
-          <Title style={tw`text-base pt-6`}>Registered Upcoming Events</Title>
+          <Title style={tw`text-base py-6`}>Registered Upcoming Events</Title>
           <UpcomingEvent />
-          <Title style={tw`text-base pt-6`}>Results</Title>
+          <Title style={tw`text-base py-6`}>Results</Title>
           <EventResult />
         </View>
       </View>

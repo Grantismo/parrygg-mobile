@@ -48,11 +48,12 @@ const Background = ({
       </View>
       <SafeAreaView
         style={[
-          bgStyle,
           Platform.OS === "android" && { paddingTop: StatusBar.currentHeight },
         ]}
       >
-        <ContentView style={tw`px-6 flex flex-col items-center justify-center`}>
+        <ContentView
+          style={[tw`px-6 flex flex-col items-center justify-center`, bgStyle]}
+        >
           {bgChildren}
         </ContentView>
       </SafeAreaView>

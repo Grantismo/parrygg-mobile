@@ -19,7 +19,7 @@ const Title = ({ style, children, color = "primary", ...textProps }: Props) => {
   }[color];
   return (
     <NativeText
-      style={[styles.mediumWeightFont, textColor, tw`text-xl mb-6`, style]}
+      style={[styles.mediumWeightFont, textColor, tw`text-xl`, style]}
       {...textProps}
     >
       {children}

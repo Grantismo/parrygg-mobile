@@ -91,7 +91,10 @@ const SearchBox: <T>(
                 }}
                 onBlur={() => setIsFocus(false)}
                 ref={ref}
-                style={[styles.defaultWeightFont, tw`w-full text-white text-base`]}
+                style={[
+                  styles.defaultWeightFont,
+                  tw`w-full text-white text-base`,
+                ]}
                 {...inputProps}
               />
             </View>

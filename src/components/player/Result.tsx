@@ -32,7 +32,9 @@ const ResultRow = ({
         </Text>
         <View style={tw`flex-row items-center`}>
           <ProfilePicture style={tw`h-4 w-4 border-[1px] ml-1 mr-1`} />
-          <Text color="accent" style={tw`text-sm`}>{name}</Text>
+          <Text color="accent" style={tw`text-sm`}>
+            {name}
+          </Text>
         </View>
       </View>
       <Text style={tw`text-sm`}>
@@ -72,7 +74,9 @@ const Result = () => {
               R2 Pools l517
             </Text>
           </View>
-          <Text color="secondary" style={tw`text-sm`}>Seed \ Place</Text>
+          <Text color="secondary" style={tw`text-sm`}>
+            Seed \ Place
+          </Text>
         </View>
         <ResultRow opponent={{ name: "DSJ", seed: 45 }} />
         <ResultRow
@@ -88,7 +92,9 @@ const Result = () => {
               R1 Pools l334
             </Text>
           </View>
-          <Text color="secondary" style={tw`text-sm`}>Seed \ Place</Text>
+          <Text color="secondary" style={tw`text-sm`}>
+            Seed \ Place
+          </Text>
         </View>
         <ResultRow
           result={{ wins: 3, losses: 1 }}
@@ -103,8 +109,6 @@ const Result = () => {
           opponent={{ name: "Bread", seed: 1422, place: 1300 }}
         />
       </View>
-
-      
     </>
   );
 };

@@ -15,10 +15,10 @@ const Nav = ({ title, showBack }: Props) => {
   return (
     <View
       style={tw`w-full flex flex-row items-center 
-      justify-between pt-4 pb-6 px-4`}
+      justify-between pt-3 pb-3 px-4`}
     >
       <View style={tw`w-14 flex flex-row justify-start`} />
-      <Title style={tw`mb-0`}>{title}</Title>
+      <Title>{title}</Title>
       <View style={tw`w-14 flex flex-row justify-end`}>
         {showBack && (
           <Pressable

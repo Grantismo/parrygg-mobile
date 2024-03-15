@@ -47,7 +47,7 @@ const RegistrationStep2Page = () => {
 
   return (
     <Background>
-      <Title color="accent">
+      <Title style={tw`mb-6`} color="accent">
         Set up <Title>Location</Title>
       </Title>
       <Form<FormData> {...{ register, setValue, validation, errors }}>

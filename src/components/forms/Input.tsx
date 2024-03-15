@@ -44,7 +44,9 @@ const Input = forwardRef<any, Props>(
               style={tw`px-[0.45rem] py-[0.1rem] text-[12px] font-normal z-10 ml-4 -top-3 absolute rounded-2xs bg-[#161616] text-white`}
             >
               {label}
-              {required && <Text style={tw`ml-1 text-[#FFC93F] text-[12px] `}> *</Text>}
+              {required && (
+                <Text style={tw`ml-1 text-[#FFC93F] text-[12px] `}> *</Text>
+              )}
             </Text>
           )}
           <TextInput

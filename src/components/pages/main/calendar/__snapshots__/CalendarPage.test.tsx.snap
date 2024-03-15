@@ -32,7 +32,6 @@ exports[`CalendarPage renders correctly 1`] = `
   <RCTSafeAreaView
     style={
       [
-        undefined,
         false,
       ]
     }
@@ -44,14 +43,17 @@ exports[`CalendarPage renders correctly 1`] = `
             "height": "100%",
             "width": "100%",
           },
-          {
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": "column",
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
+          [
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+            },
+            undefined,
+          ],
         ]
       }
     >
@@ -62,10 +64,10 @@ exports[`CalendarPage renders correctly 1`] = `
             "display": "flex",
             "flexDirection": "row",
             "justifyContent": "space-between",
-            "paddingBottom": 24,
+            "paddingBottom": 12,
             "paddingLeft": 16,
             "paddingRight": 16,
-            "paddingTop": 16,
+            "paddingTop": 12,
             "width": "100%",
           }
         }
@@ -92,11 +94,8 @@ exports[`CalendarPage renders correctly 1`] = `
               {
                 "fontSize": 20,
                 "lineHeight": 28,
-                "marginBottom": 24,
               },
-              {
-                "marginBottom": 0,
-              },
+              undefined,
             ]
           }
         >
