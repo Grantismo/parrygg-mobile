@@ -1,3 +1,3 @@
 module.exports = {
-  "*.{js,ts,tsx}": ["yarn run fix", "yarn run test"]
+  "*.{js,ts,tsx}": ["yarn run fix", "yarn run test --findRelatedTests --passWithNoTests"]
 };

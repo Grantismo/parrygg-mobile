@@ -37,8 +37,6 @@ const GrayWrapper = ({ ...props }: ViewProps) => {
 
 const PassthroughWrapper = ({ ...props }: ViewProps) => {
   return <View {...props} />;
-
-  
 };
 
 const Button = ({

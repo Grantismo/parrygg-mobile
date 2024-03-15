@@ -10,7 +10,8 @@
     "web": "expo start --web",
     "lint": "eslint .",
     "fix": "eslint . --fix",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky"
   },
   "dependencies": {
     "@babel/preset-env": "7.1.6",
