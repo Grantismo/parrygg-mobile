@@ -13,7 +13,7 @@ interface Props extends TextProps {
 const Placement = ({ place, ...props }: Props) => {
   return (
     <>
-      <Trophy width={15} height={14} color="#FFC93F" style={tw`mr-1`} />
+      <Trophy width={15} height={14} color="#FFC93F" style={tw`mr-1 `} />
       <Text color="accent" {...props}>
         {numberWithOrdinal(place)}
       </Text>

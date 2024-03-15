@@ -59,9 +59,9 @@ exports[`CalendarDatePage renders correctly 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "justifyContent": "space-between",
-              "paddingBottom": 12,
-              "paddingLeft": 16,
-              "paddingRight": 16,
+              "paddingBottom": 24,
+              "paddingLeft": 8,
+              "paddingRight": 8,
               "paddingTop": 12,
               "width": "100%",
             }
@@ -723,6 +723,8 @@ exports[`CalendarDatePage renders correctly 1`] = `
                         "color": "#777",
                       },
                       {
+                        "fontSize": 14,
+                        "lineHeight": 20,
                         "textAlign": "center",
                       },
                     ]
@@ -807,7 +809,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                         {
                           "color": "#fff",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
@@ -1011,6 +1016,8 @@ exports[`CalendarDatePage renders correctly 1`] = `
                         "color": "#777",
                       },
                       {
+                        "fontSize": 14,
+                        "lineHeight": 20,
                         "textAlign": "center",
                       },
                     ]
@@ -1095,7 +1102,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                         {
                           "color": "#fff",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
@@ -1301,6 +1311,8 @@ exports[`CalendarDatePage renders correctly 1`] = `
                         "color": "#777",
                       },
                       {
+                        "fontSize": 14,
+                        "lineHeight": 20,
                         "textAlign": "center",
                       },
                     ]
@@ -1385,7 +1397,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                         {
                           "color": "#fff",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >

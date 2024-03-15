@@ -15,7 +15,7 @@ const Nav = ({ title, showBack }: Props) => {
   return (
     <View
       style={tw`w-full flex flex-row items-center 
-      justify-between pt-3 pb-3 px-4`}
+      justify-between pt-3 pb-6 px-2`}
     >
       <View style={tw`w-14 flex flex-row justify-start`} />
       <Title>{title}</Title>

@@ -66,7 +66,7 @@ const SearchPage = () => {
 
   return (
     <Background>
-      <Title color="accent">
+      <Title color="accent" style={tw` mb-6`}>
         Tournaments <Title>and</Title> Players
       </Title>
       <PlayerTournamentSearchBox />

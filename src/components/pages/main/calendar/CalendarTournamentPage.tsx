@@ -42,7 +42,7 @@ const TournamentDetailButton = ({
   return (
     <Card
       color={color}
-      style={tw`w-full p-[1.1rem] rounded-lg flex-row items-center justify-between mb-3`}
+      style={tw`w-full pt-3 pb-4 px-5 rounded-lg flex-row items-center justify-between mb-4`}
     >
       <Title style={tw`text-base`} color={color}>
         {title}
@@ -60,7 +60,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
       <Nav title={format(date, "d MMMM yyyy")} showBack />
       <ImageSep />
       <Image
-        style={tw`w-full h-48 rounded-t-[14px]`}
+        style={tw`w-full h-48 `}
         src="https://imgur.com/o3yTFTq.png"
       />
       <ImageSep />
@@ -93,7 +93,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
           <TournamentDetailButton title="Why attend Genesis" />
           <TournamentDetailButton title="Registration Information" />
           <Text style={tw`my-2`}>Events</Text>
-          <Card style={tw`p-4`}>
+          <Card style={tw`px-6 py-4`}>
             <View style={tw`flex-row items-center justify-start`}>
               <SSBU style={tw`mr-2`} />
               <Title style={tw`text-base`}>
@@ -123,7 +123,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
               Registration closes Mar 23, 2024 8:59 AM UTC+02:00
             </Text>
             <Sep />
-            <View style={tw`flex-row items-center pt-6`}>
+            <View style={tw`flex-row items-center pt-6 `}>
               <Button color="secondary" style={tw`flex-1 mr-2`}>
                 <Bracket color="#FFC93F" height={14} style={tw`mr-2`} />
                 <Text color="accent" style={tw`text-sm mr-2`}>
