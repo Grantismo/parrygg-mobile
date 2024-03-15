@@ -1,6 +1,12 @@
 import { router, usePathname } from "expo-router";
-import React, { Children, ReactElement } from "react";
-import { Pressable, View, ViewProps } from "react-native";
+import React, {
+  Children,
+  ReactElement,
+  Suspense,
+  useEffect,
+  useRef,
+} from "react";
+import { Animated, Pressable, View, ViewProps } from "react-native";
 
 import tw from "@/lib/tailwind";
 import Calendar from "@assets/icons/Calendar";
@@ -18,23 +24,20 @@ interface FooterButtonProps extends ViewProps {
   children?: React.ReactElement<IconProps>;
 }
 
-const DefaultWrapper = ({ ...props }: ViewProps) => {
-  return <View {...props} />;
-};
-
-const SelectedWrapper = ({ children, ...props }: ViewProps) => {
-  return (
-    <View {...props}>
-      <FooterButtonBackground />
-      <View style={tw`absolute inset-0 items-center justify-center`}>
-        {children}
-      </View>
-    </View>
-  );
-};
-
 const Footer = () => {
   const pathname = usePathname();
+  const currentButtonX = useRef(new Animated.Value(0)).current; // Initial value for opacity: 0
+  const buttonXCoords = useRef<{ [key: string]: number }>({});
+
+  const selectButton = (path: string) => {
+    router.push(path);
+    Animated.spring(currentButtonX, {
+      toValue: buttonXCoords.current[path],
+      friction: 4,
+      tension: 3,
+      useNativeDriver: true,
+    }).start();
+  };
 
   const FooterButton = ({
     path,
@@ -54,45 +57,66 @@ const Footer = () => {
       ...(!isSelected && unselectedChildArgs),
     };
 
-    const IconWrapper = isSelected ? SelectedWrapper : DefaultWrapper;
-
     return (
       <Pressable
         style={[tw`h-14 w-14 items-center justify-center`, style]}
         onPress={() => {
-          router.push(path);
+          selectButton(path);
+        }}
+        onLayout={({
+          nativeEvent: {
+            layout: { x },
+          },
+        }) => {
+          if (buttonXCoords.current[path]) {
+            return;
+          }
+          buttonXCoords.current[path] = x;
+          if (isSelected) {
+            selectButton(path);
+          }
         }}
         {...props}
       >
-        <IconWrapper>{React.cloneElement(child, childProps)}</IconWrapper>
+        {React.cloneElement(child, childProps)}
       </Pressable>
     );
   };
 
   return (
-    <View
-      style={tw`grow w-full flex flex-row items-center justify-between bg-[#0A0A0A] px-4 py-2.5`}
-    >
-      <FooterButton path="/main/profile">
-        <Profile />
-      </FooterButton>
-      <FooterButton path="/main/calendar">
-        <Calendar />
-      </FooterButton>
-      <FooterButton
-        path="/main/search"
-        unselectedArgs={{ flameColor: "#FFC93F" }}
-        selectedArgs={{ flameColor: "#0A0A0A" }}
+    <Suspense>
+      <View
+        style={tw`grow w-full flex flex-row items-center justify-between bg-[#0A0A0A] px-4 py-2.5`}
       >
-        <SearchFlame color="white" />
-      </FooterButton>
-      <FooterButton path="/main/settings">
-        <Gear />
-      </FooterButton>
-      <FooterButton path="/main/myplayers">
-        <Trophy />
-      </FooterButton>
-    </View>
+        <Animated.View
+          style={[
+            tw`absolute`,
+            { transform: [{ translateX: currentButtonX }] },
+          ]}
+        >
+          <FooterButtonBackground />
+        </Animated.View>
+        <FooterButton path="/main/profile">
+          <Profile />
+        </FooterButton>
+        <FooterButton path="/main/calendar">
+          <Calendar />
+        </FooterButton>
+        <FooterButton
+          path="/main/search"
+          unselectedArgs={{ flameColor: "#FFC93F" }}
+          selectedArgs={{ flameColor: "#0A0A0A" }}
+        >
+          <SearchFlame color="white" />
+        </FooterButton>
+        <FooterButton path="/main/settings">
+          <Gear />
+        </FooterButton>
+        <FooterButton path="/main/myplayers">
+          <Trophy />
+        </FooterButton>
+      </View>
+    </Suspense>
   );
 };
 
