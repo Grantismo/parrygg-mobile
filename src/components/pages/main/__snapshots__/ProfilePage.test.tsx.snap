@@ -1061,11 +1061,11 @@ exports[`ProfilePage renders correctly 1`] = `
             >
               <RNSVGSvgView
                 align="xMidYMid"
-                bbHeight="22"
-                bbWidth="22"
+                bbHeight="16"
+                bbWidth="16"
                 fill="none"
                 focusable={false}
-                height={22}
+                height={16}
                 meetOrSlice={0}
                 minX={0}
                 minY={0}
@@ -1077,14 +1077,14 @@ exports[`ProfilePage renders correctly 1`] = `
                     },
                     {
                       "flex": 0,
-                      "height": 22,
-                      "width": 22,
+                      "height": 16,
+                      "width": 16,
                     },
                   ]
                 }
                 vbHeight={22}
                 vbWidth={22}
-                width={22}
+                width={16}
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <RNSVGGroup
@@ -1165,7 +1165,8 @@ exports[`ProfilePage renders correctly 1`] = `
                       "lineHeight": 28,
                     },
                     {
-                      "fontSize": 16,
+                      "fontSize": 14,
+                      "lineHeight": 20,
                       "marginBottom": 8,
                       "marginLeft": 8,
                       "marginTop": 8,
@@ -1189,7 +1190,8 @@ exports[`ProfilePage renders correctly 1`] = `
                         "lineHeight": 28,
                       },
                       {
-                        "fontSize": 16,
+                        "fontSize": 14,
+                        "lineHeight": 20,
                       },
                     ]
                   }

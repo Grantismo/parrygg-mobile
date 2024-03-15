@@ -64,9 +64,9 @@ exports[`SettingsPage renders correctly 1`] = `
             "display": "flex",
             "flexDirection": "row",
             "justifyContent": "space-between",
-            "paddingBottom": 12,
-            "paddingLeft": 16,
-            "paddingRight": 16,
+            "paddingBottom": 24,
+            "paddingLeft": 8,
+            "paddingRight": 8,
             "paddingTop": 12,
             "width": "100%",
           }

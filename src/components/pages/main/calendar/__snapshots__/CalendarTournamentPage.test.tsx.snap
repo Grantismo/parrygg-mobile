@@ -64,9 +64,9 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "justifyContent": "space-between",
-              "paddingBottom": 12,
-              "paddingLeft": 16,
-              "paddingRight": 16,
+              "paddingBottom": 24,
+              "paddingLeft": 8,
+              "paddingRight": 8,
               "paddingTop": 12,
               "width": "100%",
             }
@@ -193,8 +193,6 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
           src="https://imgur.com/o3yTFTq.png"
           style={
             {
-              "borderTopLeftRadius": 14,
-              "borderTopRightRadius": 14,
               "height": 192,
               "width": "100%",
             }
@@ -468,11 +466,11 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderRadius": 14,
                     "flexDirection": "row",
                     "justifyContent": "space-between",
-                    "marginBottom": 12,
-                    "paddingBottom": 17.6,
-                    "paddingLeft": 17.6,
-                    "paddingRight": 17.6,
-                    "paddingTop": 17.6,
+                    "marginBottom": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 12,
                     "width": "100%",
                   },
                 ]
@@ -536,11 +534,11 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderRadius": 14,
                     "flexDirection": "row",
                     "justifyContent": "space-between",
-                    "marginBottom": 12,
-                    "paddingBottom": 17.6,
-                    "paddingLeft": 17.6,
-                    "paddingRight": 17.6,
-                    "paddingTop": 17.6,
+                    "marginBottom": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 12,
                     "width": "100%",
                   },
                 ]
@@ -604,11 +602,11 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderRadius": 14,
                     "flexDirection": "row",
                     "justifyContent": "space-between",
-                    "marginBottom": 12,
-                    "paddingBottom": 17.6,
-                    "paddingLeft": 17.6,
-                    "paddingRight": 17.6,
-                    "paddingTop": 17.6,
+                    "marginBottom": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 12,
                     "width": "100%",
                   },
                 ]
@@ -690,8 +688,8 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                   },
                   {
                     "paddingBottom": 16,
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
+                    "paddingLeft": 24,
+                    "paddingRight": 24,
                     "paddingTop": 16,
                   },
                 ]
@@ -708,11 +706,11 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
               >
                 <RNSVGSvgView
                   align="xMidYMid"
-                  bbHeight="22"
-                  bbWidth="22"
+                  bbHeight="16"
+                  bbWidth="16"
                   fill="none"
                   focusable={false}
-                  height={22}
+                  height={16}
                   meetOrSlice={0}
                   minX={0}
                   minY={0}
@@ -727,14 +725,14 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                       },
                       {
                         "flex": 0,
-                        "height": 22,
-                        "width": 22,
+                        "height": 16,
+                        "width": 16,
                       },
                     ]
                   }
                   vbHeight={22}
                   vbWidth={22}
-                  width={22}
+                  width={16}
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <RNSVGGroup
@@ -1517,11 +1515,11 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderRadius": 14,
                     "flexDirection": "row",
                     "justifyContent": "space-between",
-                    "marginBottom": 12,
-                    "paddingBottom": 17.6,
-                    "paddingLeft": 17.6,
-                    "paddingRight": 17.6,
-                    "paddingTop": 17.6,
+                    "marginBottom": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 12,
                     "width": "100%",
                   },
                 ]
@@ -1585,11 +1583,11 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderRadius": 14,
                     "flexDirection": "row",
                     "justifyContent": "space-between",
-                    "marginBottom": 12,
-                    "paddingBottom": 17.6,
-                    "paddingLeft": 17.6,
-                    "paddingRight": 17.6,
-                    "paddingTop": 17.6,
+                    "marginBottom": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 12,
                     "width": "100%",
                   },
                 ]
@@ -1653,11 +1651,11 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderRadius": 14,
                     "flexDirection": "row",
                     "justifyContent": "space-between",
-                    "marginBottom": 12,
-                    "paddingBottom": 17.6,
-                    "paddingLeft": 17.6,
-                    "paddingRight": 17.6,
-                    "paddingTop": 17.6,
+                    "marginBottom": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 12,
                     "width": "100%",
                   },
                 ]
@@ -1721,11 +1719,11 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderRadius": 14,
                     "flexDirection": "row",
                     "justifyContent": "space-between",
-                    "marginBottom": 12,
-                    "paddingBottom": 17.6,
-                    "paddingLeft": 17.6,
-                    "paddingRight": 17.6,
-                    "paddingTop": 17.6,
+                    "marginBottom": 16,
+                    "paddingBottom": 16,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 12,
                     "width": "100%",
                   },
                 ]
