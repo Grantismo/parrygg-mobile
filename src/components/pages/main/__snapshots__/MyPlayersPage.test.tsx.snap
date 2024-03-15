@@ -165,6 +165,7 @@ exports[`ProfilePage renders correctly 1`] = `
                 "marginBottom": 16,
               },
               {
+                "marginBottom": 24,
                 "width": "100%",
               },
             ]

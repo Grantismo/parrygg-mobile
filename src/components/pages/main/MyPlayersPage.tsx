@@ -13,7 +13,7 @@ const MyPlayersPage = () => {
     <Background scroll>
       <Nav title="My Players" showBack />
 
-      <Button style={tw`w-full`}>
+      <Button style={tw`w-full mb-6`}>
         <Plus color="#1B1B1B" style={tw`mr-2`} />
         <Text color="black">Follow New Player</Text>
       </Button>

@@ -70,7 +70,9 @@ exports[`SearchPage renders correctly 1`] = `
               "fontSize": 20,
               "lineHeight": 28,
             },
-            undefined,
+            {
+              "marginBottom": 24,
+            },
           ]
         }
       >

@@ -24,12 +24,12 @@ const UpcomingOpenEvent = ({ timestamp }: Props) => (
     <View style={tw`flex-col p-6 bg-[#151515]`}>
       <View style={tw`items-center justify-center pb-6`}>
         <Title style={tw`text-base mb-2`}>Michael's Melee Monday #49</Title>
-        <Text color="secondary" style={tw`text-center`}>
+        <Text color="secondary" style={tw`text-center text-sm`}>
           1882 S Wadsworth Blvd, Lakewood, CO 80232, USA
         </Text>
         <View style={tw`mt-2 flex-row items-center justify-center`}>
           <Profile color="white" height="14" style={tw`mr-1`} />
-          <Text>3,285 Attendees</Text>
+          <Text style={tw`text-sm`}>3,285 Attendees</Text>
         </View>
       </View>
       <Button
@@ -50,13 +50,13 @@ const UpcomingLiveEvent = () => (
     <View style={tw`flex-col p-6`}>
       <View style={tw`items-center justify-center pb-6`}>
         <Title style={tw`text-base mb-2`}>Battle of BC 6</Title>
-        <Text color="secondary" style={tw`text-center`}>
+        <Text color="secondary" style={tw`text-center text-sm`}>
           Vancouver Convention Centre West Building, Canada Pl, Vancouver, BC
           V6C 3G3, Canada
         </Text>
         <View style={tw`mt-2 flex-row items-center justify-center`}>
           <Profile color="white" height="14" style={tw`mr-1`} />
-          <Text>3,285 Attendees</Text>
+          <Text style={tw`text-sm`}>3,285 Attendees</Text>
         </View>
       </View>
       <Button color="green" title="Live Event Stats" style={tw`w-full`} />
@@ -73,13 +73,13 @@ const EndedEvent = () => (
     <View style={tw`flex-col p-6`}>
       <View style={tw`items-center justify-center pb-6`}>
         <Title style={tw`text-base mb-2`}>Battle of BC 6</Title>
-        <Text color="secondary" style={tw`text-center`}>
+        <Text color="secondary" style={tw`text-center text-sm`}>
           Vancouver Convention Centre West Building, Canada Pl, Vancouver, BC
           V6C 3G3, Canada
         </Text>
         <View style={tw`mt-2 flex-row items-center justify-center`}>
           <Profile color="white" height="14" style={tw`mr-1`} />
-          <Text>3,285 Attendees</Text>
+          <Text style={tw`text-sm`}>3,285 Attendees</Text>
         </View>
       </View>
       <Button color="gray" title="Event Ended" style={tw`w-full`} />
