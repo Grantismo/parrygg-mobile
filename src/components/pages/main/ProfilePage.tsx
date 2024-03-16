@@ -31,8 +31,8 @@ const UpcomingEvent = () => {
             1882 S Wadsworth Blvd, Lakewood, CO 80232, USA
           </Text>
           <View style={tw`mt-2 flex-row items-center justify-center`}>
-          <Profile color="white" height="14" style={tw`mr-1`} />
-            <Text  style={tw`text-sm`}>3,285 Attendees</Text>
+            <Profile color="white" height="14" style={tw`mr-1`} />
+            <Text style={tw`text-sm`}>3,285 Attendees</Text>
           </View>
         </View>
         <Sep />
@@ -47,19 +47,19 @@ const UpcomingEvent = () => {
         </View>
         <Sep />
         <View style={tw`flex-row items-center pt-6`}>
-              <Button color="secondary" style={tw`flex-1 mr-2`}>
-                <Bracket color="#FFC93F" height={14} style={tw`mr-2`} />
-                <Text color="accent" style={tw`text-sm mr-2`}>
-                  Brackets
-                </Text>
-              </Button>
-              <Button color="secondary" style={tw`flex-1`}>
-                <Profile color="#FFC93F" height={14} style={tw`mr-2`} />
-                <Text color="accent" style={tw`text-sm`}>
-                  My Games
-                </Text>
-              </Button>
-            </View>
+          <Button color="secondary" style={tw`flex-1 mr-2`}>
+            <Bracket color="#FFC93F" height={14} style={tw`mr-2`} />
+            <Text color="accent" style={tw`text-sm mr-2`}>
+              Brackets
+            </Text>
+          </Button>
+          <Button color="secondary" style={tw`flex-1`}>
+            <Profile color="#FFC93F" height={14} style={tw`mr-2`} />
+            <Text color="accent" style={tw`text-sm`}>
+              My Games
+            </Text>
+          </Button>
+        </View>
         <Text color="secondary" style={tw`text-center text-sm`}>
           2 days : 15 hours : 24 minutes
         </Text>
@@ -149,12 +149,17 @@ const ProfilePage = () => {
           <Title style={tw`text-base mt-[0.8rem] mb-0.5`}>Ratings</Title>
           <View style={tw`flex-row items-center mb-3`}>
             <Placement place={28} style={tw`text-sm`} />
-            <Text color="secondary" style={tw`text-sm`}> Smash Bros. Ultimate: </Text>
+            <Text color="secondary" style={tw`text-sm`}>
+              {" "}
+              Smash Bros. Ultimate:{" "}
+            </Text>
             <Text style={tw`text-sm`}>Singles</Text>
           </View>
         </View>
         <View style={tw`bg-[#1B1B1B] w-full px-6 pb-6`}>
-          <Title style={tw`text-base pt-6 pb-4`}>Registered Upcoming Events</Title>
+          <Title style={tw`text-base pt-6 pb-4`}>
+            Registered Upcoming Events
+          </Title>
           <UpcomingEvent />
           <Title style={tw`text-base pt-1 pb-4`}>Results</Title>
           <EventResult />

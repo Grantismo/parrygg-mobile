@@ -9,10 +9,11 @@ import Nav from "@/components/base/navigation/Nav";
 import tw from "@/lib/tailwind";
 
 const CalendarPage = () => {
-  const onDayPress = (date: DateData) => {
+  const onDayPress = (event: any) => {
+    // TODO: Use passed in event date
     router.push({
       pathname: "/main/calendar/[timestamp]",
-      params: { timestamp: date.timestamp },
+      params: { timestamp: "1710379807000" },
     });
   };
 
@@ -20,7 +21,7 @@ const CalendarPage = () => {
     <Background>
       <Nav title="Calendar" />
       <View style={tw`grow w-full pb-2`}>
-        <Calendar onDayPress={onDayPress} />
+        <Calendar onPressEvent={onDayPress} />
       </View>
     </Background>
   );

@@ -459,62 +459,101 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "overflow": "hidden",
                   },
                   {
-                    "borderColor": "#FFC93F",
+                    "borderColor": "#3D3D3D",
                   },
                   {
-                    "alignItems": "center",
-                    "borderRadius": 14,
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                    "marginBottom": 16,
-                    "paddingBottom": 16,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                    "paddingTop": 12,
+                    "marginBottom": 12,
                     "width": "100%",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_600SemiBold",
-                    },
-                    {
-                      "color": "#FFC93F",
-                    },
-                    {
-                      "fontSize": 20,
-                      "lineHeight": 28,
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                  ]
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
                 }
-              >
-                Please Read!
-              </Text>
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#FFC93F",
-                    },
-                    undefined,
-                  ]
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
                 }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
               >
-                +
-              </Text>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderRadius": 14,
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "paddingBottom": 12,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Please Read!
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    +
+                  </Text>
+                </View>
+              </View>
             </View>
             <View
               style={
@@ -530,59 +569,98 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderColor": "#3D3D3D",
                   },
                   {
-                    "alignItems": "center",
-                    "borderRadius": 14,
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                    "marginBottom": 16,
-                    "paddingBottom": 16,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                    "paddingTop": 12,
+                    "marginBottom": 12,
                     "width": "100%",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_600SemiBold",
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "fontSize": 20,
-                      "lineHeight": 28,
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                  ]
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
                 }
-              >
-                Why attend Genesis
-              </Text>
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#FFC93F",
-                    },
-                    undefined,
-                  ]
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
                 }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
               >
-                +
-              </Text>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderRadius": 14,
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "paddingBottom": 12,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Why attend Genesis
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    +
+                  </Text>
+                </View>
+              </View>
             </View>
             <View
               style={
@@ -598,59 +676,98 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderColor": "#3D3D3D",
                   },
                   {
-                    "alignItems": "center",
-                    "borderRadius": 14,
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                    "marginBottom": 16,
-                    "paddingBottom": 16,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                    "paddingTop": 12,
+                    "marginBottom": 12,
                     "width": "100%",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_600SemiBold",
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "fontSize": 20,
-                      "lineHeight": 28,
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                  ]
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
                 }
-              >
-                Registration Information
-              </Text>
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#FFC93F",
-                    },
-                    undefined,
-                  ]
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
                 }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
               >
-                +
-              </Text>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderRadius": 14,
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "paddingBottom": 12,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Registration Information
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    +
+                  </Text>
+                </View>
+              </View>
             </View>
             <Text
               style={
@@ -1511,59 +1628,98 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderColor": "#3D3D3D",
                   },
                   {
-                    "alignItems": "center",
-                    "borderRadius": 14,
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                    "marginBottom": 16,
-                    "paddingBottom": 16,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                    "paddingTop": 12,
+                    "marginBottom": 12,
                     "width": "100%",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_600SemiBold",
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "fontSize": 20,
-                      "lineHeight": 28,
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                  ]
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
                 }
-              >
-                Attendees
-              </Text>
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#FFC93F",
-                    },
-                    undefined,
-                  ]
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
                 }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
               >
-                +
-              </Text>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderRadius": 14,
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "paddingBottom": 12,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Attendees
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    +
+                  </Text>
+                </View>
+              </View>
             </View>
             <View
               style={
@@ -1579,59 +1735,98 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderColor": "#3D3D3D",
                   },
                   {
-                    "alignItems": "center",
-                    "borderRadius": 14,
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                    "marginBottom": 16,
-                    "paddingBottom": 16,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                    "paddingTop": 12,
+                    "marginBottom": 12,
                     "width": "100%",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_600SemiBold",
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "fontSize": 20,
-                      "lineHeight": 28,
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                  ]
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
                 }
-              >
-                Contact Info
-              </Text>
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#FFC93F",
-                    },
-                    undefined,
-                  ]
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
                 }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
               >
-                +
-              </Text>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderRadius": 14,
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "paddingBottom": 12,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Contact Info
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    +
+                  </Text>
+                </View>
+              </View>
             </View>
             <View
               style={
@@ -1647,59 +1842,98 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderColor": "#3D3D3D",
                   },
                   {
-                    "alignItems": "center",
-                    "borderRadius": 14,
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                    "marginBottom": 16,
-                    "paddingBottom": 16,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                    "paddingTop": 12,
+                    "marginBottom": 12,
                     "width": "100%",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_600SemiBold",
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "fontSize": 20,
-                      "lineHeight": 28,
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                  ]
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
                 }
-              >
-                Location
-              </Text>
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#FFC93F",
-                    },
-                    undefined,
-                  ]
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
                 }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
               >
-                +
-              </Text>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderRadius": 14,
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "paddingBottom": 12,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Location
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    +
+                  </Text>
+                </View>
+              </View>
             </View>
             <View
               style={
@@ -1715,59 +1949,98 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                     "borderColor": "#3D3D3D",
                   },
                   {
-                    "alignItems": "center",
-                    "borderRadius": 14,
-                    "flexDirection": "row",
-                    "justifyContent": "space-between",
-                    "marginBottom": 16,
-                    "paddingBottom": 16,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                    "paddingTop": 12,
+                    "marginBottom": 12,
                     "width": "100%",
                   },
                 ]
               }
             >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_600SemiBold",
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "fontSize": 20,
-                      "lineHeight": 28,
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                  ]
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
                 }
-              >
-                Admins
-              </Text>
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#FFC93F",
-                    },
-                    undefined,
-                  ]
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
                 }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
               >
-                +
-              </Text>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "borderRadius": 14,
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "paddingBottom": 12,
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                      "paddingTop": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_600SemiBold",
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "fontSize": 20,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                      ]
+                    }
+                  >
+                    Admins
+                  </Text>
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#FFC93F",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    +
+                  </Text>
+                </View>
+              </View>
             </View>
           </View>
         </View>

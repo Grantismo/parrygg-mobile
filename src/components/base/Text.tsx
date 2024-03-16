@@ -1,12 +1,17 @@
 import * as React from "react";
 import { ReactNode } from "react";
-import { Text as NativeText, TextStyle, StyleProp } from "react-native";
+import {
+  Text as NativeText,
+  TextStyle,
+  StyleProp,
+  TextProps,
+} from "react-native";
 
 import { styles } from "@/components/base/styles";
 import tw from "@/lib/tailwind";
 
 type TextColor = "primary" | "secondary" | "green" | "red" | "accent" | "black";
-interface Props {
+interface Props extends TextProps {
   style?: StyleProp<TextStyle>;
   children: ReactNode;
   color?: TextColor;

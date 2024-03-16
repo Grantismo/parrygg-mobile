@@ -41,6 +41,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.50.1",
     "react-native": "0.73.4",
+    "react-native-big-calendar": "^4.10.0",
     "react-native-calendars": "github:Grantismo/react-native-calendars",
     "react-native-element-dropdown": "github:Grantismo/react-native-element-dropdown",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",

@@ -1,11 +1,12 @@
 import { format } from "date-fns";
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
-import { Image, View } from "react-native";
+import { Image, View, ViewProps } from "react-native";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
 import Card from "@/components/base/Card";
+import CollapsableCard from "@/components/base/CollapsableCard";
 import Sep from "@/components/base/Sep";
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
@@ -32,23 +33,33 @@ const ImageSep = () => {
   );
 };
 
+interface TournamentDetailProps extends ViewProps {
+  title: string;
+  color?: "primary" | "accent";
+}
+
 const TournamentDetailButton = ({
   title,
   color = "primary",
-}: {
-  title: string;
-  color?: "primary" | "accent";
-}) => {
+  children,
+  ...props
+}: TournamentDetailProps) => {
   return (
-    <Card
+    <CollapsableCard
       color={color}
-      style={tw`w-full pt-3 pb-4 px-5 rounded-lg flex-row items-center justify-between mb-4`}
+      style={tw`w-full mb-3`}
+      header={(open: boolean) => (
+        <View style={tw`p-3 rounded-lg flex-row items-center justify-between`}>
+          <Title style={tw`text-base`} color={color}>
+            {title}
+          </Title>
+          <Text color="accent">{open ? "-" : "+"}</Text>
+        </View>
+      )}
+      {...props}
     >
-      <Title style={tw`text-base`} color={color}>
-        {title}
-      </Title>
-      <Text color="accent">+</Text>
-    </Card>
+      <View style={tw`p-3 pt-0`}>{children}</View>
+    </CollapsableCard>
   );
 };
 
@@ -59,10 +70,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
     <Background scroll style={tw`p-0`}>
       <Nav title={format(date, "d MMMM yyyy")} showBack />
       <ImageSep />
-      <Image
-        style={tw`w-full h-48 `}
-        src="https://imgur.com/o3yTFTq.png"
-      />
+      <Image style={tw`w-full h-48 `} src="https://imgur.com/o3yTFTq.png" />
       <ImageSep />
       <View style={tw`bg-[#151515] w-full items-center`}>
         <Image
@@ -89,7 +97,20 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
             to the next level a over 200,000 square feet. Our milestone 10th
             event is shaping up to be our most expansive yet.
           </Text>
-          <TournamentDetailButton color="accent" title="Please Read!" />
+          <TournamentDetailButton color="accent" title="Please Read!">
+            <Text style={tw`text-sm`} color="secondary">
+              In publishing and graphic design, Lorem ipsum is a placeholder
+              text commonly used to demonstrate the visual form. Document or a
+              typeface without relying on meaningful content.
+            </Text>
+            <Image
+              style={tw`w-full h-40 border border-[#FFFFFF] my-3 rounded-sm`}
+              src="https://imgur.com/84bPhRr.png"
+            />
+            <Text style={tw`text-sm`} color="secondary">
+              Document or a typeface without relying on meaningful content.
+            </Text>
+          </TournamentDetailButton>
           <TournamentDetailButton title="Why attend Genesis" />
           <TournamentDetailButton title="Registration Information" />
           <Text style={tw`my-2`}>Events</Text>
@@ -141,7 +162,15 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
           <Text style={tw`my-2`}>Useful Information</Text>
           <TournamentDetailButton title="Attendees" />
           <TournamentDetailButton title="Contact Info" />
-          <TournamentDetailButton title="Location" />
+          <TournamentDetailButton title="Location">
+            <Text style={tw`text-sm pb-3`} color="secondary">
+              Apt. 327 7953 Konopelski Street, Port Rodrick, ME 54029
+            </Text>
+            <Image
+              style={tw`w-full h-40 border border-[#FFFFFF] my-2 rounded-sm`}
+              src="https://i.imgur.com/Po0DZFE.png"
+            />
+          </TournamentDetailButton>
           <TournamentDetailButton title="Admins" />
         </View>
       </View>
