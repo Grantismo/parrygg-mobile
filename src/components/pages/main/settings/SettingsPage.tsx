@@ -42,7 +42,7 @@ const SettingsPage = () => {
   };
   return (
     <Background>
-      <Nav title="Settings" showBack />
+      <Nav title="Settings" />
       <View style={tw`grow w-full pb-2`}>
         <View
           style={tw`w-full rounded-lg border border-white  mb-6 bg-[#151515]`}

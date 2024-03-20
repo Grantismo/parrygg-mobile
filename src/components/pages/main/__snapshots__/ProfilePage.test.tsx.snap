@@ -800,7 +800,9 @@ exports[`ProfilePage renders correctly 1`] = `
               ]
             }
           >
-             Smash Bros. Ultimate: 
+             
+            Smash Bros. Ultimate:
+             
           </Text>
           <Text
             style={

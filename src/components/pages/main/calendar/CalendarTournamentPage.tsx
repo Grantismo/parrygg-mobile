@@ -49,7 +49,7 @@ const TournamentDetailButton = ({
       color={color}
       style={tw`w-full mb-3`}
       header={(open: boolean) => (
-        <View style={tw`p-3 rounded-lg flex-row items-center justify-between`}>
+        <View style={tw`px-5 pt-3.5 pb-4.5 rounded-lg flex-row items-center justify-between`}>
           <Title style={tw`text-base`} color={color}>
             {title}
           </Title>
@@ -98,7 +98,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
             event is shaping up to be our most expansive yet.
           </Text>
           <TournamentDetailButton color="accent" title="Please Read!">
-            <Text style={tw`text-sm`} color="secondary">
+            <Text style={tw`text-sm px-2`} color="secondary">
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual form. Document or a
               typeface without relying on meaningful content.
@@ -107,7 +107,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
               style={tw`w-full h-40 border border-[#FFFFFF] my-3 rounded-sm`}
               src="https://imgur.com/84bPhRr.png"
             />
-            <Text style={tw`text-sm`} color="secondary">
+            <Text style={tw`text-sm px-2 pb-3`} color="secondary">
               Document or a typeface without relying on meaningful content.
             </Text>
           </TournamentDetailButton>
@@ -139,7 +139,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
                 <Title style={tw`text-base mt-2`}>$12.99</Title>
               </View>
             </View>
-            <Button title="Join Now" />
+            <Button title="Join Now" style={[tw`rounded-xs`]}/>
             <Text color="secondary" style={tw`text-sm text-center mb-4`}>
               Registration closes Mar 23, 2024 8:59 AM UTC+02:00
             </Text>
@@ -163,7 +163,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
           <TournamentDetailButton title="Attendees" />
           <TournamentDetailButton title="Contact Info" />
           <TournamentDetailButton title="Location">
-            <Text style={tw`text-sm pb-3`} color="secondary">
+            <Text style={tw`text-sm pb-3 px-2`} color="secondary">
               Apt. 327 7953 Konopelski Street, Port Rodrick, ME 54029
             </Text>
             <Image
