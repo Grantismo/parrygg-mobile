@@ -49,7 +49,9 @@ const TournamentDetailButton = ({
       color={color}
       style={tw`w-full mb-3`}
       header={(open: boolean) => (
-        <View style={tw`px-5 pt-3.5 pb-4.5 rounded-lg flex-row items-center justify-between`}>
+        <View
+          style={tw`px-5 pt-3.5 pb-4.5 rounded-lg flex-row items-center justify-between`}
+        >
           <Title style={tw`text-base`} color={color}>
             {title}
           </Title>
@@ -139,7 +141,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
                 <Title style={tw`text-base mt-2`}>$12.99</Title>
               </View>
             </View>
-            <Button title="Join Now" style={[tw`rounded-xs`]}/>
+            <Button title="Join Now" style={[tw`rounded-xs`]} />
             <Text color="secondary" style={tw`text-sm text-center mb-4`}>
               Registration closes Mar 23, 2024 8:59 AM UTC+02:00
             </Text>
