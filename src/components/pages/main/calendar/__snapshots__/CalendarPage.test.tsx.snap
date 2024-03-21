@@ -76,10 +76,10 @@ exports[`CalendarPage renders correctly 1`] = `
               "display": "flex",
               "flexDirection": "row",
               "justifyContent": "space-between",
-              "paddingBottom": 20,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 20,
+              "paddingBottom": 24,
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "paddingTop": 40,
               "width": "100%",
             },
             undefined,
@@ -714,7 +714,7 @@ exports[`CalendarPage renders correctly 1`] = `
                         "textAlign": "center",
                       },
                       {
-                        "color": "#FFC93F",
+                        "color": "#ccc",
                       },
                     ]
                   }
@@ -745,7 +745,7 @@ exports[`CalendarPage renders correctly 1`] = `
                         "textAlign": "center",
                       },
                       {
-                        "color": "#ccc",
+                        "color": "#FFC93F",
                       },
                     ]
                   }
@@ -3831,7 +3831,7 @@ exports[`CalendarPage renders correctly 1`] = `
                           "fontSize": 12,
                         },
                         {
-                          "color": "#FFC93F",
+                          "color": "#ccc",
                         },
                         {},
                       ]
@@ -3927,7 +3927,7 @@ exports[`CalendarPage renders correctly 1`] = `
                           "fontSize": 12,
                         },
                         {
-                          "color": "#ccc",
+                          "color": "#FFC93F",
                         },
                         {},
                       ]
