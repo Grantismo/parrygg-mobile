@@ -57,7 +57,7 @@ const SettingsPage = () => {
         <SettingButton
           title="Profile"
           icon={<ProfileIcon />}
-          path="/main/settings/profile"
+          path="/settings/profile"
         />
         <View style={tw`grow`} />
         <Button title="Log Out" />

@@ -12,7 +12,7 @@ const CalendarPage = () => {
   const onDayPress = (event: any) => {
     // TODO: Use passed in event date
     router.push({
-      pathname: "/main/calendar/[timestamp]",
+      pathname: "/calendar/[timestamp]",
       params: { timestamp: "1710379807000" },
     });
   };

@@ -47,24 +47,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
       ]
     }
   >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": "column",
-            "justifyContent": "center",
-          },
-          {
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
-          },
-        ]
-      }
-    >
+    <View>
       <RCTScrollView
         onScroll={[Function]}
         stickyHeaderIndices={
@@ -83,14 +66,20 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                   "flexDirection": "row",
                   "justifyContent": "space-between",
                   "paddingBottom": 20,
-                  "paddingLeft": 32,
-                  "paddingRight": 32,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
                   "paddingTop": 20,
                   "width": "100%",
                 },
-                {
-                  "backgroundColor": "transparent",
-                },
+                [
+                  {
+                    "paddingLeft": 24,
+                    "paddingRight": 24,
+                  },
+                  {
+                    "backgroundColor": "transparent",
+                  },
+                ],
               ]
             }
           >
@@ -187,10 +176,26 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
           </View>
           <View
             style={
-              {
-                "paddingLeft": 24,
-                "paddingRight": 24,
-              }
+              [
+                {
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                },
+                [
+                  {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                  },
+                  {
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                  },
+                ],
+              ]
             }
           >
             <ViewManagerAdapter_ExpoLinearGradient

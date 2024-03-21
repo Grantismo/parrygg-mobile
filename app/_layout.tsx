@@ -3,7 +3,7 @@ import {
   Inter_500Medium,
   Inter_600SemiBold,
 } from "@expo-google-fonts/inter";
-import { Slot, SplashScreen } from "expo-router";
+import { SplashScreen, Stack } from "expo-router";
 import {
   setStatusBarBackgroundColor,
   setStatusBarStyle,
@@ -51,10 +51,12 @@ const RootLayout = () => {
   return (
     <SafeAreaProvider
       style={
-        tw`-my-[1px]` /* Remove 1 pixel space between the SafeAreaView and upper/lower bounds*/
+        tw`-mt-[1px]` /* Remove 1 pixel space between the SafeAreaView and upper bound */
       }
     >
-      <Slot />
+      <Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      </Stack>
     </SafeAreaProvider>
   );
 };

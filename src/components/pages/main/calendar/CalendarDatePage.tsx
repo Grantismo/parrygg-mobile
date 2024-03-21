@@ -35,7 +35,7 @@ const UpcomingOpenEvent = ({ timestamp }: Props) => (
       <Button
         title="Registration Open"
         style={tw`w-full`}
-        href={`/main/calendar/${timestamp}/tournament/123`}
+        href={`/calendar/${timestamp}/tournament/123`}
       />
     </View>
   </Card>

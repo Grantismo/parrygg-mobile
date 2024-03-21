@@ -40,7 +40,7 @@ const ScrollContentView = ({ style, children, ...props }: Props) => {
   }
 
   return (
-    <View style={style}>
+    <View>
       <ScrollView
         stickyHeaderIndices={nav ? [0] : []}
         onScroll={(event) => {
@@ -51,11 +51,14 @@ const ScrollContentView = ({ style, children, ...props }: Props) => {
         {nav &&
           React.cloneElement(nav, {
             ...nav.props,
-            style: {
-              backgroundColor: scrollY <= 0 ? "transparent" : "#0A0A0A",
-            },
+            style: [
+              tw`px-6`,
+              {
+                backgroundColor: scrollY <= 0 ? "transparent" : "#0A0A0A",
+              },
+            ],
           })}
-        <View style={tw`px-6`}>{childArray}</View>
+        <View style={[tw`px-6`, style]}>{childArray}</View>
       </ScrollView>
     </View>
   );
