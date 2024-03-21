@@ -29,10 +29,21 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
       }
     />
   </View>
-  <RCTSafeAreaView
+  <RNCSafeAreaView
+    edges={
+      {
+        "bottom": "additive",
+        "left": "additive",
+        "right": "additive",
+        "top": "additive",
+      }
+    }
     style={
       [
-        false,
+        {
+          "borderColor": "#fee2e2",
+          "borderTopWidth": 1,
+        },
       ]
     }
   >
@@ -41,6 +52,8 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
         [
           {
             "height": "100%",
+            "paddingLeft": 24,
+            "paddingRight": 24,
             "width": "100%",
           },
           [
@@ -49,8 +62,6 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
               "display": "flex",
               "flexDirection": "column",
               "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
             },
             undefined,
           ],
@@ -800,6 +811,6 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
         </ViewManagerAdapter_ExpoLinearGradient>
       </View>
     </View>
-  </RCTSafeAreaView>
+  </RNCSafeAreaView>
 </View>
 `;

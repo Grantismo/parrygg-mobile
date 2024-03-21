@@ -18,6 +18,21 @@ interface FooterButtonProps extends ViewProps {
   children?: React.ReactElement<IconProps>;
 }
 
+const DefaultWrapper = ({ ...props }: ViewProps) => {
+  return <View {...props} />;
+};
+
+const SelectedWrapper = ({ children, ...props }: ViewProps) => {
+  return (
+    <View {...props}>
+      <FooterButtonBackground />
+      <View style={tw`absolute inset-0 items-center justify-center`}>
+        {children}
+      </View>
+    </View>
+  );
+};
+
 const Footer = () => {
   const pathname = usePathname();
   const currentButtonX = useRef(new Animated.Value(0)).current; // Initial value for opacity: 0
@@ -42,7 +57,7 @@ const Footer = () => {
     ...props
   }: FooterButtonProps) => {
     const child = Children.only(children) as ReactElement;
-    const isSelected = pathname.startsWith(path);
+    const isSelected = path === pathname;
     const unselectedChildArgs = { color: "white", ...unselectedArgs };
     const selectedChildArgs = { color: "#1B1B1B", ...selectedArgs };
     const childProps = {
@@ -51,28 +66,17 @@ const Footer = () => {
       ...(!isSelected && unselectedChildArgs),
     };
 
+    const IconWrapper = isSelected ? SelectedWrapper : DefaultWrapper;
+
     return (
       <Pressable
         style={[tw`h-14 w-14 items-center justify-center`, style]}
         onPress={() => {
-          selectButton(path);
-        }}
-        onLayout={({
-          nativeEvent: {
-            layout: { x },
-          },
-        }) => {
-          if (buttonXCoords.current[path]) {
-            return;
-          }
-          buttonXCoords.current[path] = x;
-          if (isSelected) {
-            selectButton(path);
-          }
+          router.push(path);
         }}
         {...props}
       >
-        {React.cloneElement(child, childProps)}
+        <IconWrapper>{React.cloneElement(child, childProps)}</IconWrapper>
       </Pressable>
     );
   };
@@ -82,14 +86,6 @@ const Footer = () => {
       <View
         style={tw`grow w-full flex flex-row items-center justify-between bg-[#0A0A0A] px-4 py-2.5`}
       >
-        <Animated.View
-          style={[
-            tw`absolute`,
-            { transform: [{ translateX: currentButtonX }] },
-          ]}
-        >
-          <FooterButtonBackground />
-        </Animated.View>
         <FooterButton path="/main/profile">
           <Profile />
         </FooterButton>

@@ -1,4 +1,10 @@
-import React, { ReactNode } from "react";
+import React, {
+  Children,
+  ReactElement,
+  ReactNode,
+  isValidElement,
+  useState,
+} from "react";
 import {
   View,
   StyleProp,
@@ -6,11 +12,10 @@ import {
   ViewStyle,
   Image,
   ScrollView,
-  SafeAreaView,
-  Platform,
-  StatusBar,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
+import Nav from "@/components/base/navigation/Nav";
 import tw from "@/lib/tailwind";
 import { Images } from "@assets/assets";
 
@@ -21,12 +26,43 @@ interface Props extends ViewProps {
   showFooter?: boolean;
 }
 
-const ScrollContentView = ({ style, ...props }: Props) => {
-  return <ScrollView contentContainerStyle={style} {...props} />;
+const ScrollContentView = ({ style, children, ...props }: Props) => {
+  const [scrollY, setScrollY] = useState(0);
+  const childArray = Children.toArray(children);
+
+  let nav: ReactElement | undefined;
+  if (
+    childArray.length &&
+    isValidElement(childArray[0]) &&
+    childArray[0].type === Nav
+  ) {
+    nav = childArray.shift() as ReactElement;
+  }
+
+  return (
+    <View style={style}>
+      <ScrollView
+        stickyHeaderIndices={nav ? [0] : []}
+        onScroll={(event) => {
+          setScrollY(event.nativeEvent.contentOffset.y);
+        }}
+        {...props}
+      >
+        {nav &&
+          React.cloneElement(nav, {
+            ...nav.props,
+            style: {
+              backgroundColor: scrollY <= 0 ? "transparent" : "#0A0A0A",
+            },
+          })}
+        <View style={tw`px-6`}>{childArray}</View>
+      </ScrollView>
+    </View>
+  );
 };
 
 const DefaultView = ({ style, ...props }: Props) => {
-  return <View style={[tw`w-full h-full`, style]} {...props} />;
+  return <View style={[tw`w-full h-full px-6`, style]} {...props} />;
 };
 
 const Background = ({
@@ -37,7 +73,6 @@ const Background = ({
   ...bgProps
 }: Props) => {
   const ContentView = scroll ? ScrollContentView : DefaultView;
-
   return (
     <View style={tw`bg-[#1b1b1b]`} {...bgProps}>
       <View style={tw`absolute inset-x-0 top-0 h-full`}>
@@ -46,13 +81,9 @@ const Background = ({
           source={Images.TournamentPoster}
         />
       </View>
-      <SafeAreaView
-        style={[
-          Platform.OS === "android" && { paddingTop: StatusBar.currentHeight },
-        ]}
-      >
+      <SafeAreaView style={[tw`border-t border-red-100`]}>
         <ContentView
-          style={[tw`px-6 flex flex-col items-center justify-center`, bgStyle]}
+          style={[tw`flex flex-col items-center justify-center`, bgStyle]}
         >
           {bgChildren}
         </ContentView>

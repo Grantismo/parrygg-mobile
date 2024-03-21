@@ -56,8 +56,6 @@ const Calendar = ({ onPressEvent }: Props) => {
     console.log(start);
   };
 
-  console.log("rerender");
-
   return (
     <View
       style={[

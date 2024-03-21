@@ -4,7 +4,13 @@ import {
   Inter_600SemiBold,
 } from "@expo-google-fonts/inter";
 import { Slot, SplashScreen } from "expo-router";
+import {
+  setStatusBarBackgroundColor,
+  setStatusBarStyle,
+} from "expo-status-bar";
 import React, { useEffect } from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import tw from "twrnc";
 
 //   const keyCloakUrl = `http://${Constants?.expoConfig?.hostUri?.split(`:`)?.shift()?.concat(`.nip.io:8089`)}`
 //   const keycloakConfiguration = {
@@ -40,8 +46,17 @@ const RootLayout = () => {
   if (!fontsLoaded && !fontError) {
     return null;
   }
-
-  return <Slot />;
+  setStatusBarStyle("light");
+  setStatusBarBackgroundColor("#0A0A0A", false);
+  return (
+    <SafeAreaProvider
+      style={
+        tw`-my-[1px]` /* Remove 1 pixel space between the SafeAreaView and upper/lower bounds*/
+      }
+    >
+      <Slot />
+    </SafeAreaProvider>
+  );
 };
 
 export default RootLayout;
