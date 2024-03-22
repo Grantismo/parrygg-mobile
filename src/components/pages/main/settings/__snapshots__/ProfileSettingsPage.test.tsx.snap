@@ -103,7 +103,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
             {
               "color": "#fff",
               "fontFamily": "Inter_600SemiBold",
-              "fontSize": 40,
+              "fontSize": 20,
             }
           }
         >

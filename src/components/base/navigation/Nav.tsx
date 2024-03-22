@@ -27,7 +27,6 @@ const COLLAPSED_BACKGROUND_COLOR = "rgba(10, 10, 10, 1)"; // #0A0A0A
 const COLLAPSED_FONT_SIZE = 16;
 
 const Nav = ({ title, showBack, style, collapseValue }: Props) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
   const paddingTop = collapseValue
     ? collapseValue.interpolate({
         inputRange: [0, 100],
@@ -41,7 +40,7 @@ const Nav = ({ title, showBack, style, collapseValue }: Props) => {
         outputRange: [FONT_SIZE, COLLAPSED_FONT_SIZE],
         extrapolate: "clamp",
       })
-    : PADDING_TOP;
+    : FONT_SIZE;
   const backgroundColor = collapseValue
     ? collapseValue.interpolate({
         inputRange: [0, 100],
@@ -49,10 +48,6 @@ const Nav = ({ title, showBack, style, collapseValue }: Props) => {
         extrapolate: "clamp",
       })
     : BACKGROUND_COLOR;
-
-  collapseValue?.addListener((v) => {
-    setIsCollapsed(v.value >= 100);
-  });
 
   return (
     <Animated.View
