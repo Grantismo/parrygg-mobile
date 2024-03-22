@@ -41,156 +41,154 @@ exports[`ProfilePage renders correctly 1`] = `
     style={
       [
         {
-          "borderColor": "#fee2e2",
-          "borderTopWidth": 1,
+          "display": "flex",
+          "flexDirection": "column",
+          "height": "100%",
         },
       ]
     }
   >
-    <View>
-      <RCTScrollView
-        onScroll={[Function]}
-        stickyHeaderIndices={
+    <View
+      style={
+        [
           [
-            0,
-          ]
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "column",
+              "height": "100%",
+              "justifyContent": "center",
+            },
+            undefined,
+          ],
+          {
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(10, 10, 10, 0)",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingBottom": 12,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 40,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+            "zIndex": 10,
+          }
         }
       >
-        <View>
-          <View
-            style={
-              [
-                {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "justifyContent": "space-between",
-                  "paddingBottom": 24,
-                  "paddingLeft": 8,
-                  "paddingRight": 8,
-                  "paddingTop": 40,
-                  "width": "100%",
-                },
-                [
-                  {
-                    "paddingLeft": 24,
-                    "paddingRight": 24,
-                  },
-                  {
-                    "backgroundColor": "transparent",
-                  },
-                ],
-              ]
+        <View
+          style={
+            {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "width": 56,
             }
-          >
-            <View
-              style={
-                {
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "justifyContent": "flex-start",
-                  "width": 56,
-                }
+          }
+        />
+        <Text
+          collapsable={false}
+          style={
+            {
+              "color": "#fff",
+              "fontFamily": "Inter_600SemiBold",
+              "fontSize": 20,
+            }
+          }
+        >
+          My Players
+        </Text>
+        <View
+          style={
+            {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "flex-end",
+              "width": 56,
+            }
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
               }
-            />
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
             <Text
               style={
                 [
                   {
-                    "fontFamily": "Inter_600SemiBold",
+                    "fontFamily": "Inter_500Medium",
                   },
                   {
-                    "color": "#fff",
+                    "fontSize": 16,
                   },
                   {
-                    "fontSize": 20,
-                    "lineHeight": 28,
+                    "color": "#777",
                   },
                   undefined,
                 ]
               }
             >
-              My Players
+              Back
             </Text>
-            <View
-              style={
-                {
-                  "display": "flex",
-                  "flexDirection": "row",
-                  "justifyContent": "flex-end",
-                  "width": 56,
-                }
-              }
-            >
-              <View
-                accessibilityState={
-                  {
-                    "busy": undefined,
-                    "checked": undefined,
-                    "disabled": undefined,
-                    "expanded": undefined,
-                    "selected": undefined,
-                  }
-                }
-                accessibilityValue={
-                  {
-                    "max": undefined,
-                    "min": undefined,
-                    "now": undefined,
-                    "text": undefined,
-                  }
-                }
-                accessible={true}
-                collapsable={false}
-                focusable={true}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-              >
-                <Text
-                  style={
-                    [
-                      {
-                        "fontFamily": "Inter_500Medium",
-                      },
-                      {
-                        "fontSize": 16,
-                      },
-                      {
-                        "color": "#777",
-                      },
-                      undefined,
-                    ]
-                  }
-                >
-                  Back
-                </Text>
-              </View>
-            </View>
           </View>
+        </View>
+      </View>
+      <RCTScrollView
+        onScroll={[Function]}
+        scrollEventThrottle={5}
+      >
+        <View>
           <View
             style={
-              [
-                {
-                  "paddingLeft": 24,
-                  "paddingRight": 24,
-                },
-                [
-                  {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flexDirection": "column",
-                    "justifyContent": "center",
-                  },
-                  undefined,
-                ],
-              ]
+              {
+                "height": 92,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              }
             }
           >
             <View

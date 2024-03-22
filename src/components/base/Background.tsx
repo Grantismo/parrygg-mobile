@@ -3,7 +3,7 @@ import React, {
   ReactElement,
   ReactNode,
   isValidElement,
-  useState,
+  useRef,
 } from "react";
 import {
   View,
@@ -12,6 +12,7 @@ import {
   ViewStyle,
   Image,
   ScrollView,
+  Animated,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -26,10 +27,12 @@ interface Props extends ViewProps {
   showFooter?: boolean;
 }
 
+const NAV_HEIGHT = 92;
+const SCROLL_COLLAPSE_HEIGHT = 30;
 const ScrollContentView = ({ style, children, ...props }: Props) => {
-  const [scrollY, setScrollY] = useState(0);
-  const childArray = Children.toArray(children);
+  const scrollY = useRef(new Animated.Value(0)).current;
 
+  const childArray = Children.toArray(children);
   let nav: ReactElement | undefined;
   if (
     childArray.length &&
@@ -38,27 +41,32 @@ const ScrollContentView = ({ style, children, ...props }: Props) => {
   ) {
     nav = childArray.shift() as ReactElement;
   }
+  const collapseNavPercent = scrollY.interpolate({
+    inputRange: [0, SCROLL_COLLAPSE_HEIGHT],
+    outputRange: [0, 100],
+    extrapolate: "clamp",
+  });
 
   return (
-    <View>
+    <View style={[style, tw`relative`]}>
+      {nav && (
+        <Nav
+          style={tw`absolute px-6 top-0 z-10`}
+          collapseValue={collapseNavPercent}
+          {...nav.props}
+        />
+      )}
       <ScrollView
-        stickyHeaderIndices={nav ? [0] : []}
-        onScroll={(event) => {
-          setScrollY(event.nativeEvent.contentOffset.y);
-        }}
+        onScroll={Animated.event(
+          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+          { useNativeDriver: false },
+        )}
+        scrollEventThrottle={5}
         {...props}
       >
-        {nav &&
-          React.cloneElement(nav, {
-            ...nav.props,
-            style: [
-              tw`px-6`,
-              {
-                backgroundColor: scrollY <= 0 ? "transparent" : "#0A0A0A",
-              },
-            ],
-          })}
-        <View style={[tw`px-6`, style]}>{childArray}</View>
+        {/* Empty view to allow smooth scrolling as nav animates */}
+        <View style={{ height: NAV_HEIGHT }} />
+        <View style={tw`px-6`}>{childArray}</View>
       </ScrollView>
     </View>
   );
@@ -84,9 +92,12 @@ const Background = ({
           source={Images.TournamentPoster}
         />
       </View>
-      <SafeAreaView style={[tw`border-t border-red-100`]}>
+      <SafeAreaView style={[tw`h-full flex flex-col`]}>
         <ContentView
-          style={[tw`flex flex-col items-center justify-center`, bgStyle]}
+          style={[
+            tw`flex flex-col items-center justify-center h-full`,
+            bgStyle,
+          ]}
         >
           {bgChildren}
         </ContentView>
