@@ -50,7 +50,7 @@ const Input = forwardRef<any, Props>(
     const inputStyle = SizeMapping[size];
     return (
       <View style={[tw`mb-1 w-full z-0`, containerStyle]}>
-        <LinearGradient style={tw`rounded-xl`} colors={["#0C0C0C", "#161616"]}>
+        <LinearGradient style={inputStyle} colors={["#0C0C0C", "#161616"]}>
           {label && (
             <Text
               style={tw`px-[0.45rem] py-[0.1rem] text-[12px] font-normal z-10 ml-4 -top-3 absolute rounded-2xs bg-[#161616] text-white`}

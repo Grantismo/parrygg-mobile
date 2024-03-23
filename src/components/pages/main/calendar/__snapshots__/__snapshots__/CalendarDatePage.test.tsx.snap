@@ -926,10 +926,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                       style={
                         [
                           {
-                            "borderRadius": 14,
+                            "backgroundColor": "rgba(56, 52, 42, 0.38)",
                           },
                           {
-                            "backgroundColor": "rgba(56, 52, 42, 0.38)",
+                            "borderRadius": 10,
                           },
                         ]
                       }
@@ -968,7 +968,6 @@ exports[`CalendarDatePage renders correctly 1`] = `
                           [
                             {
                               "alignItems": "center",
-                              "borderRadius": 14,
                               "borderWidth": 2,
                               "color": "#000",
                               "display": "flex",
@@ -985,6 +984,9 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             false,
                             false,
                             false,
+                            {
+                              "borderRadius": 10,
+                            },
                             undefined,
                           ]
                         }
@@ -1006,6 +1008,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                                   "color": "#000",
                                 },
                                 false,
+                                {
+                                  "fontSize": 14,
+                                  "lineHeight": 20,
+                                },
                               ],
                             ]
                           }
@@ -1219,10 +1225,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                       style={
                         [
                           {
-                            "borderRadius": 14,
+                            "backgroundColor": "rgba(56, 52, 42, 0.38)",
                           },
                           {
-                            "backgroundColor": "rgba(56, 52, 42, 0.38)",
+                            "borderRadius": 10,
                           },
                         ]
                       }
@@ -1261,7 +1267,6 @@ exports[`CalendarDatePage renders correctly 1`] = `
                           [
                             {
                               "alignItems": "center",
-                              "borderRadius": 14,
                               "borderWidth": 2,
                               "color": "#000",
                               "display": "flex",
@@ -1277,6 +1282,9 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             false,
                             {
                               "borderColor": "#56E75C",
+                            },
+                            {
+                              "borderRadius": 10,
                             },
                             undefined,
                           ]
@@ -1300,6 +1308,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                                 },
                                 {
                                   "color": "#fff",
+                                },
+                                {
+                                  "fontSize": 14,
+                                  "lineHeight": 20,
                                 },
                               ],
                             ]
@@ -1514,10 +1526,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                       style={
                         [
                           {
-                            "borderRadius": 14,
+                            "backgroundColor": "rgba(56, 52, 42, 0.38)",
                           },
                           {
-                            "backgroundColor": "rgba(56, 52, 42, 0.38)",
+                            "borderRadius": 10,
                           },
                         ]
                       }
@@ -1556,7 +1568,6 @@ exports[`CalendarDatePage renders correctly 1`] = `
                           [
                             {
                               "alignItems": "center",
-                              "borderRadius": 14,
                               "borderWidth": 2,
                               "color": "#000",
                               "display": "flex",
@@ -1573,6 +1584,9 @@ exports[`CalendarDatePage renders correctly 1`] = `
                               "borderColor": "#8A8A8A",
                             },
                             false,
+                            {
+                              "borderRadius": 10,
+                            },
                             undefined,
                           ]
                         }
@@ -1595,6 +1609,10 @@ exports[`CalendarDatePage renders correctly 1`] = `
                                 },
                                 {
                                   "color": "#fff",
+                                },
+                                {
+                                  "fontSize": 14,
+                                  "lineHeight": 20,
                                 },
                               ],
                             ]

@@ -214,10 +214,10 @@ exports[`ProfilePage renders correctly 1`] = `
                 style={
                   [
                     {
-                      "borderRadius": 14,
+                      "backgroundColor": "rgba(56, 52, 42, 0.38)",
                     },
                     {
-                      "backgroundColor": "rgba(56, 52, 42, 0.38)",
+                      "borderRadius": 10,
                     },
                   ]
                 }
@@ -256,7 +256,6 @@ exports[`ProfilePage renders correctly 1`] = `
                     [
                       {
                         "alignItems": "center",
-                        "borderRadius": 14,
                         "borderWidth": 2,
                         "color": "#000",
                         "display": "flex",
@@ -273,6 +272,9 @@ exports[`ProfilePage renders correctly 1`] = `
                       false,
                       false,
                       false,
+                      {
+                        "borderRadius": 10,
+                      },
                       undefined,
                     ]
                   }

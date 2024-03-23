@@ -51,15 +51,15 @@ const PressableWrapperMapping = {
 
 interface SizeValues {
   buttonStyle: Style;
-  fontStyle: Style;
+  textStyle: Style;
 }
 
-const SizeMapping = {
-  lg: { buttonStyle: tw`rounded-lg`, fontstyle: tw`text-base` },
-  md: { buttonStyle: tw`rounded-md`, fontstyle: tw`text-base` },
-  base: { buttonStyle: tw`rounded`, fontstyle: tw`text-sm` },
-  sm: { buttonStyle: tw`rounded-sm`, fontstyle: tw`text-sm` },
-  xs: { buttonStyle: tw`rounded-xs`, fontstyle: tw`text-sm` },
+const SizeMapping: { [key: string]: SizeValues } = {
+  lg: { buttonStyle: tw`rounded-lg`, textStyle: tw`text-base` },
+  md: { buttonStyle: tw`rounded-md`, textStyle: tw`text-base` },
+  base: { buttonStyle: tw`rounded`, textStyle: tw`text-sm` },
+  sm: { buttonStyle: tw`rounded-sm`, textStyle: tw`text-sm` },
+  xs: { buttonStyle: tw`rounded-xs`, textStyle: tw`text-sm` },
 };
 
 const Button = ({
@@ -67,27 +67,33 @@ const Button = ({
   style,
   pressableStyle,
   color = "primary",
+  size = "base",
   children,
   href,
   onPress,
   ...pressableProps
 }: Props) => {
   const PressableWrapper = PressableWrapperMapping[color];
+  const buttonStyle = SizeMapping[size];
 
   return (
     <View style={[tw`mb-4`, style]}>
       <PressableWrapper
-        style={[tw`rounded-lg`, { backgroundColor: "rgba(56, 52, 42, 0.38)" }]}
+        style={[
+          { backgroundColor: "rgba(56, 52, 42, 0.38)" },
+          buttonStyle.buttonStyle,
+        ]}
       >
         <Pressable
           style={[
-            tw`rounded-lg px-6 pt-[13px] pb-[15px] border-2 
+            tw`px-6 pt-[13px] pb-[15px] border-2 
                      text-black flex flex-row items-center justify-center`,
             color === "primary" && tw`border-[#ffd978]`,
             color === "secondary" &&
-              tw`border border-[#FFC93F]  rounded-[11px]  pt-[14px] pb-[16px] bg-[#151515]`,
+              tw`border border-[#FFC93F] pt-[14px] pb-[16px] bg-[#151515]`,
             color === "gray" && tw`border-[#8A8A8A]`,
             color === "green" && tw`border-[#56E75C]`,
+            buttonStyle.buttonStyle,
             pressableStyle,
           ]}
           onPress={(event) => {
@@ -110,6 +116,7 @@ const Button = ({
                   style={[
                     tw`text-black`,
                     new Set(["green", "gray"]).has(color) && tw`text-white`,
+                    buttonStyle.textStyle,
                   ]}
                 >
                   {title}
