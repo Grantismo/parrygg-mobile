@@ -50,21 +50,9 @@ exports[`CalendarDatePage renders correctly 1`] = `
   >
     <View
       style={
-        [
-          [
-            {
-              "alignItems": "center",
-              "display": "flex",
-              "flexDirection": "column",
-              "height": "100%",
-              "justifyContent": "center",
-            },
-            undefined,
-          ],
-          {
-            "position": "relative",
-          },
-        ]
+        {
+          "position": "relative",
+        }
       }
     >
       <View
@@ -77,8 +65,8 @@ exports[`CalendarDatePage renders correctly 1`] = `
             "flexDirection": "row",
             "justifyContent": "space-between",
             "paddingBottom": 12,
-            "paddingLeft": 24,
-            "paddingRight": 24,
+            "paddingLeft": 32,
+            "paddingRight": 32,
             "paddingTop": 40,
             "position": "absolute",
             "top": 0,
@@ -118,7 +106,59 @@ exports[`CalendarDatePage renders correctly 1`] = `
               "width": 56,
             }
           }
-        />
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            hitSlop={5}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Inter_500Medium",
+                  },
+                  {
+                    "fontSize": 16,
+                  },
+                  {
+                    "color": "#777",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              Back
+            </Text>
+          </View>
+        </View>
       </View>
       <RCTScrollView
         onScroll={[Function]}
@@ -128,16 +168,27 @@ exports[`CalendarDatePage renders correctly 1`] = `
           <View
             style={
               {
-                "height": 92,
+                "height": 80,
               }
             }
           />
           <View
             style={
-              {
-                "paddingLeft": 24,
-                "paddingRight": 24,
-              }
+              [
+                {
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                },
+                [
+                  {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ],
+              ]
             }
           >
             <View

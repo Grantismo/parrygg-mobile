@@ -50,21 +50,9 @@ exports[`ProfilePage renders correctly 1`] = `
   >
     <View
       style={
-        [
-          [
-            {
-              "alignItems": "center",
-              "display": "flex",
-              "flexDirection": "column",
-              "height": "100%",
-              "justifyContent": "center",
-            },
-            undefined,
-          ],
-          {
-            "position": "relative",
-          },
-        ]
+        {
+          "position": "relative",
+        }
       }
     >
       <View
@@ -77,8 +65,8 @@ exports[`ProfilePage renders correctly 1`] = `
             "flexDirection": "row",
             "justifyContent": "space-between",
             "paddingBottom": 12,
-            "paddingLeft": 24,
-            "paddingRight": 24,
+            "paddingLeft": 32,
+            "paddingRight": 32,
             "paddingTop": 40,
             "position": "absolute",
             "top": 0,
@@ -140,6 +128,7 @@ exports[`ProfilePage renders correctly 1`] = `
             accessible={true}
             collapsable={false}
             focusable={true}
+            hitSlop={5}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -179,16 +168,27 @@ exports[`ProfilePage renders correctly 1`] = `
           <View
             style={
               {
-                "height": 92,
+                "height": 80,
               }
             }
           />
           <View
             style={
-              {
-                "paddingLeft": 24,
-                "paddingRight": 24,
-              }
+              [
+                {
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                },
+                [
+                  {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ],
+              ]
             }
           >
             <View

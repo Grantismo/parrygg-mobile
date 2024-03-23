@@ -1,5 +1,5 @@
 import { router } from "expo-router";
-import React, { useState } from "react";
+import React from "react";
 import { Animated, Pressable, StyleProp, View, ViewStyle } from "react-native";
 
 import Text from "@/components/base/Text";
@@ -13,16 +13,11 @@ interface Props {
   collapseValue?: Animated.Value; // from 0 to 10000
 }
 
-// {
-//   backgroundColor: scrollY <= 16 ? "transparent" : "#0A0A0A",
-//   paddingTop,
-// },
-
 const PADDING_TOP = 40;
 const BACKGROUND_COLOR = "rgba(10, 10, 10, 0)";
 const FONT_SIZE = 20;
 
-const COLLAPSED_PADDING_TOP = 10;
+const COLLAPSED_PADDING_TOP = 14;
 const COLLAPSED_BACKGROUND_COLOR = "rgba(10, 10, 10, 1)"; // #0A0A0A
 const COLLAPSED_FONT_SIZE = 16;
 
@@ -52,7 +47,7 @@ const Nav = ({ title, showBack, style, collapseValue }: Props) => {
   return (
     <Animated.View
       style={[
-        tw`w-full flex flex-row items-center justify-between pb-3 px-2`,
+        tw`w-full flex flex-row items-center justify-between pb-3 px-8`,
         style,
         {
           paddingTop,
@@ -72,6 +67,7 @@ const Nav = ({ title, showBack, style, collapseValue }: Props) => {
             onPress={() => {
               router.back();
             }}
+            hitSlop={5}
           >
             <Text color="secondary">Back</Text>
           </Pressable>

@@ -27,12 +27,10 @@ interface Props extends ViewProps {
   showFooter?: boolean;
 }
 
-const NAV_HEIGHT = 92;
-const SCROLL_COLLAPSE_HEIGHT = 30;
-const ScrollContentView = ({ style, children, ...props }: Props) => {
-  const scrollY = useRef(new Animated.Value(0)).current;
+const NAV_HEIGHT = 80;
+const SCROLL_COLLAPSE_HEIGHT = 34;
 
-  const childArray = Children.toArray(children);
+function getNav(childArray: ReactNode[]) {
   let nav: ReactElement | undefined;
   if (
     childArray.length &&
@@ -41,6 +39,14 @@ const ScrollContentView = ({ style, children, ...props }: Props) => {
   ) {
     nav = childArray.shift() as ReactElement;
   }
+  return nav;
+}
+
+const ScrollContentView = ({ style, children, ...props }: Props) => {
+  const scrollY = useRef(new Animated.Value(0)).current;
+
+  const childArray = Children.toArray(children);
+  const nav: ReactElement | undefined = getNav(childArray);
   const collapseNavPercent = scrollY.interpolate({
     inputRange: [0, SCROLL_COLLAPSE_HEIGHT],
     outputRange: [0, 100],
@@ -48,10 +54,10 @@ const ScrollContentView = ({ style, children, ...props }: Props) => {
   });
 
   return (
-    <View style={[style, tw`relative`]}>
+    <View style={tw`relative`}>
       {nav && (
         <Nav
-          style={tw`absolute px-6 top-0 z-10`}
+          style={tw`absolute top-0 z-10`}
           collapseValue={collapseNavPercent}
           {...nav.props}
         />
@@ -66,14 +72,21 @@ const ScrollContentView = ({ style, children, ...props }: Props) => {
       >
         {/* Empty view to allow smooth scrolling as nav animates */}
         <View style={{ height: NAV_HEIGHT }} />
-        <View style={tw`px-6`}>{childArray}</View>
+        <View style={[tw`px-6`, style]}>{childArray}</View>
       </ScrollView>
     </View>
   );
 };
 
-const DefaultView = ({ style, ...props }: Props) => {
-  return <View style={[tw`w-full h-full px-6`, style]} {...props} />;
+const DefaultView = ({ style, children, ...props }: Props) => {
+  const childArray = Children.toArray(children);
+  const nav: ReactElement | undefined = getNav(childArray);
+  return (
+    <View {...props}>
+      {nav && <Nav {...nav.props} />}
+      <View style={[tw`px-6 h-full`, style]}>{childArray}</View>
+    </View>
+  );
 };
 
 const Background = ({
@@ -94,10 +107,7 @@ const Background = ({
       </View>
       <SafeAreaView style={[tw`h-full flex flex-col`]}>
         <ContentView
-          style={[
-            tw`flex flex-col items-center justify-center h-full`,
-            bgStyle,
-          ]}
+          style={[tw`flex flex-col items-center justify-center`, bgStyle]}
         >
           {bgChildren}
         </ContentView>
