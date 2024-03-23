@@ -10,6 +10,7 @@ import {
   ViewStyle,
 } from "react-native";
 import { ViewProps } from "react-native-svg/lib/typescript/fabric/utils";
+import { Style } from "twrnc";
 
 import Text from "@/components/base/Text";
 import tw from "@/lib/tailwind";
@@ -18,10 +19,12 @@ interface Props extends PressableProps {
   title?: string;
   style?: StyleProp<ViewStyle>;
   pressableStyle?: StyleProp<ViewStyle>;
+  size?: Size;
   color?: Color;
   href?: Href;
 }
 type Color = "primary" | "secondary" | "green" | "gray";
+type Size = "lg" | "md" | "base" | "sm" | "xs";
 
 const PrimaryWrapper = ({ ...props }: ViewProps) => {
   return <LinearGradient colors={["#EFB31A", "#FFCB46"]} {...props} />;
@@ -39,6 +42,26 @@ const PassthroughWrapper = ({ ...props }: ViewProps) => {
   return <View {...props} />;
 };
 
+const PressableWrapperMapping = {
+  primary: PrimaryWrapper,
+  secondary: PassthroughWrapper,
+  green: GreenWrapper,
+  gray: GrayWrapper,
+};
+
+interface SizeValues {
+  buttonStyle: Style;
+  fontStyle: Style;
+}
+
+const SizeMapping = {
+  lg: { buttonStyle: tw`rounded-lg`, fontstyle: tw`text-base` },
+  md: { buttonStyle: tw`rounded-md`, fontstyle: tw`text-base` },
+  base: { buttonStyle: tw`rounded`, fontstyle: tw`text-sm` },
+  sm: { buttonStyle: tw`rounded-sm`, fontstyle: tw`text-sm` },
+  xs: { buttonStyle: tw`rounded-xs`, fontstyle: tw`text-sm` },
+};
+
 const Button = ({
   title,
   style,
@@ -49,12 +72,7 @@ const Button = ({
   onPress,
   ...pressableProps
 }: Props) => {
-  const PressableWrapper = {
-    primary: PrimaryWrapper,
-    secondary: PassthroughWrapper,
-    green: GreenWrapper,
-    gray: GrayWrapper,
-  }[color];
+  const PressableWrapper = PressableWrapperMapping[color];
 
   return (
     <View style={[tw`mb-4`, style]}>

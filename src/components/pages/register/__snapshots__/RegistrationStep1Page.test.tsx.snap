@@ -205,7 +205,6 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                   {
                     "borderColor": "#fff",
-                    "borderRadius": 14,
                     "borderWidth": 1,
                     "color": "#fff",
                     "fontSize": 16,
@@ -215,6 +214,9 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                     "paddingTop": 13,
                   },
                   false,
+                  {
+                    "borderRadius": 14,
+                  },
                 ]
               }
             />
@@ -332,7 +334,6 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                   {
                     "borderColor": "#fff",
-                    "borderRadius": 14,
                     "borderWidth": 1,
                     "color": "#fff",
                     "fontSize": 16,
@@ -342,6 +343,9 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                     "paddingTop": 13,
                   },
                   false,
+                  {
+                    "borderRadius": 14,
+                  },
                 ]
               }
             />
@@ -459,7 +463,6 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                   {
                     "borderColor": "#fff",
-                    "borderRadius": 14,
                     "borderWidth": 1,
                     "color": "#fff",
                     "fontSize": 16,
@@ -469,6 +472,9 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                     "paddingTop": 13,
                   },
                   false,
+                  {
+                    "borderRadius": 14,
+                  },
                 ]
               }
             />
@@ -564,7 +570,6 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                   {
                     "borderColor": "#fff",
-                    "borderRadius": 14,
                     "borderWidth": 1,
                     "color": "#fff",
                     "fontSize": 16,
@@ -574,6 +579,9 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                     "paddingTop": 13,
                   },
                   false,
+                  {
+                    "borderRadius": 14,
+                  },
                 ]
               }
             />
@@ -669,7 +677,6 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                   {
                     "borderColor": "#fff",
-                    "borderRadius": 14,
                     "borderWidth": 1,
                     "color": "#fff",
                     "fontSize": 16,
@@ -679,6 +686,9 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                     "paddingTop": 13,
                   },
                   false,
+                  {
+                    "borderRadius": 14,
+                  },
                 ]
               }
             />

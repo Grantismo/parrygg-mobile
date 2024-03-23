@@ -9,6 +9,7 @@ import {
   StyleProp,
   ViewStyle,
 } from "react-native";
+import { Style } from "twrnc";
 
 import Text from "@/components/base/Text";
 import { styles } from "@/components/base/styles";
@@ -21,7 +22,16 @@ interface Props extends TextInputProps {
   error?: FieldError;
   required?: boolean;
   containerStyle?: StyleProp<ViewStyle>;
+  size?: Size;
 }
+
+type Size = "lg" | "md" | "base" | "sm" | "xs";
+
+const SizeMapping: { [key: string]: Style } = {
+  lg: tw`rounded-lg`,
+  md: tw`rounded-md`,
+  base: tw`rounded`,
+};
 
 const Input = forwardRef<any, Props>(
   (
@@ -31,11 +41,13 @@ const Input = forwardRef<any, Props>(
       required,
       placeholder,
       containerStyle,
+      size = "lg",
       ...inputProps
     }: Props,
     ref,
   ): React.ReactElement => {
     const [isFocus, setIsFocus] = useState(false);
+    const inputStyle = SizeMapping[size];
     return (
       <View style={[tw`mb-1 w-full z-0`, containerStyle]}>
         <LinearGradient style={tw`rounded-xl`} colors={["#0C0C0C", "#161616"]}>
@@ -59,8 +71,9 @@ const Input = forwardRef<any, Props>(
             style={[
               styles.defaultWeightFont,
               tw`text-base pt-[13px] pb-[15px] px-[18px]  text-white 
-                                border border-white rounded-lg sm:text-sm`,
+                                border border-white sm:text-sm`,
               isFocus && tw`border border-[#FFC93F]`,
+              inputStyle,
             ]}
             {...inputProps}
           />
