@@ -1094,11 +1094,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                         {
                           "marginBottom": 16,
                         },
-                        [
-                          {
-                            "borderRadius": 6,
-                          },
-                        ],
+                        undefined,
                       ]
                     }
                   >
@@ -1115,7 +1111,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                             "backgroundColor": "rgba(56, 52, 42, 0.38)",
                           },
                           {
-                            "borderRadius": 10,
+                            "borderRadius": 12,
                           },
                         ]
                       }
@@ -1171,7 +1167,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                             false,
                             false,
                             {
-                              "borderRadius": 10,
+                              "borderRadius": 12,
                             },
                             undefined,
                           ]
@@ -1195,8 +1191,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                                 },
                                 false,
                                 {
-                                  "fontSize": 14,
-                                  "lineHeight": 20,
+                                  "fontSize": 16,
                                 },
                               ],
                             ]

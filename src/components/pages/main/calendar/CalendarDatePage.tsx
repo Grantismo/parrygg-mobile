@@ -21,7 +21,7 @@ const UpcomingOpenEvent = ({ timestamp }: Props) => (
       style={tw`w-full h-40 rounded-t-lg`}
       src="https://imgur.com/o3yTFTq.png"
     />
-    <View style={tw`flex-col p-6 bg-[#151515]`}>
+    <View style={tw`flex-col pt-6 px-6 pb-3 bg-[#151515]`}>
       <View style={tw`items-center justify-center pb-6`}>
         <Title style={tw`text-base mb-2`}>Michael's Melee Monday #49</Title>
         <Text color="secondary" style={tw`text-center text-sm`}>
@@ -33,6 +33,7 @@ const UpcomingOpenEvent = ({ timestamp }: Props) => (
         </View>
       </View>
       <Button
+        size="md"
         title="Registration Open"
         style={tw`w-full`}
         href={`/calendar/${timestamp}/tournament/123`}
@@ -47,7 +48,7 @@ const UpcomingLiveEvent = () => (
       style={tw`w-full h-40 rounded-t-lg`}
       src="https://imgur.com/8ny13Be.png"
     />
-    <View style={tw`flex-col p-6`}>
+    <View style={tw`flex-col pt-6 px-6 pb-3`}>
       <View style={tw`items-center justify-center pb-6`}>
         <Title style={tw`text-base mb-2`}>Battle of BC 6</Title>
         <Text color="secondary" style={tw`text-center text-sm`}>
@@ -59,7 +60,12 @@ const UpcomingLiveEvent = () => (
           <Text style={tw`text-sm`}>3,285 Attendees</Text>
         </View>
       </View>
-      <Button color="green" title="Live Event Stats" style={tw`w-full`} />
+      <Button
+        size="md"
+        color="green"
+        title="Live Event Stats"
+        style={tw`w-full`}
+      />
     </View>
   </Card>
 );
@@ -70,7 +76,7 @@ const EndedEvent = () => (
       style={tw`w-full h-40 rounded-t-lg`}
       src="https://imgur.com/Sm54xX7.png"
     />
-    <View style={tw`flex-col p-6`}>
+    <View style={tw`flex-col pt-6 px-6 pb-3`}>
       <View style={tw`items-center justify-center pb-6`}>
         <Title style={tw`text-base mb-2`}>Battle of BC 6</Title>
         <Text color="secondary" style={tw`text-center text-sm`}>
@@ -82,7 +88,7 @@ const EndedEvent = () => (
           <Text style={tw`text-sm`}>3,285 Attendees</Text>
         </View>
       </View>
-      <Button color="gray" title="Event Ended" style={tw`w-full`} />
+      <Button size="md" color="gray" title="Event Ended" style={tw`w-full`} />
     </View>
   </Card>
 );

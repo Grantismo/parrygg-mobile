@@ -756,7 +756,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                     {
                       "backgroundColor": "#151515",
                       "flexDirection": "column",
-                      "paddingBottom": 24,
+                      "paddingBottom": 12,
                       "paddingLeft": 24,
                       "paddingRight": 24,
                       "paddingTop": 24,
@@ -929,7 +929,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             "backgroundColor": "rgba(56, 52, 42, 0.38)",
                           },
                           {
-                            "borderRadius": 10,
+                            "borderRadius": 12,
                           },
                         ]
                       }
@@ -985,7 +985,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             false,
                             false,
                             {
-                              "borderRadius": 10,
+                              "borderRadius": 12,
                             },
                             undefined,
                           ]
@@ -1009,8 +1009,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                                 },
                                 false,
                                 {
-                                  "fontSize": 14,
-                                  "lineHeight": 20,
+                                  "fontSize": 16,
                                 },
                               ],
                             ]
@@ -1055,7 +1054,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                   style={
                     {
                       "flexDirection": "column",
-                      "paddingBottom": 24,
+                      "paddingBottom": 12,
                       "paddingLeft": 24,
                       "paddingRight": 24,
                       "paddingTop": 24,
@@ -1228,7 +1227,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             "backgroundColor": "rgba(56, 52, 42, 0.38)",
                           },
                           {
-                            "borderRadius": 10,
+                            "borderRadius": 12,
                           },
                         ]
                       }
@@ -1284,7 +1283,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                               "borderColor": "#56E75C",
                             },
                             {
-                              "borderRadius": 10,
+                              "borderRadius": 12,
                             },
                             undefined,
                           ]
@@ -1310,8 +1309,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                                   "color": "#fff",
                                 },
                                 {
-                                  "fontSize": 14,
-                                  "lineHeight": 20,
+                                  "fontSize": 16,
                                 },
                               ],
                             ]
@@ -1356,7 +1354,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                   style={
                     {
                       "flexDirection": "column",
-                      "paddingBottom": 24,
+                      "paddingBottom": 12,
                       "paddingLeft": 24,
                       "paddingRight": 24,
                       "paddingTop": 24,
@@ -1529,7 +1527,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             "backgroundColor": "rgba(56, 52, 42, 0.38)",
                           },
                           {
-                            "borderRadius": 10,
+                            "borderRadius": 12,
                           },
                         ]
                       }
@@ -1585,7 +1583,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             },
                             false,
                             {
-                              "borderRadius": 10,
+                              "borderRadius": 12,
                             },
                             undefined,
                           ]
@@ -1611,8 +1609,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                                   "color": "#fff",
                                 },
                                 {
-                                  "fontSize": 14,
-                                  "lineHeight": 20,
+                                  "fontSize": 16,
                                 },
                               ],
                             ]
