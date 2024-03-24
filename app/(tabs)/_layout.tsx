@@ -13,11 +13,11 @@ const MainLayout = () => {
   return (
     <Tabs
       screenOptions={{
-        headerShown: false,
         tabBarStyle: [
           tw`w-full flex flex-row items-center justify-between bg-[#0A0A0A] px-4 py-9 border-t-0`,
         ],
         tabBarShowLabel: false,
+        headerShown: false,
       }}
     >
       <Tabs.Screen
@@ -65,7 +65,7 @@ const MainLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="myplayers"
+        name="tournaments" // my players
         options={{
           tabBarIcon: ({ focused }) => (
             <TabButton isSelected={focused}>

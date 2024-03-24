@@ -8,6 +8,7 @@ import Button from "@/components/base/Button";
 import Sep from "@/components/base/Sep";
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
+import ImageUpload from "@/components/base/images/ImageUpload";
 import tw from "@/lib/tailwind";
 import Calendar from "@assets/icons/Calendar";
 import FileUpload from "@assets/icons/FileUpload";
@@ -25,15 +26,11 @@ const RegistrationStep3Page = () => {
       <Title color="accent" style={tw`mb-6`}>
         Profile <Title style={tw`text-white`}>Pictures</Title>
       </Title>
-      <View style={tw`px-6 mb-[1.6rem] w-full`}>
+      <View style={tw`mb-[1.6rem] w-full`}>
         <View
           style={tw`p-5 rounded-[16px] border border-[#3E3E3E] bg-[#151515]`}
         >
-          <View
-            style={tw`h-32 rounded-[8px] border-2 border-dashed border-[#FFC93F] flex items-center justify-center`}
-          >
-            <FileUpload />
-          </View>
+          <ImageUpload />
           <View style={tw`w-full flex flex-row`}>
             <View
               style={tw`h-20 w-20 rounded-[2.5rem] border-2 border-[#39D83F] ml-3 -mt-4 flex flex-row`}
@@ -51,14 +48,14 @@ const RegistrationStep3Page = () => {
             </View>
           </View>
           <View style={tw`flex flex-row items-center`}>
-            <Calendar />
+            <Calendar color="white" />
             <Text style={tw`ml-2.5 text-[#777] py-[0.69rem]`}>
               Dec 18th, 2023
             </Text>
           </View>
           <Sep />
           <View style={tw`flex flex-row items-center`}>
-            <Pin />
+            <Pin color="white" />
             <Text style={tw`ml-2.5 text-[#777] py-[0.69rem]  mt-1 mb-1`}>
               Lakewood, CO, United States
             </Text>

@@ -8,6 +8,7 @@ import {
   RegisterOptions,
 } from "react-hook-form";
 
+import DateTimeInput from "@/components/forms/DateTimeInput";
 import DropdownInput from "@/components/forms/DropdownInput";
 import Input from "@/components/forms/Input";
 import CityInput from "@/components/forms/location/CityInput";
@@ -28,6 +29,8 @@ const DROPDOWN_INPUTS = new Set([
   CountryInput,
   StateInput,
 ]);
+
+const INPUT_TYPES = new Set([Input, DateTimeInput]);
 
 const Form = <T extends FieldValues>({
   register,
@@ -64,7 +67,7 @@ const Form = <T extends FieldValues>({
         }
         if (child.props.name) {
           let fieldProps = {};
-          if (child.type === Input) {
+          if (INPUT_TYPES.has(child.type)) {
             fieldProps = {
               onChangeText: (v: PathValue<T, any>) =>
                 setValue(child.props.name, v, { shouldValidate: true }),

@@ -188,26 +188,15 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                  *
               </Text>
             </Text>
-            <TextInput
-              autoCapitalize="none"
-              blurOnSubmit={false}
-              name="tag"
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              onSubmitEditing={[Function]}
-              placeholder="e.g. blorppppp"
-              placeholderTextColor="#6F6F6F"
+            <View
               style={
                 [
                   {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
+                    "alignItems": "center",
                     "borderColor": "#fff",
                     "borderWidth": 1,
-                    "color": "#fff",
-                    "fontSize": 16,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
                     "paddingBottom": 15,
                     "paddingLeft": 18,
                     "paddingRight": 18,
@@ -219,7 +208,34 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                 ]
               }
-            />
+            >
+              <TextInput
+                autoCapitalize="none"
+                blurOnSubmit={false}
+                name="tag"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                onSubmitEditing={[Function]}
+                placeholder="e.g. blorppppp"
+                placeholderTextColor="#6F6F6F"
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "color": "#fff",
+                      "display": "flex",
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              />
+            </View>
           </ViewManagerAdapter_ExpoLinearGradient>
           <Text
             style={
@@ -317,26 +333,15 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                  *
               </Text>
             </Text>
-            <TextInput
-              autoCapitalize="none"
-              blurOnSubmit={false}
-              name="firstName"
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              onSubmitEditing={[Function]}
-              placeholder="John"
-              placeholderTextColor="#6F6F6F"
+            <View
               style={
                 [
                   {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
+                    "alignItems": "center",
                     "borderColor": "#fff",
                     "borderWidth": 1,
-                    "color": "#fff",
-                    "fontSize": 16,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
                     "paddingBottom": 15,
                     "paddingLeft": 18,
                     "paddingRight": 18,
@@ -348,7 +353,34 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                 ]
               }
-            />
+            >
+              <TextInput
+                autoCapitalize="none"
+                blurOnSubmit={false}
+                name="firstName"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                onSubmitEditing={[Function]}
+                placeholder="John"
+                placeholderTextColor="#6F6F6F"
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "color": "#fff",
+                      "display": "flex",
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              />
+            </View>
           </ViewManagerAdapter_ExpoLinearGradient>
           <Text
             style={
@@ -446,26 +478,15 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                  *
               </Text>
             </Text>
-            <TextInput
-              autoCapitalize="none"
-              blurOnSubmit={false}
-              name="lastName"
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              onSubmitEditing={[Function]}
-              placeholder="Doe"
-              placeholderTextColor="#6F6F6F"
+            <View
               style={
                 [
                   {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
+                    "alignItems": "center",
                     "borderColor": "#fff",
                     "borderWidth": 1,
-                    "color": "#fff",
-                    "fontSize": 16,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
                     "paddingBottom": 15,
                     "paddingLeft": 18,
                     "paddingRight": 18,
@@ -477,7 +498,34 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                 ]
               }
-            />
+            >
+              <TextInput
+                autoCapitalize="none"
+                blurOnSubmit={false}
+                name="lastName"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                onSubmitEditing={[Function]}
+                placeholder="Doe"
+                placeholderTextColor="#6F6F6F"
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "color": "#fff",
+                      "display": "flex",
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              />
+            </View>
           </ViewManagerAdapter_ExpoLinearGradient>
           <Text
             style={
@@ -553,26 +601,15 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
             >
               Bio
             </Text>
-            <TextInput
-              autoCapitalize="none"
-              blurOnSubmit={false}
-              name="bio"
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              onSubmitEditing={[Function]}
-              placeholder="e.g. I love smash"
-              placeholderTextColor="#6F6F6F"
+            <View
               style={
                 [
                   {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
+                    "alignItems": "center",
                     "borderColor": "#fff",
                     "borderWidth": 1,
-                    "color": "#fff",
-                    "fontSize": 16,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
                     "paddingBottom": 15,
                     "paddingLeft": 18,
                     "paddingRight": 18,
@@ -584,7 +621,34 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                 ]
               }
-            />
+            >
+              <TextInput
+                autoCapitalize="none"
+                blurOnSubmit={false}
+                name="bio"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                onSubmitEditing={[Function]}
+                placeholder="e.g. I love smash"
+                placeholderTextColor="#6F6F6F"
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "color": "#fff",
+                      "display": "flex",
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              />
+            </View>
           </ViewManagerAdapter_ExpoLinearGradient>
           <Text
             style={
@@ -660,26 +724,15 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
             >
               Pronouns
             </Text>
-            <TextInput
-              autoCapitalize="none"
-              blurOnSubmit={false}
-              name="pronouns"
-              onBlur={[Function]}
-              onChangeText={[Function]}
-              onFocus={[Function]}
-              onSubmitEditing={[Function]}
-              placeholder="e.g. they/them"
-              placeholderTextColor="#6F6F6F"
+            <View
               style={
                 [
                   {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
+                    "alignItems": "center",
                     "borderColor": "#fff",
                     "borderWidth": 1,
-                    "color": "#fff",
-                    "fontSize": 16,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
                     "paddingBottom": 15,
                     "paddingLeft": 18,
                     "paddingRight": 18,
@@ -691,7 +744,34 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   },
                 ]
               }
-            />
+            >
+              <TextInput
+                autoCapitalize="none"
+                blurOnSubmit={false}
+                name="pronouns"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                onSubmitEditing={[Function]}
+                placeholder="e.g. they/them"
+                placeholderTextColor="#6F6F6F"
+                style={
+                  [
+                    {
+                      "fontFamily": "Inter_500Medium",
+                    },
+                    {
+                      "color": "#fff",
+                      "display": "flex",
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                    },
+                  ]
+                }
+              />
+            </View>
           </ViewManagerAdapter_ExpoLinearGradient>
           <Text
             style={

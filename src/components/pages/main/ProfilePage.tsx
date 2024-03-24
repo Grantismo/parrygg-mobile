@@ -12,6 +12,7 @@ import tw from "@/lib/tailwind";
 import Bracket from "@assets/icons/Bracket";
 import Calendar from "@assets/icons/Calendar";
 import Pin from "@assets/icons/Pin";
+import Plus from "@assets/icons/Plus";
 import Profile from "@assets/icons/Profile";
 import SSBU from "@assets/icons/SSBU";
 import Twitch from "@assets/icons/Twitch";
@@ -157,6 +158,10 @@ const ProfilePage = () => {
           </View>
         </View>
         <View style={tw`bg-[#1B1B1B] w-full px-6 pb-6`}>
+          <Button style={tw`w-full mb-6 mt-4`} href="/tournaments/create">
+            <Plus color="#1B1B1B" style={tw`mr-2`} />
+            <Text color="black">Create Tournament</Text>
+          </Button>
           <Title style={tw`text-base pt-6 pb-4`}>
             Registered Upcoming Events
           </Title>

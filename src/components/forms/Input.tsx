@@ -1,31 +1,13 @@
 import { LinearGradient } from "expo-linear-gradient";
 import * as React from "react";
 import { forwardRef, useState } from "react";
-import { FieldError } from "react-hook-form";
-import {
-  View,
-  TextInput,
-  TextInputProps,
-  StyleProp,
-  ViewStyle,
-} from "react-native";
+import { View, TextInput } from "react-native";
 import { Style } from "twrnc";
 
 import Text from "@/components/base/Text";
 import { styles } from "@/components/base/styles";
+import Props from "@/components/forms/InputProps";
 import tw from "@/lib/tailwind";
-
-interface Props extends TextInputProps {
-  name: string;
-  label?: string;
-  placeholder?: string;
-  error?: FieldError;
-  required?: boolean;
-  containerStyle?: StyleProp<ViewStyle>;
-  size?: Size;
-}
-
-type Size = "lg" | "md" | "base" | "sm" | "xs";
 
 const SizeMapping: { [key: string]: Style } = {
   lg: tw`rounded-lg`,
@@ -42,6 +24,7 @@ const Input = forwardRef<any, Props>(
       placeholder,
       containerStyle,
       size = "lg",
+      rightPressable,
       ...inputProps
     }: Props,
     ref,
@@ -61,22 +44,28 @@ const Input = forwardRef<any, Props>(
               )}
             </Text>
           )}
-          <TextInput
-            autoCapitalize="none"
-            placeholder={placeholder}
-            placeholderTextColor="#6F6F6F"
-            onFocus={() => setIsFocus(true)}
-            onBlur={() => setIsFocus(false)}
-            ref={ref}
+          <View
             style={[
-              styles.defaultWeightFont,
-              tw`text-base pt-[13px] pb-[15px] px-[18px]  text-white 
-                                border border-white sm:text-sm`,
+              tw`flex-row items-center justify-between pt-[13px] pb-[15px] px-[18px] border border-white`,
               isFocus && tw`border border-[#FFC93F]`,
               inputStyle,
             ]}
-            {...inputProps}
-          />
+          >
+            <TextInput
+              autoCapitalize="none"
+              placeholder={placeholder}
+              placeholderTextColor="#6F6F6F"
+              onFocus={() => setIsFocus(true)}
+              onBlur={() => setIsFocus(false)}
+              ref={ref}
+              style={[
+                styles.defaultWeightFont,
+                tw`flex flex-1 text-base text-white`,
+              ]}
+              {...inputProps}
+            />
+            {rightPressable && rightPressable}
+          </View>
         </LinearGradient>
         <Text>{error && error.message}</Text>
       </View>
