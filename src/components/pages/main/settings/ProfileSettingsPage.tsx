@@ -44,7 +44,11 @@ const ProfileSettingsPage = () => {
             label="Pronouns"
             placeholder="e.g. they/them"
           />
-          <Button title="Update Profile" onPress={handleSubmit(onSubmit)} />
+          <Button
+            size="lg"
+            title="Update Profile"
+            onPress={handleSubmit(onSubmit)}
+          />
         </Form>
       </View>
     </Background>

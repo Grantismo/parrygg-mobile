@@ -26,7 +26,7 @@ const SearchPage = () => {
 
   const TrendingButton = ({ title, src }: { title: string; src: string }) => {
     return (
-      <Button pressableStyle={tw`justify-start flex-row p-2`}>
+      <Button size="lg" pressableStyle={tw`justify-start flex-row p-2`}>
         <Image style={tw`h-9 w-9 rounded-xs mr-2`} src={src} />
         <Text color="black">{title}</Text>
       </Button>

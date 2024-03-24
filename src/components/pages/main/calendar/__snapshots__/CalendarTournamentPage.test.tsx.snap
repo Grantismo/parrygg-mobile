@@ -1111,7 +1111,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                             "backgroundColor": "rgba(56, 52, 42, 0.38)",
                           },
                           {
-                            "borderRadius": 14,
+                            "borderRadius": 12,
                           },
                         ]
                       }
@@ -1167,7 +1167,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                             false,
                             false,
                             {
-                              "borderRadius": 14,
+                              "borderRadius": 12,
                             },
                             undefined,
                           ]

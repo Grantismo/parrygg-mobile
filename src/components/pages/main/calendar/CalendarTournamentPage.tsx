@@ -141,7 +141,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
                 <Title style={tw`text-base mt-2`}>$12.99</Title>
               </View>
             </View>
-            <Button size="lg" title="Join Now" />
+            <Button size="md" title="Join Now" />
             <Text color="secondary" style={tw`text-sm text-center mb-4`}>
               Registration closes Mar 23, 2024 8:59 AM UTC+02:00
             </Text>

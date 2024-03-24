@@ -884,7 +884,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                     "backgroundColor": "rgba(56, 52, 42, 0.38)",
                   },
                   {
-                    "borderRadius": 10,
+                    "borderRadius": 14,
                   },
                 ]
               }
@@ -940,7 +940,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                     false,
                     false,
                     {
-                      "borderRadius": 10,
+                      "borderRadius": 14,
                     },
                     undefined,
                   ]
@@ -964,8 +964,7 @@ exports[`ProfileSettingsPage renders correctly 1`] = `
                         },
                         false,
                         {
-                          "fontSize": 14,
-                          "lineHeight": 20,
+                          "fontSize": 16,
                         },
                       ],
                     ]
