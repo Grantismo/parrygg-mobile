@@ -984,6 +984,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             false,
                             false,
                             false,
+                            false,
                             {
                               "borderRadius": 12,
                             },
@@ -1282,6 +1283,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             {
                               "borderColor": "#56E75C",
                             },
+                            false,
                             {
                               "borderRadius": 12,
                             },
@@ -1581,6 +1583,7 @@ exports[`CalendarDatePage renders correctly 1`] = `
                             {
                               "borderColor": "#8A8A8A",
                             },
+                            false,
                             false,
                             {
                               "borderRadius": 12,

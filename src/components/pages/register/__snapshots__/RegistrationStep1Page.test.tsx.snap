@@ -232,6 +232,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                       "flexShrink": 1,
                       "fontSize": 16,
                     },
+                    undefined,
                   ]
                 }
               />
@@ -377,6 +378,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                       "flexShrink": 1,
                       "fontSize": 16,
                     },
+                    undefined,
                   ]
                 }
               />
@@ -522,6 +524,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                       "flexShrink": 1,
                       "fontSize": 16,
                     },
+                    undefined,
                   ]
                 }
               />
@@ -645,6 +648,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                       "flexShrink": 1,
                       "fontSize": 16,
                     },
+                    undefined,
                   ]
                 }
               />
@@ -768,6 +772,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                       "flexShrink": 1,
                       "fontSize": 16,
                     },
+                    undefined,
                   ]
                 }
               />
@@ -867,6 +872,7 @@ exports[`RegistrationStep1Page renders correctly 1`] = `
                   {
                     "borderColor": "#ffd978",
                   },
+                  false,
                   false,
                   false,
                   false,

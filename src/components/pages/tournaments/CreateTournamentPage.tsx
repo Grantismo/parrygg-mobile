@@ -22,7 +22,11 @@ const CreateTournamentPage = () => {
           icon={<Gear />}
           path="/tournaments/settings"
         />
-        <SettingsButton title="Page Content" icon={<Page />} path="" />
+        <SettingsButton
+          title="Page Content"
+          icon={<Page />}
+          path="/tournaments/pagecontent"
+        />
         <SettingsButton title="Events" icon={<Blocks />} path="" />
         <SettingsButton title="Attendees" icon={<Profile />} path="" />
       </View>

@@ -9079,6 +9079,11 @@ react-native-big-calendar@^4.10.0:
   optionalDependencies:
     moment "^2.29.4"
 
+react-native-draglist@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/react-native-draglist/-/react-native-draglist-3.6.0.tgz#06f9cd59b781df858e37f3d8b85a0fcec5404327"
+  integrity sha512-uNzuwbCzkkOoR7tdvhBfMW6n3klreMytN6J9z5y5Q2qm3emVTrXJnFLOsL/aI1bD34u8NkFTEttnOf94LkJFhA==
+
 "react-native-element-dropdown@github:Grantismo/react-native-element-dropdown":
   version "2.10.1"
   resolved "https://codeload.github.com/Grantismo/react-native-element-dropdown/tar.gz/5adc390cc7e47f86e570d4c2f3074863c880f070"

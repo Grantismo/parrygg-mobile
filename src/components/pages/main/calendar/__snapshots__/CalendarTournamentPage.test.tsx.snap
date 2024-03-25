@@ -1166,6 +1166,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                             false,
                             false,
                             false,
+                            false,
                             {
                               "borderRadius": 12,
                             },
@@ -1322,6 +1323,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                                 "paddingBottom": 16,
                                 "paddingTop": 14,
                               },
+                              false,
                               false,
                               false,
                               {
@@ -1543,6 +1545,7 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                                 "paddingBottom": 16,
                                 "paddingTop": 14,
                               },
+                              false,
                               false,
                               false,
                               {

@@ -272,6 +272,7 @@ exports[`ProfilePage renders correctly 1`] = `
                       false,
                       false,
                       false,
+                      false,
                       {
                         "borderRadius": 14,
                       },

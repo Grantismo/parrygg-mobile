@@ -465,6 +465,7 @@ exports[`SearchPage renders correctly 1`] = `
                       false,
                       false,
                       false,
+                      false,
                       {
                         "borderRadius": 14,
                       },
@@ -589,6 +590,7 @@ exports[`SearchPage renders correctly 1`] = `
                       false,
                       false,
                       false,
+                      false,
                       {
                         "borderRadius": 14,
                       },
@@ -710,6 +712,7 @@ exports[`SearchPage renders correctly 1`] = `
                       {
                         "borderColor": "#ffd978",
                       },
+                      false,
                       false,
                       false,
                       false,

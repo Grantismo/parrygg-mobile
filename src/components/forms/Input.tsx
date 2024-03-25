@@ -25,6 +25,7 @@ const Input = forwardRef<any, Props>(
       containerStyle,
       size = "lg",
       rightPressable,
+      style,
       ...inputProps
     }: Props,
     ref,
@@ -61,6 +62,7 @@ const Input = forwardRef<any, Props>(
               style={[
                 styles.defaultWeightFont,
                 tw`flex flex-1 text-base text-white`,
+                style,
               ]}
               {...inputProps}
             />

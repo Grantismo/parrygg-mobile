@@ -23,7 +23,7 @@ interface Props extends PressableProps {
   color?: Color;
   href?: Href;
 }
-type Color = "primary" | "secondary" | "green" | "gray";
+type Color = "primary" | "secondary" | "green" | "gray" | "red";
 type Size = "lg" | "md" | "base" | "sm" | "xs";
 
 const PrimaryWrapper = ({ ...props }: ViewProps) => {
@@ -38,6 +38,10 @@ const GrayWrapper = ({ ...props }: ViewProps) => {
   return <LinearGradient colors={["#636363", "#727272"]} {...props} />;
 };
 
+const RedWrapper = ({ ...props }: ViewProps) => {
+  return <LinearGradient colors={["#F31C0E", "#FF4236"]} {...props} />;
+};
+
 const PassthroughWrapper = ({ ...props }: ViewProps) => {
   return <View {...props} />;
 };
@@ -47,6 +51,7 @@ const PressableWrapperMapping = {
   secondary: PassthroughWrapper,
   green: GreenWrapper,
   gray: GrayWrapper,
+  red: RedWrapper,
 };
 
 interface SizeValues {
@@ -93,6 +98,7 @@ const Button = ({
               tw`border border-[#FFC93F] pt-[14px] pb-[16px] bg-[#151515]`,
             color === "gray" && tw`border-[#8A8A8A]`,
             color === "green" && tw`border-[#56E75C]`,
+            color === "red" && tw`border-[#FF6960]`,
             buttonStyle.buttonStyle,
             pressableStyle,
           ]}
@@ -115,7 +121,8 @@ const Button = ({
                 <Text
                   style={[
                     tw`text-black`,
-                    new Set(["green", "gray"]).has(color) && tw`text-white`,
+                    new Set(["green", "gray", "red"]).has(color) &&
+                      tw`text-white`,
                     buttonStyle.textStyle,
                   ]}
                 >

@@ -744,6 +744,7 @@ exports[`RegistrationStep2Page renders correctly 1`] = `
                   false,
                   false,
                   false,
+                  false,
                   {
                     "borderRadius": 10,
                   },
