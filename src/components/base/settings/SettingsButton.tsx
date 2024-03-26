@@ -31,7 +31,7 @@ const SettingsButton = ({
         end={[1, 0]}
         colors={["#121212", "#1b1b1b"]}
       >
-        <View style={tw`flex-row`} {...props}>
+        <View style={tw`flex-row items-center justify-center`} {...props}>
           {icon &&
             React.cloneElement(icon, { style: tw`mr-3`, color: "white" })}
           {title && <Text>{title}</Text>}

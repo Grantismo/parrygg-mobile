@@ -25,6 +25,7 @@ const Checkbox = ({ color, includePartialState = false }: Props) => {
   };
   return (
     <Pressable
+      hitSlop={10}
       onPress={toggleState}
       style={[
         tw`rounded-[3px] w-6 h-6 items-center justify-center`,

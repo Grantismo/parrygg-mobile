@@ -59,7 +59,7 @@ const Nav = ({
   return (
     <Animated.View
       style={[
-        tw`w-full flex flex-row items-center justify-between pb-3 px-8`,
+        tw`w-full flex flex-row items-center justify-between pb-5 px-8`,
         style,
         {
           paddingTop,

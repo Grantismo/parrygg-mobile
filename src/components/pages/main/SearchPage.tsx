@@ -5,6 +5,7 @@ import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
+import Nav from "@/components/base/navigation/Nav";
 import PlayerTournamentSearchBox from "@/components/base/search/PlayerTournamentSearchBox";
 import PlayerResult from "@/components/player/PlayerResult";
 import tw from "@/lib/tailwind";
@@ -65,7 +66,7 @@ const SearchPage = () => {
   };
 
   return (
-    <Background>
+    <Background scroll>
       <Title color="accent" style={tw` mb-6`}>
         Tournaments <Title>and</Title> Players
       </Title>

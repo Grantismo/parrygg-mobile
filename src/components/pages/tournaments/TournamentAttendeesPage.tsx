@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, ScrollView } from "react-native";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
@@ -11,26 +11,9 @@ import tw from "@/lib/tailwind";
 import Plus from "@assets/icons/Plus";
 import Profile from "@assets/icons/Profile";
 
-const TournamentAttendeesPage = () => {
-  const CheckboxRow = () => {
-    return (
-      <View style={tw`flex-row mt-1 py-3`}>
-        <View style={tw`w-10 items-center`}>
-          <Checkbox color="green" />
-        </View>
-        <View style={tw`w-14 items-center`}>
-          <Checkbox color="yellow" includePartialState />
-        </View>
-        <View style={tw`w-13 items-center`}>
-          <Checkbox color="yellow" includePartialState />
-        </View>
-        <View style={tw`w-14 items-center`}>
-          <Checkbox color="yellow" includePartialState />
-        </View>
-      </View>
-    );
-  };
+const NUM_COLS = 6;
 
+const TournamentAttendeesPage = () => {
   const attendees = [
     { name: "blorppppp", description: "Grant W (he/him)" },
     { name: "destinybond", description: "Mitchell E. (he/him)" },
@@ -38,6 +21,54 @@ const TournamentAttendeesPage = () => {
     { name: "GetCrabby", description: "Geoff (he/him)" },
     { name: "Schwang", description: "Hannah S. (she/her)" },
   ];
+
+  const Col = ({ index }: { index: number }) => {
+    return (
+      <View
+        style={[
+          tw`flex-col items-center justify-center mt-1 py-3`,
+          index === 0 && tw`pl-2`,
+        ]}
+      >
+        <View style={tw`h-12`}>
+          {index === 0 && (
+            <Text color="green" style={tw`mt-1`}>
+              Paid
+            </Text>
+          )}
+          {index > 0 && (
+            <View style={tw`flex-col items-center justify-center w-14`}>
+              <Image
+                style={tw`h-8 w-12`}
+                src="https://imgur.com/dO2poBH.jpeg"
+              />
+              <View style={tw`flex-row mt-1`}>
+                <Profile height={6} color="white" />
+              </View>
+            </View>
+          )}
+        </View>
+
+        {[...Array(attendees.length)].map((_, i: number) => {
+          return (
+            <View key={i} style={tw`h-14`}>
+              {index === 0 && (
+                <View style={tw`w-10 items-center`}>
+                  <Checkbox color="green" />
+                </View>
+              )}
+              {index > 0 && (
+                <View style={tw`w-14 items-center`}>
+                  <Checkbox color="yellow" includePartialState />
+                </View>
+              )}
+            </View>
+          );
+        })}
+      </View>
+    );
+  };
+
   return (
     <Background scroll style={tw`p-0`}>
       <Nav title="Attendees" showBack />
@@ -65,45 +96,11 @@ const TournamentAttendeesPage = () => {
             );
           })}
         </View>
-        <View style={tw`flex-col p-3`}>
-          <View style={tw`flex-row`}>
-            <Text color="green" style={tw`mr-2 mt-1`}>
-              Paid
-            </Text>
-            <View style={tw`flex-col items-center justify-center mr-2`}>
-              <Image
-                style={tw`h-8 w-12`}
-                src="https://imgur.com/dO2poBH.jpeg"
-              />
-              <View style={tw`flex-row mt-1`}>
-                <Profile height={6} color="white" />
-              </View>
-            </View>
-            <View style={tw`flex-col items-center justify-center mr-2`}>
-              <Image
-                style={tw`h-8 w-12`}
-                src="https://imgur.com/dO2poBH.jpeg"
-              />
-              <View style={tw`flex-row mt-1`}>
-                <Profile style={tw`mr-1`} height={6} width={6} color="white" />
-                <Profile height={6} width={6} color="white" />
-              </View>
-            </View>
-            <View style={tw`flex-col items-center justify-center mr-2`}>
-              <Image
-                style={tw`h-8 w-12`}
-                src="https://imgur.com/dO2poBH.jpeg"
-              />
-              <View style={tw`flex-row mt-1`}>
-                <Profile style={tw`mr-1`} height={6} width={6} color="white" />
-                <Profile height={6} width={6} color="white" />
-              </View>
-            </View>
-          </View>
-          {[...Array(attendees.length)].map(() => (
-            <CheckboxRow />
+        <ScrollView horizontal>
+          {[...Array(NUM_COLS)].map((_, i) => (
+            <Col key={i} index={i} />
           ))}
-        </View>
+        </ScrollView>
       </View>
     </Background>
   );

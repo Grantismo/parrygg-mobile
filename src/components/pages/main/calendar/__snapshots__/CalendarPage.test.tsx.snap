@@ -58,7 +58,7 @@ exports[`CalendarPage renders correctly 1`] = `
             "display": "flex",
             "flexDirection": "row",
             "justifyContent": "space-between",
-            "paddingBottom": 12,
+            "paddingBottom": 20,
             "paddingLeft": 32,
             "paddingRight": 32,
             "paddingTop": 40,

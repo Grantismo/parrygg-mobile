@@ -58,7 +58,7 @@ exports[`SettingsPage renders correctly 1`] = `
             "display": "flex",
             "flexDirection": "row",
             "justifyContent": "space-between",
-            "paddingBottom": 12,
+            "paddingBottom": 20,
             "paddingLeft": 32,
             "paddingRight": 32,
             "paddingTop": 40,
@@ -312,7 +312,9 @@ exports[`SettingsPage renders correctly 1`] = `
               <View
                 style={
                   {
+                    "alignItems": "center",
                     "flexDirection": "row",
+                    "justifyContent": "center",
                   }
                 }
               >
