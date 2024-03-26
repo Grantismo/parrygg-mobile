@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
 
-import SearchBox from "@/components/base/SearchBox";
 import Text from "@/components/base/Text";
+import SearchBox from "@/components/base/search/SearchBox";
 import tw from "@/lib/tailwind";
 import SF6 from "@assets/icons/SF6";
 import SSBU from "@assets/icons/SSBU";

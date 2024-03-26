@@ -3,7 +3,6 @@ import { FieldErrors, RegisterOptions, useForm } from "react-hook-form";
 import { GestureResponderEvent, TouchableOpacity, View } from "react-native";
 import DraggableFlatList, {
   RenderItemParams,
-  ScaleDecorator,
   ShadowDecorator,
 } from "react-native-draggable-flatlist";
 

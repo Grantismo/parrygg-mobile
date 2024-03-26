@@ -12,6 +12,7 @@ interface Props {
   renderLeft?: JSX.Element;
   style?: StyleProp<ViewStyle>;
   collapseValue?: Animated.Value; // from 0 to 10000
+  collapsed?: boolean;
 }
 
 const PADDING_TOP = 40;
@@ -22,7 +23,17 @@ const COLLAPSED_PADDING_TOP = 14;
 const COLLAPSED_BACKGROUND_COLOR = "rgba(10, 10, 10, 1)"; // #0A0A0A
 const COLLAPSED_FONT_SIZE = 16;
 
-const Nav = ({ title, showBack, renderLeft, style, collapseValue }: Props) => {
+const Nav = ({
+  title,
+  showBack,
+  renderLeft,
+  style,
+  collapseValue,
+  collapsed = false,
+}: Props) => {
+  if (collapsed) {
+    collapseValue = new Animated.Value(100);
+  }
   const paddingTop = collapseValue
     ? collapseValue.interpolate({
         inputRange: [0, 100],
