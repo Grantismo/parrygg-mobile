@@ -3,9 +3,9 @@ import { Pressable, View, Image } from "react-native";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
-import PlayerTournamentSearchBox from "@/components/base/PlayerTournamentSearchBox";
 import Text from "@/components/base/Text";
 import Title from "@/components/base/Title";
+import PlayerTournamentSearchBox from "@/components/base/search/PlayerTournamentSearchBox";
 import PlayerResult from "@/components/player/PlayerResult";
 import tw from "@/lib/tailwind";
 import RightArrow from "@assets/icons/RightArrow";

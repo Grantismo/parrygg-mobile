@@ -9,7 +9,6 @@ const Layout = () => {
       }}
     >
       <Stack.Screen name="index" />
-      <Stack.Screen name="create" />
     </Stack>
   );
 };
