@@ -441,7 +441,10 @@ exports[`ProfilePage renders correctly 1`] = `
                   {
                     "color": "#FFC93F",
                   },
-                  undefined,
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                  },
                 ]
               }
             >
@@ -849,8 +852,8 @@ exports[`ProfilePage renders correctly 1`] = `
                 "marginBottom": 16,
               },
               {
-                "marginBottom": 24,
-                "marginTop": 16,
+                "marginBottom": 8,
+                "marginTop": 24,
                 "width": "100%",
               },
             ]
@@ -869,7 +872,7 @@ exports[`ProfilePage renders correctly 1`] = `
                   "backgroundColor": "rgba(56, 52, 42, 0.38)",
                 },
                 {
-                  "borderRadius": 10,
+                  "borderRadius": 14,
                 },
               ]
             }
@@ -926,7 +929,7 @@ exports[`ProfilePage renders correctly 1`] = `
                   false,
                   false,
                   {
-                    "borderRadius": 10,
+                    "borderRadius": 14,
                   },
                   undefined,
                 ]

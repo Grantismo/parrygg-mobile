@@ -115,7 +115,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
           </TournamentDetailButton>
           <TournamentDetailButton title="Why attend Genesis" />
           <TournamentDetailButton title="Registration Information" />
-          <Text style={tw`my-2`}>Events</Text>
+          <Text style={tw`mb-4 mt-3`}>Events</Text>
           <Card style={tw`px-6 py-4`}>
             <View style={tw`flex-row items-center justify-start`}>
               <SSBU style={tw`mr-2`} />
@@ -161,7 +161,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
               </Button>
             </View>
           </Card>
-          <Text style={tw`my-2`}>Useful Information</Text>
+          <Text style={tw`mb-4 mt-1`}>Useful Information</Text>
           <TournamentDetailButton title="Attendees" />
           <TournamentDetailButton title="Contact Info" />
           <TournamentDetailButton title="Location">
