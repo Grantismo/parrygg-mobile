@@ -1,7 +1,11 @@
 import React, { useRef, useState } from "react";
 import { FieldErrors, RegisterOptions, useForm } from "react-hook-form";
-import { TouchableOpacity, View } from "react-native";
-import DragList, { DragListRenderItemInfo } from "react-native-draglist";
+import { GestureResponderEvent, TouchableOpacity, View } from "react-native";
+import DraggableFlatList, {
+  RenderItemParams,
+  ScaleDecorator,
+  ShadowDecorator,
+} from "react-native-draggable-flatlist";
 
 import Background from "@/components/base/Background";
 import Button from "@/components/base/Button";
@@ -18,6 +22,10 @@ import RightArrow from "@assets/icons/RightArrow";
 
 interface Props {
   title: string;
+  dragProps: {
+    drag: (event: GestureResponderEvent) => void;
+    disabled: boolean;
+  };
 }
 
 type PageContentSectionData = {
@@ -28,7 +36,10 @@ type PageContentSectionData = {
   pronouns: string;
 };
 
-const PageContentSectionForm = ({ title }: Props) => {
+const PageContentSectionForm = ({
+  title,
+  dragProps: { drag, disabled },
+}: Props) => {
   const errors: FieldErrors<PageContentSectionData> = {};
 
   const validation: RegisterOptions[] = [];
@@ -48,7 +59,13 @@ const PageContentSectionForm = ({ title }: Props) => {
         return (
           <View style={tw`w-full flex flex-row items-center justify-between`}>
             <View style={tw`flex-row items-center justify-center`}>
-              <DragHandle style={tw`mr-2`} color="white" />
+              <TouchableOpacity
+                hitSlop={10}
+                onPressIn={drag}
+                disabled={disabled}
+              >
+                <DragHandle style={tw`mr-2`} color="white" />
+              </TouchableOpacity>
               <Text>{title}</Text>
             </View>
             {!open && <RightArrow color="#FFC93F" />}
@@ -103,13 +120,27 @@ const TournamentPageContentPage = () => {
     "Why attend Genesis",
   ]);
 
+  const renderItem = ({ item, drag, isActive }: RenderItemParams<string>) => {
+    return (
+      <ShadowDecorator>
+        <PageContentSectionForm
+          title={item}
+          dragProps={{ drag, disabled: isActive }}
+        />
+      </ShadowDecorator>
+    );
+  };
+
   return (
     <Background>
       <Nav title="Page Content" showBack />
       <View style={tw`w-full h-full`}>
-        {sections.map((s) => {
-          return <PageContentSectionForm key={s} title={s} />;
-        })}
+        <DraggableFlatList
+          data={sections}
+          onDragEnd={({ data }) => setSections(data)}
+          keyExtractor={(s) => s}
+          renderItem={renderItem}
+        />
         <Button style={tw`w-full`}>
           <Plus color="#1B1B1B" style={tw`mr-2`} />
           <Text color="black">Add Section</Text>

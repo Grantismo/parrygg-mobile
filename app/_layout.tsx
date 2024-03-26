@@ -9,6 +9,7 @@ import {
   setStatusBarStyle,
 } from "expo-status-bar";
 import React, { useEffect } from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import tw from "twrnc";
 
@@ -49,15 +50,17 @@ const RootLayout = () => {
   setStatusBarStyle("light");
   setStatusBarBackgroundColor("#0A0A0A", false);
   return (
-    <SafeAreaProvider
-      style={
-        tw`-mt-[1px]` /* Remove 1 pixel space between the SafeAreaView and upper bound */
-      }
-    >
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      </Stack>
-    </SafeAreaProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SafeAreaProvider
+        style={
+          tw`-mt-[1px]` /* Remove 1 pixel space between the SafeAreaView and upper bound */
+        }
+      >
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        </Stack>
+      </SafeAreaProvider>
+    </GestureHandlerRootView>
   );
 };
 
