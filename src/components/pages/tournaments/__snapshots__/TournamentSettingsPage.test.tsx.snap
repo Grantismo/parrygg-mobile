@@ -251,7 +251,6 @@ exports[`TournamentSettingsPage renders correctly 1`] = `
               style={
                 {
                   "height": "100%",
-                  "marginTop": 24,
                   "width": "100%",
                 }
               }
