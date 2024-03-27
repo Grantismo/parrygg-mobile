@@ -13,10 +13,10 @@ import Profile from "@assets/icons/Profile";
 
 const CreateTournamentPage = () => {
   return (
-    <Background>
+    <Background scroll>
       <Nav title="Create Tournament" showBack />
       <View style={tw`grow`}>
-        <ImageUpload style={tw`mb-6 h-48`} />
+        <ImageUpload style={tw`mb-6 h-48 rounded-lg`} />
         <SettingsButton
           title="Settings"
           icon={<Gear />}

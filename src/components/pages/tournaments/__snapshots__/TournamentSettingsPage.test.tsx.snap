@@ -48,7 +48,13 @@ exports[`TournamentSettingsPage renders correctly 1`] = `
       ]
     }
   >
-    <View>
+    <View
+      style={
+        {
+          "position": "relative",
+        }
+      }
+    >
       <View
         collapsable={false}
         style={
@@ -62,7 +68,10 @@ exports[`TournamentSettingsPage renders correctly 1`] = `
             "paddingLeft": 32,
             "paddingRight": 32,
             "paddingTop": 40,
+            "position": "absolute",
+            "top": 0,
             "width": "100%",
+            "zIndex": 10,
           }
         }
       >
@@ -207,91 +216,174 @@ exports[`TournamentSettingsPage renders correctly 1`] = `
           </View>
         </View>
       </View>
-      <View
-        style={
-          [
-            {
-              "height": "100%",
-              "paddingLeft": 24,
-              "paddingRight": 24,
-            },
-            [
-              {
-                "alignItems": "center",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-              },
-              undefined,
-            ],
-          ]
-        }
+      <RCTScrollView
+        onScroll={[Function]}
+        scrollEventThrottle={5}
       >
-        <View
-          style={
-            {
-              "height": "100%",
-              "marginTop": 24,
-              "width": "100%",
+        <View>
+          <View
+            style={
+              {
+                "height": 90,
+              }
             }
-          }
-        >
+          />
           <View
             style={
               [
                 {
-                  "marginBottom": 4,
-                  "width": "100%",
-                  "zIndex": 0,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
                 },
-                undefined,
+                [
+                  {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ],
               ]
             }
           >
-            <ViewManagerAdapter_ExpoLinearGradient
-              colors={
-                [
-                  4278979596,
-                  4279637526,
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 14,
+                  "height": "100%",
+                  "width": "100%",
                 }
               }
             >
-              <Text
+              <View
                 style={
                   [
                     {
-                      "fontFamily": "Inter_500Medium",
+                      "marginBottom": 4,
+                      "width": "100%",
+                      "zIndex": 0,
                     },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "backgroundColor": "#161616",
-                      "borderRadius": 4,
-                      "color": "#fff",
-                      "fontSize": 12,
-                      "fontWeight": "normal",
-                      "marginLeft": 16,
-                      "paddingBottom": 1.6,
-                      "paddingLeft": 7.2,
-                      "paddingRight": 7.2,
-                      "paddingTop": 1.6,
-                      "position": "absolute",
-                      "top": -12,
-                      "zIndex": 10,
-                    },
+                    undefined,
                   ]
                 }
               >
-                Tournament Name
+                <ViewManagerAdapter_ExpoLinearGradient
+                  colors={
+                    [
+                      4278979596,
+                      4279637526,
+                    ]
+                  }
+                  style={
+                    {
+                      "borderRadius": 14,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "backgroundColor": "#161616",
+                          "borderRadius": 4,
+                          "color": "#fff",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "marginLeft": 16,
+                          "paddingBottom": 1.6,
+                          "paddingLeft": 7.2,
+                          "paddingRight": 7.2,
+                          "paddingTop": 1.6,
+                          "position": "absolute",
+                          "top": -12,
+                          "zIndex": 10,
+                        },
+                      ]
+                    }
+                  >
+                    Tournament Name
+                    <Text
+                      style={
+                        [
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "#fff",
+                          },
+                          {
+                            "color": "#FFC93F",
+                            "fontSize": 12,
+                            "marginLeft": 4,
+                          },
+                        ]
+                      }
+                    >
+                       *
+                    </Text>
+                  </Text>
+                  <View
+                    style={
+                      [
+                        {
+                          "alignItems": "center",
+                          "borderColor": "#fff",
+                          "borderWidth": 1,
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingBottom": 15,
+                          "paddingLeft": 18,
+                          "paddingRight": 18,
+                          "paddingTop": 13,
+                        },
+                        false,
+                        {
+                          "borderRadius": 14,
+                        },
+                      ]
+                    }
+                  >
+                    <TextInput
+                      autoCapitalize="none"
+                      blurOnSubmit={false}
+                      name="tournamentName"
+                      onBlur={[Function]}
+                      onChangeText={[Function]}
+                      onFocus={[Function]}
+                      onSubmitEditing={[Function]}
+                      placeholder="e.g. Your rad tournament"
+                      placeholderTextColor="#6F6F6F"
+                      style={
+                        [
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "color": "#fff",
+                            "display": "flex",
+                            "flexBasis": "0%",
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "fontSize": 16,
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                  </View>
+                </ViewManagerAdapter_ExpoLinearGradient>
                 <Text
                   style={
                     [
@@ -304,140 +396,140 @@ exports[`TournamentSettingsPage renders correctly 1`] = `
                       {
                         "color": "#fff",
                       },
-                      {
-                        "color": "#FFC93F",
-                        "fontSize": 12,
-                        "marginLeft": 4,
-                      },
-                    ]
-                  }
-                >
-                   *
-                </Text>
-              </Text>
-              <View
-                style={
-                  [
-                    {
-                      "alignItems": "center",
-                      "borderColor": "#fff",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "paddingBottom": 15,
-                      "paddingLeft": 18,
-                      "paddingRight": 18,
-                      "paddingTop": 13,
-                    },
-                    false,
-                    {
-                      "borderRadius": 14,
-                    },
-                  ]
-                }
-              >
-                <TextInput
-                  autoCapitalize="none"
-                  blurOnSubmit={false}
-                  name="tournamentName"
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  onSubmitEditing={[Function]}
-                  placeholder="e.g. Your rad tournament"
-                  placeholderTextColor="#6F6F6F"
-                  style={
-                    [
-                      {
-                        "fontFamily": "Inter_500Medium",
-                      },
-                      {
-                        "color": "#fff",
-                        "display": "flex",
-                        "flexBasis": "0%",
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                        "fontSize": 16,
-                      },
                       undefined,
                     ]
                   }
                 />
               </View>
-            </ViewManagerAdapter_ExpoLinearGradient>
-            <Text
-              style={
-                [
-                  {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
-                    "fontSize": 16,
-                  },
-                  {
-                    "color": "#fff",
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              [
-                {
-                  "marginBottom": 4,
-                  "width": "100%",
-                  "zIndex": 0,
-                },
-                undefined,
-              ]
-            }
-          >
-            <ViewManagerAdapter_ExpoLinearGradient
-              colors={
-                [
-                  4278979596,
-                  4279637526,
-                ]
-              }
-              style={
-                {
-                  "borderRadius": 14,
-                }
-              }
-            >
-              <Text
+              <View
                 style={
                   [
                     {
-                      "fontFamily": "Inter_500Medium",
+                      "marginBottom": 4,
+                      "width": "100%",
+                      "zIndex": 0,
                     },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "backgroundColor": "#161616",
-                      "borderRadius": 4,
-                      "color": "#fff",
-                      "fontSize": 12,
-                      "fontWeight": "normal",
-                      "marginLeft": 16,
-                      "paddingBottom": 1.6,
-                      "paddingLeft": 7.2,
-                      "paddingRight": 7.2,
-                      "paddingTop": 1.6,
-                      "position": "absolute",
-                      "top": -12,
-                      "zIndex": 10,
-                    },
+                    undefined,
                   ]
                 }
               >
-                URL
+                <ViewManagerAdapter_ExpoLinearGradient
+                  colors={
+                    [
+                      4278979596,
+                      4279637526,
+                    ]
+                  }
+                  style={
+                    {
+                      "borderRadius": 14,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "backgroundColor": "#161616",
+                          "borderRadius": 4,
+                          "color": "#fff",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "marginLeft": 16,
+                          "paddingBottom": 1.6,
+                          "paddingLeft": 7.2,
+                          "paddingRight": 7.2,
+                          "paddingTop": 1.6,
+                          "position": "absolute",
+                          "top": -12,
+                          "zIndex": 10,
+                        },
+                      ]
+                    }
+                  >
+                    URL
+                    <Text
+                      style={
+                        [
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "#fff",
+                          },
+                          {
+                            "color": "#FFC93F",
+                            "fontSize": 12,
+                            "marginLeft": 4,
+                          },
+                        ]
+                      }
+                    >
+                       *
+                    </Text>
+                  </Text>
+                  <View
+                    style={
+                      [
+                        {
+                          "alignItems": "center",
+                          "borderColor": "#fff",
+                          "borderWidth": 1,
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingBottom": 15,
+                          "paddingLeft": 18,
+                          "paddingRight": 18,
+                          "paddingTop": 13,
+                        },
+                        false,
+                        {
+                          "borderRadius": 14,
+                        },
+                      ]
+                    }
+                  >
+                    <TextInput
+                      autoCapitalize="none"
+                      blurOnSubmit={false}
+                      name="url"
+                      onBlur={[Function]}
+                      onChangeText={[Function]}
+                      onFocus={[Function]}
+                      onSubmitEditing={[Function]}
+                      placeholder="parry.gg/placeholder"
+                      placeholderTextColor="#6F6F6F"
+                      style={
+                        [
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "color": "#fff",
+                            "display": "flex",
+                            "flexBasis": "0%",
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "fontSize": 16,
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                  </View>
+                </ViewManagerAdapter_ExpoLinearGradient>
                 <Text
                   style={
                     [
@@ -450,666 +542,680 @@ exports[`TournamentSettingsPage renders correctly 1`] = `
                       {
                         "color": "#fff",
                       },
-                      {
-                        "color": "#FFC93F",
-                        "fontSize": 12,
-                        "marginLeft": 4,
-                      },
-                    ]
-                  }
-                >
-                   *
-                </Text>
-              </Text>
-              <View
-                style={
-                  [
-                    {
-                      "alignItems": "center",
-                      "borderColor": "#fff",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "paddingBottom": 15,
-                      "paddingLeft": 18,
-                      "paddingRight": 18,
-                      "paddingTop": 13,
-                    },
-                    false,
-                    {
-                      "borderRadius": 14,
-                    },
-                  ]
-                }
-              >
-                <TextInput
-                  autoCapitalize="none"
-                  blurOnSubmit={false}
-                  name="url"
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  onSubmitEditing={[Function]}
-                  placeholder="parry.gg/placeholder"
-                  placeholderTextColor="#6F6F6F"
-                  style={
-                    [
-                      {
-                        "fontFamily": "Inter_500Medium",
-                      },
-                      {
-                        "color": "#fff",
-                        "display": "flex",
-                        "flexBasis": "0%",
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                        "fontSize": 16,
-                      },
                       undefined,
                     ]
                   }
                 />
               </View>
-            </ViewManagerAdapter_ExpoLinearGradient>
-            <Text
-              style={
-                [
-                  {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
-                    "fontSize": 16,
-                  },
-                  {
-                    "color": "#fff",
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              [
-                {
-                  "marginBottom": 4,
-                  "width": "100%",
-                  "zIndex": 0,
-                },
-                undefined,
-              ]
-            }
-          >
-            <ViewManagerAdapter_ExpoLinearGradient
-              colors={
-                [
-                  4278979596,
-                  4279637526,
-                ]
-              }
-              style={
-                {
-                  "borderRadius": 14,
-                }
-              }
-            >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "backgroundColor": "#161616",
-                      "borderRadius": 4,
-                      "color": "#fff",
-                      "fontSize": 12,
-                      "fontWeight": "normal",
-                      "marginLeft": 16,
-                      "paddingBottom": 1.6,
-                      "paddingLeft": 7.2,
-                      "paddingRight": 7.2,
-                      "paddingTop": 1.6,
-                      "position": "absolute",
-                      "top": -12,
-                      "zIndex": 10,
-                    },
-                  ]
-                }
-              >
-                State Date
-              </Text>
               <View
                 style={
                   [
                     {
-                      "alignItems": "center",
-                      "borderColor": "#fff",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "paddingBottom": 15,
-                      "paddingLeft": 18,
-                      "paddingRight": 18,
-                      "paddingTop": 13,
+                      "marginBottom": 4,
+                      "width": "100%",
+                      "zIndex": 0,
                     },
-                    false,
-                    {
-                      "borderRadius": 14,
-                    },
+                    undefined,
                   ]
                 }
               >
-                <TextInput
-                  autoCapitalize="none"
-                  blurOnSubmit={false}
-                  name="startDate"
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  onSubmitEditing={[Function]}
-                  placeholder="mm/dd/yyyy hh:mm"
-                  placeholderTextColor="#6F6F6F"
-                  style={
+                <ViewManagerAdapter_ExpoLinearGradient
+                  colors={
                     [
-                      {
-                        "fontFamily": "Inter_500Medium",
-                      },
-                      {
-                        "color": "#fff",
-                        "display": "flex",
-                        "flexBasis": "0%",
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                        "fontSize": 16,
-                      },
-                      undefined,
+                      4278979596,
+                      4279637526,
                     ]
                   }
-                />
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": undefined,
-                      "expanded": undefined,
-                      "selected": undefined,
-                    }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  hitSlop={10}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
                   style={
                     {
-                      "width": 20,
+                      "borderRadius": 14,
                     }
                   }
                 >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight="14"
-                    bbWidth="19"
-                    fill="none"
-                    focusable={false}
-                    height={14}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
+                  <Text
                     style={
                       [
                         {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
+                          "fontFamily": "Inter_500Medium",
                         },
                         {
-                          "flex": 0,
-                          "height": 14,
-                          "width": 19,
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "backgroundColor": "#161616",
+                          "borderRadius": 4,
+                          "color": "#fff",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "marginLeft": 16,
+                          "paddingBottom": 1.6,
+                          "paddingLeft": 7.2,
+                          "paddingRight": 7.2,
+                          "paddingTop": 1.6,
+                          "position": "absolute",
+                          "top": -12,
+                          "zIndex": 10,
                         },
                       ]
                     }
-                    vbHeight={20}
-                    vbWidth={19}
-                    width={19}
-                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <RNSVGGroup
-                      fill={null}
-                      propList={
-                        [
-                          "fill",
-                        ]
-                      }
-                    >
-                      <RNSVGPath
-                        d="M0.664062 16.5272C0.664062 18.4928 2.00024 19.5913 3.24167 19.5913H15.5339C16.9835 19.5913 18.0122 18.51 18.0122 16.5272V7.83256H0.664062V16.5272ZM11.934 10.9214C11.934 10.6808 12.1431 10.4839 12.3987 10.4839H13.6323C13.8878 10.4839 14.0969 10.6808 14.0969 10.9214V12.1864C14.0969 12.427 13.8878 12.6239 13.6323 12.6239H12.3987C12.1431 12.6239 11.934 12.427 11.934 12.1864V10.9214ZM11.934 14.3355C11.934 14.0949 12.1431 13.898 12.3987 13.898H13.6323C13.8878 13.898 14.0969 14.0949 14.0969 14.3355V15.5698C14.0969 15.8105 13.8878 16.0073 13.6323 16.0073H12.3987C12.1431 16.0073 11.934 15.8105 11.934 15.5698V14.3355ZM8.1968 10.9214C8.1968 10.6808 8.40591 10.4839 8.66149 10.4839H9.93451C10.1901 10.4839 10.3992 10.6808 10.3992 10.9214V12.1864C10.3992 12.427 10.1901 12.6239 9.93451 12.6239H8.66149C8.40591 12.6239 8.1968 12.427 8.1968 12.1864V10.9214ZM8.1968 14.3355C8.1968 14.0949 8.40591 13.898 8.66149 13.898H9.93451C10.1901 13.898 10.3992 14.0949 10.3992 14.3355V15.5698C10.3992 15.8105 10.1901 16.0073 9.93451 16.0073H8.66149C8.40591 16.0073 8.1968 15.8105 8.1968 15.5698V14.3355ZM4.48135 10.9214C4.48135 10.6808 4.69046 10.4839 4.94603 10.4839H6.14509C6.40066 10.4839 6.60977 10.6808 6.60977 10.9214V12.1864C6.60977 12.427 6.40066 12.6239 6.14509 12.6239H4.94603C4.69046 12.6239 4.48135 12.427 4.48135 12.1864V10.9214ZM4.48135 14.3355C4.48135 14.0949 4.69046 13.898 4.94603 13.898H6.14509C6.40066 13.898 6.60977 14.0949 6.60977 14.3355V15.5698C6.60977 15.8105 6.40066 16.0073 6.14509 16.0073H4.94603C4.69046 16.0073 4.48135 15.8105 4.48135 15.5698V14.3355ZM15.5339 3.28026H14.2947V1.53034C14.2947 1.20952 14.0159 0.947038 13.6752 0.947038H12.436C12.0953 0.947038 11.8164 1.20952 11.8164 1.53034V3.28026H6.85983V1.53034C6.85983 1.20952 6.58102 0.947038 6.24025 0.947038H5.0011C4.66033 0.947038 4.38152 1.20952 4.38152 1.53034V3.28026H3.48481C1.47845 3.28026 0.664062 4.71897 0.664062 5.68507V6.70288H18.0122V5.68507C18.0122 4.71897 17.5167 3.28026 15.5339 3.28026Z"
-                        fill={
-                          {
-                            "payload": 4286019447,
-                            "type": 0,
-                          }
-                        }
-                        propList={
-                          [
-                            "fill",
-                          ]
-                        }
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-            </ViewManagerAdapter_ExpoLinearGradient>
-            <Text
-              style={
-                [
-                  {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
-                    "fontSize": 16,
-                  },
-                  {
-                    "color": "#fff",
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              [
-                {
-                  "marginBottom": 4,
-                  "width": "100%",
-                  "zIndex": 0,
-                },
-                undefined,
-              ]
-            }
-          >
-            <ViewManagerAdapter_ExpoLinearGradient
-              colors={
-                [
-                  4278979596,
-                  4279637526,
-                ]
-              }
-              style={
-                {
-                  "borderRadius": 14,
-                }
-              }
-            >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "backgroundColor": "#161616",
-                      "borderRadius": 4,
-                      "color": "#fff",
-                      "fontSize": 12,
-                      "fontWeight": "normal",
-                      "marginLeft": 16,
-                      "paddingBottom": 1.6,
-                      "paddingLeft": 7.2,
-                      "paddingRight": 7.2,
-                      "paddingTop": 1.6,
-                      "position": "absolute",
-                      "top": -12,
-                      "zIndex": 10,
-                    },
-                  ]
-                }
-              >
-                End Date
-              </Text>
-              <View
-                style={
-                  [
-                    {
-                      "alignItems": "center",
-                      "borderColor": "#fff",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "paddingBottom": 15,
-                      "paddingLeft": 18,
-                      "paddingRight": 18,
-                      "paddingTop": 13,
-                    },
-                    false,
-                    {
-                      "borderRadius": 14,
-                    },
-                  ]
-                }
-              >
-                <TextInput
-                  autoCapitalize="none"
-                  blurOnSubmit={false}
-                  name="endDate"
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  onSubmitEditing={[Function]}
-                  placeholder="mm/dd/yyyy hh:mm"
-                  placeholderTextColor="#6F6F6F"
-                  style={
-                    [
-                      {
-                        "fontFamily": "Inter_500Medium",
-                      },
-                      {
-                        "color": "#fff",
-                        "display": "flex",
-                        "flexBasis": "0%",
-                        "flexGrow": 1,
-                        "flexShrink": 1,
-                        "fontSize": 16,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-                <View
-                  accessibilityState={
-                    {
-                      "busy": undefined,
-                      "checked": undefined,
-                      "disabled": undefined,
-                      "expanded": undefined,
-                      "selected": undefined,
-                    }
-                  }
-                  accessibilityValue={
-                    {
-                      "max": undefined,
-                      "min": undefined,
-                      "now": undefined,
-                      "text": undefined,
-                    }
-                  }
-                  accessible={true}
-                  collapsable={false}
-                  focusable={true}
-                  hitSlop={10}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    {
-                      "width": 20,
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight="14"
-                    bbWidth="19"
-                    fill="none"
-                    focusable={false}
-                    height={14}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
+                    State Date
+                  </Text>
+                  <View
                     style={
                       [
                         {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
+                          "alignItems": "center",
+                          "borderColor": "#fff",
+                          "borderWidth": 1,
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingBottom": 15,
+                          "paddingLeft": 18,
+                          "paddingRight": 18,
+                          "paddingTop": 13,
                         },
+                        false,
                         {
-                          "flex": 0,
-                          "height": 14,
-                          "width": 19,
+                          "borderRadius": 14,
                         },
                       ]
                     }
-                    vbHeight={20}
-                    vbWidth={19}
-                    width={19}
-                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <RNSVGGroup
-                      fill={null}
-                      propList={
+                    <TextInput
+                      autoCapitalize="none"
+                      blurOnSubmit={false}
+                      name="startDate"
+                      onBlur={[Function]}
+                      onChangeText={[Function]}
+                      onFocus={[Function]}
+                      onSubmitEditing={[Function]}
+                      placeholder="mm/dd/yyyy hh:mm"
+                      placeholderTextColor="#6F6F6F"
+                      style={
                         [
-                          "fill",
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "color": "#fff",
+                            "display": "flex",
+                            "flexBasis": "0%",
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "fontSize": 16,
+                          },
+                          undefined,
                         ]
                       }
-                    >
-                      <RNSVGPath
-                        d="M0.664062 16.5272C0.664062 18.4928 2.00024 19.5913 3.24167 19.5913H15.5339C16.9835 19.5913 18.0122 18.51 18.0122 16.5272V7.83256H0.664062V16.5272ZM11.934 10.9214C11.934 10.6808 12.1431 10.4839 12.3987 10.4839H13.6323C13.8878 10.4839 14.0969 10.6808 14.0969 10.9214V12.1864C14.0969 12.427 13.8878 12.6239 13.6323 12.6239H12.3987C12.1431 12.6239 11.934 12.427 11.934 12.1864V10.9214ZM11.934 14.3355C11.934 14.0949 12.1431 13.898 12.3987 13.898H13.6323C13.8878 13.898 14.0969 14.0949 14.0969 14.3355V15.5698C14.0969 15.8105 13.8878 16.0073 13.6323 16.0073H12.3987C12.1431 16.0073 11.934 15.8105 11.934 15.5698V14.3355ZM8.1968 10.9214C8.1968 10.6808 8.40591 10.4839 8.66149 10.4839H9.93451C10.1901 10.4839 10.3992 10.6808 10.3992 10.9214V12.1864C10.3992 12.427 10.1901 12.6239 9.93451 12.6239H8.66149C8.40591 12.6239 8.1968 12.427 8.1968 12.1864V10.9214ZM8.1968 14.3355C8.1968 14.0949 8.40591 13.898 8.66149 13.898H9.93451C10.1901 13.898 10.3992 14.0949 10.3992 14.3355V15.5698C10.3992 15.8105 10.1901 16.0073 9.93451 16.0073H8.66149C8.40591 16.0073 8.1968 15.8105 8.1968 15.5698V14.3355ZM4.48135 10.9214C4.48135 10.6808 4.69046 10.4839 4.94603 10.4839H6.14509C6.40066 10.4839 6.60977 10.6808 6.60977 10.9214V12.1864C6.60977 12.427 6.40066 12.6239 6.14509 12.6239H4.94603C4.69046 12.6239 4.48135 12.427 4.48135 12.1864V10.9214ZM4.48135 14.3355C4.48135 14.0949 4.69046 13.898 4.94603 13.898H6.14509C6.40066 13.898 6.60977 14.0949 6.60977 14.3355V15.5698C6.60977 15.8105 6.40066 16.0073 6.14509 16.0073H4.94603C4.69046 16.0073 4.48135 15.8105 4.48135 15.5698V14.3355ZM15.5339 3.28026H14.2947V1.53034C14.2947 1.20952 14.0159 0.947038 13.6752 0.947038H12.436C12.0953 0.947038 11.8164 1.20952 11.8164 1.53034V3.28026H6.85983V1.53034C6.85983 1.20952 6.58102 0.947038 6.24025 0.947038H5.0011C4.66033 0.947038 4.38152 1.20952 4.38152 1.53034V3.28026H3.48481C1.47845 3.28026 0.664062 4.71897 0.664062 5.68507V6.70288H18.0122V5.68507C18.0122 4.71897 17.5167 3.28026 15.5339 3.28026Z"
-                        fill={
-                          {
-                            "payload": 4286019447,
-                            "type": 0,
-                          }
+                    />
+                    <View
+                      accessibilityState={
+                        {
+                          "busy": undefined,
+                          "checked": undefined,
+                          "disabled": undefined,
+                          "expanded": undefined,
+                          "selected": undefined,
                         }
-                        propList={
+                      }
+                      accessibilityValue={
+                        {
+                          "max": undefined,
+                          "min": undefined,
+                          "now": undefined,
+                          "text": undefined,
+                        }
+                      }
+                      accessible={true}
+                      collapsable={false}
+                      focusable={true}
+                      hitSlop={10}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        {
+                          "width": 20,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight="14"
+                        bbWidth="19"
+                        fill="none"
+                        focusable={false}
+                        height={14}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        style={
                           [
-                            "fill",
+                            {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            {
+                              "flex": 0,
+                              "height": 14,
+                              "width": 19,
+                            },
                           ]
                         }
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-            </ViewManagerAdapter_ExpoLinearGradient>
-            <Text
-              style={
-                [
-                  {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
-                    "fontSize": 16,
-                  },
-                  {
-                    "color": "#fff",
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              [
-                {
-                  "marginBottom": 4,
-                  "width": "100%",
-                  "zIndex": 0,
-                },
-                undefined,
-              ]
-            }
-          >
-            <ViewManagerAdapter_ExpoLinearGradient
-              colors={
-                [
-                  4278979596,
-                  4279637526,
-                ]
-              }
-              style={
-                {
-                  "borderRadius": 14,
-                }
-              }
-            >
-              <Text
-                style={
-                  [
-                    {
-                      "fontFamily": "Inter_500Medium",
-                    },
-                    {
-                      "fontSize": 16,
-                    },
-                    {
-                      "color": "#fff",
-                    },
-                    {
-                      "backgroundColor": "#161616",
-                      "borderRadius": 4,
-                      "color": "#fff",
-                      "fontSize": 12,
-                      "fontWeight": "normal",
-                      "marginLeft": 16,
-                      "paddingBottom": 1.6,
-                      "paddingLeft": 7.2,
-                      "paddingRight": 7.2,
-                      "paddingTop": 1.6,
-                      "position": "absolute",
-                      "top": -12,
-                      "zIndex": 10,
-                    },
-                  ]
-                }
-              >
-                Venue Address
-              </Text>
-              <View
-                style={
-                  [
-                    {
-                      "alignItems": "center",
-                      "borderColor": "#fff",
-                      "borderWidth": 1,
-                      "flexDirection": "row",
-                      "justifyContent": "space-between",
-                      "paddingBottom": 15,
-                      "paddingLeft": 18,
-                      "paddingRight": 18,
-                      "paddingTop": 13,
-                    },
-                    false,
-                    {
-                      "borderRadius": 14,
-                    },
-                  ]
-                }
-              >
-                <TextInput
-                  autoCapitalize="none"
-                  blurOnSubmit={false}
-                  name="address"
-                  onBlur={[Function]}
-                  onChangeText={[Function]}
-                  onFocus={[Function]}
-                  onSubmitEditing={[Function]}
-                  placeholder="10501 FGCU Blvd, Fort Myers"
-                  placeholderTextColor="#6F6F6F"
+                        vbHeight={20}
+                        vbWidth={19}
+                        width={19}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <RNSVGGroup
+                          fill={null}
+                          propList={
+                            [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M0.664062 16.5272C0.664062 18.4928 2.00024 19.5913 3.24167 19.5913H15.5339C16.9835 19.5913 18.0122 18.51 18.0122 16.5272V7.83256H0.664062V16.5272ZM11.934 10.9214C11.934 10.6808 12.1431 10.4839 12.3987 10.4839H13.6323C13.8878 10.4839 14.0969 10.6808 14.0969 10.9214V12.1864C14.0969 12.427 13.8878 12.6239 13.6323 12.6239H12.3987C12.1431 12.6239 11.934 12.427 11.934 12.1864V10.9214ZM11.934 14.3355C11.934 14.0949 12.1431 13.898 12.3987 13.898H13.6323C13.8878 13.898 14.0969 14.0949 14.0969 14.3355V15.5698C14.0969 15.8105 13.8878 16.0073 13.6323 16.0073H12.3987C12.1431 16.0073 11.934 15.8105 11.934 15.5698V14.3355ZM8.1968 10.9214C8.1968 10.6808 8.40591 10.4839 8.66149 10.4839H9.93451C10.1901 10.4839 10.3992 10.6808 10.3992 10.9214V12.1864C10.3992 12.427 10.1901 12.6239 9.93451 12.6239H8.66149C8.40591 12.6239 8.1968 12.427 8.1968 12.1864V10.9214ZM8.1968 14.3355C8.1968 14.0949 8.40591 13.898 8.66149 13.898H9.93451C10.1901 13.898 10.3992 14.0949 10.3992 14.3355V15.5698C10.3992 15.8105 10.1901 16.0073 9.93451 16.0073H8.66149C8.40591 16.0073 8.1968 15.8105 8.1968 15.5698V14.3355ZM4.48135 10.9214C4.48135 10.6808 4.69046 10.4839 4.94603 10.4839H6.14509C6.40066 10.4839 6.60977 10.6808 6.60977 10.9214V12.1864C6.60977 12.427 6.40066 12.6239 6.14509 12.6239H4.94603C4.69046 12.6239 4.48135 12.427 4.48135 12.1864V10.9214ZM4.48135 14.3355C4.48135 14.0949 4.69046 13.898 4.94603 13.898H6.14509C6.40066 13.898 6.60977 14.0949 6.60977 14.3355V15.5698C6.60977 15.8105 6.40066 16.0073 6.14509 16.0073H4.94603C4.69046 16.0073 4.48135 15.8105 4.48135 15.5698V14.3355ZM15.5339 3.28026H14.2947V1.53034C14.2947 1.20952 14.0159 0.947038 13.6752 0.947038H12.436C12.0953 0.947038 11.8164 1.20952 11.8164 1.53034V3.28026H6.85983V1.53034C6.85983 1.20952 6.58102 0.947038 6.24025 0.947038H5.0011C4.66033 0.947038 4.38152 1.20952 4.38152 1.53034V3.28026H3.48481C1.47845 3.28026 0.664062 4.71897 0.664062 5.68507V6.70288H18.0122V5.68507C18.0122 4.71897 17.5167 3.28026 15.5339 3.28026Z"
+                            fill={
+                              {
+                                "payload": 4286019447,
+                                "type": 0,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                  </View>
+                </ViewManagerAdapter_ExpoLinearGradient>
+                <Text
                   style={
                     [
                       {
                         "fontFamily": "Inter_500Medium",
                       },
                       {
-                        "color": "#fff",
-                        "display": "flex",
-                        "flexBasis": "0%",
-                        "flexGrow": 1,
-                        "flexShrink": 1,
                         "fontSize": 16,
+                      },
+                      {
+                        "color": "#fff",
                       },
                       undefined,
                     ]
                   }
                 />
               </View>
-            </ViewManagerAdapter_ExpoLinearGradient>
-            <Text
-              style={
-                [
-                  {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
-                    "fontSize": 16,
-                  },
-                  {
-                    "color": "#fff",
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              [
-                {
-                  "marginBottom": 16,
-                },
-                {
-                  "width": "100%",
-                },
-              ]
-            }
-          >
-            <ViewManagerAdapter_ExpoLinearGradient
-              colors={
-                [
-                  4293899034,
-                  4294953798,
-                ]
-              }
-              style={
-                [
-                  {
-                    "backgroundColor": "rgba(56, 52, 42, 0.38)",
-                  },
-                  {
-                    "borderRadius": 10,
-                  },
-                ]
-              }
-            >
+              <View
+                style={
+                  [
+                    {
+                      "marginBottom": 4,
+                      "width": "100%",
+                      "zIndex": 0,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <ViewManagerAdapter_ExpoLinearGradient
+                  colors={
+                    [
+                      4278979596,
+                      4279637526,
+                    ]
+                  }
+                  style={
+                    {
+                      "borderRadius": 14,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "backgroundColor": "#161616",
+                          "borderRadius": 4,
+                          "color": "#fff",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "marginLeft": 16,
+                          "paddingBottom": 1.6,
+                          "paddingLeft": 7.2,
+                          "paddingRight": 7.2,
+                          "paddingTop": 1.6,
+                          "position": "absolute",
+                          "top": -12,
+                          "zIndex": 10,
+                        },
+                      ]
+                    }
+                  >
+                    End Date
+                  </Text>
+                  <View
+                    style={
+                      [
+                        {
+                          "alignItems": "center",
+                          "borderColor": "#fff",
+                          "borderWidth": 1,
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingBottom": 15,
+                          "paddingLeft": 18,
+                          "paddingRight": 18,
+                          "paddingTop": 13,
+                        },
+                        false,
+                        {
+                          "borderRadius": 14,
+                        },
+                      ]
+                    }
+                  >
+                    <TextInput
+                      autoCapitalize="none"
+                      blurOnSubmit={false}
+                      name="endDate"
+                      onBlur={[Function]}
+                      onChangeText={[Function]}
+                      onFocus={[Function]}
+                      onSubmitEditing={[Function]}
+                      placeholder="mm/dd/yyyy hh:mm"
+                      placeholderTextColor="#6F6F6F"
+                      style={
+                        [
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "color": "#fff",
+                            "display": "flex",
+                            "flexBasis": "0%",
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "fontSize": 16,
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                    <View
+                      accessibilityState={
+                        {
+                          "busy": undefined,
+                          "checked": undefined,
+                          "disabled": undefined,
+                          "expanded": undefined,
+                          "selected": undefined,
+                        }
+                      }
+                      accessibilityValue={
+                        {
+                          "max": undefined,
+                          "min": undefined,
+                          "now": undefined,
+                          "text": undefined,
+                        }
+                      }
+                      accessible={true}
+                      collapsable={false}
+                      focusable={true}
+                      hitSlop={10}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        {
+                          "width": 20,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight="14"
+                        bbWidth="19"
+                        fill="none"
+                        focusable={false}
+                        height={14}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        style={
+                          [
+                            {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            {
+                              "flex": 0,
+                              "height": 14,
+                              "width": 19,
+                            },
+                          ]
+                        }
+                        vbHeight={20}
+                        vbWidth={19}
+                        width={19}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <RNSVGGroup
+                          fill={null}
+                          propList={
+                            [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M0.664062 16.5272C0.664062 18.4928 2.00024 19.5913 3.24167 19.5913H15.5339C16.9835 19.5913 18.0122 18.51 18.0122 16.5272V7.83256H0.664062V16.5272ZM11.934 10.9214C11.934 10.6808 12.1431 10.4839 12.3987 10.4839H13.6323C13.8878 10.4839 14.0969 10.6808 14.0969 10.9214V12.1864C14.0969 12.427 13.8878 12.6239 13.6323 12.6239H12.3987C12.1431 12.6239 11.934 12.427 11.934 12.1864V10.9214ZM11.934 14.3355C11.934 14.0949 12.1431 13.898 12.3987 13.898H13.6323C13.8878 13.898 14.0969 14.0949 14.0969 14.3355V15.5698C14.0969 15.8105 13.8878 16.0073 13.6323 16.0073H12.3987C12.1431 16.0073 11.934 15.8105 11.934 15.5698V14.3355ZM8.1968 10.9214C8.1968 10.6808 8.40591 10.4839 8.66149 10.4839H9.93451C10.1901 10.4839 10.3992 10.6808 10.3992 10.9214V12.1864C10.3992 12.427 10.1901 12.6239 9.93451 12.6239H8.66149C8.40591 12.6239 8.1968 12.427 8.1968 12.1864V10.9214ZM8.1968 14.3355C8.1968 14.0949 8.40591 13.898 8.66149 13.898H9.93451C10.1901 13.898 10.3992 14.0949 10.3992 14.3355V15.5698C10.3992 15.8105 10.1901 16.0073 9.93451 16.0073H8.66149C8.40591 16.0073 8.1968 15.8105 8.1968 15.5698V14.3355ZM4.48135 10.9214C4.48135 10.6808 4.69046 10.4839 4.94603 10.4839H6.14509C6.40066 10.4839 6.60977 10.6808 6.60977 10.9214V12.1864C6.60977 12.427 6.40066 12.6239 6.14509 12.6239H4.94603C4.69046 12.6239 4.48135 12.427 4.48135 12.1864V10.9214ZM4.48135 14.3355C4.48135 14.0949 4.69046 13.898 4.94603 13.898H6.14509C6.40066 13.898 6.60977 14.0949 6.60977 14.3355V15.5698C6.60977 15.8105 6.40066 16.0073 6.14509 16.0073H4.94603C4.69046 16.0073 4.48135 15.8105 4.48135 15.5698V14.3355ZM15.5339 3.28026H14.2947V1.53034C14.2947 1.20952 14.0159 0.947038 13.6752 0.947038H12.436C12.0953 0.947038 11.8164 1.20952 11.8164 1.53034V3.28026H6.85983V1.53034C6.85983 1.20952 6.58102 0.947038 6.24025 0.947038H5.0011C4.66033 0.947038 4.38152 1.20952 4.38152 1.53034V3.28026H3.48481C1.47845 3.28026 0.664062 4.71897 0.664062 5.68507V6.70288H18.0122V5.68507C18.0122 4.71897 17.5167 3.28026 15.5339 3.28026Z"
+                            fill={
+                              {
+                                "payload": 4286019447,
+                                "type": 0,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                  </View>
+                </ViewManagerAdapter_ExpoLinearGradient>
+                <Text
+                  style={
+                    [
+                      {
+                        "fontFamily": "Inter_500Medium",
+                      },
+                      {
+                        "fontSize": 16,
+                      },
+                      {
+                        "color": "#fff",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "marginBottom": 4,
+                      "width": "100%",
+                      "zIndex": 0,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <ViewManagerAdapter_ExpoLinearGradient
+                  colors={
+                    [
+                      4278979596,
+                      4279637526,
+                    ]
+                  }
+                  style={
+                    {
+                      "borderRadius": 14,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "fontFamily": "Inter_500Medium",
+                        },
+                        {
+                          "fontSize": 16,
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                        {
+                          "backgroundColor": "#161616",
+                          "borderRadius": 4,
+                          "color": "#fff",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "marginLeft": 16,
+                          "paddingBottom": 1.6,
+                          "paddingLeft": 7.2,
+                          "paddingRight": 7.2,
+                          "paddingTop": 1.6,
+                          "position": "absolute",
+                          "top": -12,
+                          "zIndex": 10,
+                        },
+                      ]
+                    }
+                  >
+                    Venue Address
+                  </Text>
+                  <View
+                    style={
+                      [
+                        {
+                          "alignItems": "center",
+                          "borderColor": "#fff",
+                          "borderWidth": 1,
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingBottom": 15,
+                          "paddingLeft": 18,
+                          "paddingRight": 18,
+                          "paddingTop": 13,
+                        },
+                        false,
+                        {
+                          "borderRadius": 14,
+                        },
+                      ]
+                    }
+                  >
+                    <TextInput
+                      autoCapitalize="none"
+                      blurOnSubmit={false}
+                      name="address"
+                      onBlur={[Function]}
+                      onChangeText={[Function]}
+                      onFocus={[Function]}
+                      onSubmitEditing={[Function]}
+                      placeholder="10501 FGCU Blvd, Fort Myers"
+                      placeholderTextColor="#6F6F6F"
+                      style={
+                        [
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "color": "#fff",
+                            "display": "flex",
+                            "flexBasis": "0%",
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "fontSize": 16,
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                  </View>
+                </ViewManagerAdapter_ExpoLinearGradient>
+                <Text
+                  style={
+                    [
+                      {
+                        "fontFamily": "Inter_500Medium",
+                      },
+                      {
+                        "fontSize": 16,
+                      },
+                      {
+                        "color": "#fff",
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "marginBottom": 16,
+                    },
+                    {
+                      "width": "100%",
+                    },
+                  ]
+                }
+              >
+                <ViewManagerAdapter_ExpoLinearGradient
+                  colors={
+                    [
+                      4293899034,
+                      4294953798,
+                    ]
+                  }
+                  style={
+                    [
+                      {
+                        "backgroundColor": "rgba(56, 52, 42, 0.38)",
+                      },
+                      {
+                        "borderRadius": 14,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      [
+                        {
+                          "alignItems": "center",
+                          "borderWidth": 2,
+                          "color": "#000",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "justifyContent": "center",
+                          "paddingBottom": 15,
+                          "paddingLeft": 24,
+                          "paddingRight": 24,
+                          "paddingTop": 13,
+                        },
+                        {
+                          "borderColor": "#ffd978",
+                        },
+                        false,
+                        false,
+                        false,
+                        false,
+                        {
+                          "borderRadius": 14,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "fontFamily": "Inter_500Medium",
+                          },
+                          {
+                            "fontSize": 16,
+                          },
+                          {
+                            "color": "#fff",
+                          },
+                          [
+                            {
+                              "color": "#000",
+                            },
+                            false,
+                            {
+                              "fontSize": 16,
+                            },
+                          ],
+                        ]
+                      }
+                    >
+                      Save Changes
+                    </Text>
+                  </View>
+                </ViewManagerAdapter_ExpoLinearGradient>
+              </View>
               <View
                 accessibilityState={
                   {
@@ -1141,31 +1247,9 @@ exports[`TournamentSettingsPage renders correctly 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 style={
-                  [
-                    {
-                      "alignItems": "center",
-                      "borderWidth": 2,
-                      "color": "#000",
-                      "display": "flex",
-                      "flexDirection": "row",
-                      "justifyContent": "center",
-                      "paddingBottom": 15,
-                      "paddingLeft": 24,
-                      "paddingRight": 24,
-                      "paddingTop": 13,
-                    },
-                    {
-                      "borderColor": "#ffd978",
-                    },
-                    false,
-                    false,
-                    false,
-                    false,
-                    {
-                      "borderRadius": 10,
-                    },
-                    undefined,
-                  ]
+                  {
+                    "marginTop": 8,
+                  }
                 }
               >
                 <Text
@@ -1178,85 +1262,21 @@ exports[`TournamentSettingsPage renders correctly 1`] = `
                         "fontSize": 16,
                       },
                       {
-                        "color": "#fff",
+                        "color": "#FA3024",
                       },
-                      [
-                        {
-                          "color": "#000",
-                        },
-                        false,
-                        {
-                          "fontSize": 14,
-                          "lineHeight": 20,
-                        },
-                      ],
+                      {
+                        "textAlign": "center",
+                      },
                     ]
                   }
                 >
-                  Save Changes
+                  Delete Tournament
                 </Text>
               </View>
-            </ViewManagerAdapter_ExpoLinearGradient>
-          </View>
-          <View
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": undefined,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              {
-                "marginTop": 8,
-              }
-            }
-          >
-            <Text
-              style={
-                [
-                  {
-                    "fontFamily": "Inter_500Medium",
-                  },
-                  {
-                    "fontSize": 16,
-                  },
-                  {
-                    "color": "#FA3024",
-                  },
-                  {
-                    "textAlign": "center",
-                  },
-                ]
-              }
-            >
-              Delete Tournament
-            </Text>
+            </View>
           </View>
         </View>
-      </View>
+      </RCTScrollView>
     </View>
   </RNCSafeAreaView>
 </View>

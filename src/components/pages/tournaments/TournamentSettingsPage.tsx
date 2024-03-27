@@ -30,10 +30,10 @@ const TournamentSettingsPage = () => {
   };
 
   return (
-    <Background>
+    <Background scroll>
       <Nav title="Settings" showBack renderLeft={<Trash color="#777777" />} />
 
-      <View style={tw`mt-6 w-full h-full`}>
+      <View style={tw`mt w-full h-full`}>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
           <Input
             name="tournamentName"
@@ -63,6 +63,7 @@ const TournamentSettingsPage = () => {
             placeholder="10501 FGCU Blvd, Fort Myers"
           />
           <Button
+            size="lg"
             style={tw`w-full`}
             title="Save Changes"
             onPress={handleSubmit(onSubmit)}

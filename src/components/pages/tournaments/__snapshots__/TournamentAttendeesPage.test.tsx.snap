@@ -199,10 +199,8 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
             <View
               style={
                 {
-                  "paddingBottom": 24,
                   "paddingLeft": 24,
                   "paddingRight": 24,
-                  "paddingTop": 24,
                   "width": "100%",
                 }
               }
@@ -232,7 +230,7 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         "backgroundColor": "rgba(56, 52, 42, 0.38)",
                       },
                       {
-                        "borderRadius": 10,
+                        "borderRadius": 14,
                       },
                     ]
                   }
@@ -289,7 +287,7 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         false,
                         false,
                         {
-                          "borderRadius": 10,
+                          "borderRadius": 14,
                         },
                         undefined,
                       ]
@@ -535,11 +533,12 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                     "borderBottomRightRadius": 10,
                     "borderTopRightRadius": 10,
                     "flexDirection": "column",
+                    "marginTop": 4,
                     "paddingBottom": 12,
                     "paddingLeft": 12,
                     "paddingRight": 12,
                     "paddingTop": 12,
-                    "width": 168,
+                    "width": 152,
                   }
                 }
               >
@@ -555,7 +554,10 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                       {
                         "color": "#fff",
                       },
-                      undefined,
+                      {
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                      },
                     ]
                   }
                 >
@@ -600,7 +602,10 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#fff",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
@@ -619,11 +624,14 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#777",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
-                    Grant W (he/him)
+                    Grant W
                   </Text>
                 </View>
                 <View
@@ -647,7 +655,10 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#fff",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
@@ -666,11 +677,14 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#777",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
-                    Mitchell E. (he/him)
+                    Mitchell E.
                   </Text>
                 </View>
                 <View
@@ -694,7 +708,10 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#fff",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
@@ -713,11 +730,14 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#777",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
-                    Adam J. (he/him)
+                    Adam J.
                   </Text>
                 </View>
                 <View
@@ -741,7 +761,10 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#fff",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
@@ -760,11 +783,14 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#777",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
-                    Geoff (he/him)
+                    Geoff
                   </Text>
                 </View>
                 <View
@@ -788,7 +814,10 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#fff",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
@@ -807,11 +836,14 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         {
                           "color": "#777",
                         },
-                        undefined,
+                        {
+                          "fontSize": 14,
+                          "lineHeight": 20,
+                        },
                       ]
                     }
                   >
-                    Hannah S. (she/her)
+                    Hannah S.
                   </Text>
                 </View>
               </View>
@@ -1218,7 +1250,7 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         }
                       >
                         <Image
-                          src="https://imgur.com/dO2poBH.jpeg"
+                          src="https://i.imgur.com/ETSVJpG.png"
                           style={
                             {
                               "height": 32,
@@ -1643,7 +1675,7 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         }
                       >
                         <Image
-                          src="https://imgur.com/dO2poBH.jpeg"
+                          src="https://i.imgur.com/ETSVJpG.png"
                           style={
                             {
                               "height": 32,
@@ -2068,7 +2100,7 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         }
                       >
                         <Image
-                          src="https://imgur.com/dO2poBH.jpeg"
+                          src="https://i.imgur.com/ETSVJpG.png"
                           style={
                             {
                               "height": 32,
@@ -2493,7 +2525,7 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         }
                       >
                         <Image
-                          src="https://imgur.com/dO2poBH.jpeg"
+                          src="https://i.imgur.com/ETSVJpG.png"
                           style={
                             {
                               "height": 32,
@@ -2918,7 +2950,7 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
                         }
                       >
                         <Image
-                          src="https://imgur.com/dO2poBH.jpeg"
+                          src="https://i.imgur.com/ETSVJpG.png"
                           style={
                             {
                               "height": 32,

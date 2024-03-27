@@ -75,7 +75,7 @@ const Nav = ({
       >
         {title}
       </Animated.Text>
-      <View style={tw`w-14 flex flex-row justify-end`}>
+      <View style={tw`w-14 flex flex-row justify-end `}>
         {showBack && (
           <Pressable
             onPress={() => {

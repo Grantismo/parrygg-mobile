@@ -815,8 +815,8 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                         "color": "#fff",
                       },
                       {
-                        "marginBottom": 8,
-                        "marginTop": 8,
+                        "marginBottom": 16,
+                        "marginTop": 12,
                       },
                     ]
                   }
@@ -1649,8 +1649,8 @@ exports[`CalendarTournamentPage renders correctly 1`] = `
                         "color": "#fff",
                       },
                       {
-                        "marginBottom": 8,
-                        "marginTop": 8,
+                        "marginBottom": 16,
+                        "marginTop": 4,
                       },
                     ]
                   }

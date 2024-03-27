@@ -125,7 +125,9 @@ const ProfilePage = () => {
               <Text color="secondary">John D. (he/him)</Text>
             </View>
             <View style={tw`absolute mt-3 right-0`}>
-              <Text color="accent">Edit</Text>
+              <Text color="accent" style={tw`text-sm`}>
+                Edit
+              </Text>
             </View>
           </View>
           <View style={tw`flex flex-row items-center`}>
@@ -158,7 +160,11 @@ const ProfilePage = () => {
           </View>
         </View>
         <View style={tw`bg-[#1B1B1B] w-full px-6 pb-6`}>
-          <Button style={tw`w-full mb-6 mt-4`} href="/tournaments/create">
+          <Button
+            size="lg"
+            style={tw`w-full mb-2 mt-6`}
+            href="/tournaments/create"
+          >
             <Plus color="#1B1B1B" style={tw`mr-2`} />
             <Text color="black">Create Tournament</Text>
           </Button>

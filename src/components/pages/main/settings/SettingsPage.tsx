@@ -12,7 +12,7 @@ import ProfileIcon from "@assets/icons/Profile";
 
 const SettingsPage = () => {
   return (
-    <Background>
+    <Background scroll>
       <Nav title="Settings" />
       <View style={tw`grow w-full pb-2`}>
         <View
@@ -31,7 +31,7 @@ const SettingsPage = () => {
           path="/settings/profile"
         />
         <View style={tw`grow`} />
-        <Button title="Log Out" />
+        <Button size="lg" title="Log Out" />
       </View>
     </Background>
   );

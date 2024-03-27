@@ -43,9 +43,9 @@ const EventButton = ({
       <View style={tw`w-full flex flex-row items-center justify-between`}>
         <View style={tw`flex-row items-center justify-center`}>
           <TouchableOpacity hitSlop={10} onPressIn={drag} disabled={disabled}>
-            <DragHandle style={tw`mr-2`} color="#777777" />
+            <DragHandle style={tw`mr-3`} color="#777777" />
           </TouchableOpacity>
-          <Image style={tw`h-8 w-12 mr-2`} src={imgSrc} />
+          <Image style={tw`h-6 w-10 mr-4 rounded-2xs`} src={imgSrc} />
           <Text>{title}</Text>
         </View>
       </View>
@@ -55,9 +55,9 @@ const EventButton = ({
 
 const TournamentEventsPage = () => {
   const [events, setEvents] = useState<Event[]>([
-    { title: "SSBU: Singles", imgSrc: "https://imgur.com/dO2poBH.jpeg" },
-    { title: "SSBU: Doubles", imgSrc: "https://imgur.com/dO2poBH.jpeg" },
-    { title: "SF6: Singles", imgSrc: "https://imgur.com/6CA6m0f.jpeg" },
+    { title: "SSBU: Singles", imgSrc: "https://i.imgur.com/I3HiTD7.png" },
+    { title: "SSBU: Doubles", imgSrc: "https://i.imgur.com/ETSVJpG.png" },
+    { title: "SF6: Singles", imgSrc: "https://i.imgur.com/I3HiTD7.png" },
   ]);
 
   const renderItem = ({ item, drag, isActive }: RenderItemParams<Event>) => {
@@ -78,7 +78,7 @@ const TournamentEventsPage = () => {
           keyExtractor={(s) => s.title}
           renderItem={renderItem}
         />
-        <Button style={tw`w-full`}>
+        <Button size="lg" style={tw`w-full`}>
           <Plus color="#1B1B1B" style={tw`mr-2`} />
           <Text color="black">Add Event</Text>
         </Button>

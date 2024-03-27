@@ -22,7 +22,7 @@ const SettingsButton = ({
 }: SettingButtonProps) => {
   return (
     <Pressable
-      style={tw`w-full rounded-lg border border-[#777777]  mb-6 bg-[#151515]`}
+      style={tw`w-full rounded-lg border border-[#777777]  mb-5 bg-[#151515]`}
       onPress={() => router.push(path)}
     >
       <LinearGradient
@@ -33,7 +33,7 @@ const SettingsButton = ({
       >
         <View style={tw`flex-row items-center justify-center`} {...props}>
           {icon &&
-            React.cloneElement(icon, { style: tw`mr-3`, color: "white" })}
+            React.cloneElement(icon, { style: tw`mr-3.5`, color: "white" })}
           {title && <Text>{title}</Text>}
           {children && children}
         </View>
