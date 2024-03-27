@@ -4,10 +4,10 @@ import React from "react";
 import TabButton from "@/components/base/navigation/TabButton";
 import tw from "@/lib/tailwind";
 import Calendar from "@assets/icons/Calendar";
+import CreateNew from "@assets/icons/CreateNew";
 import Gear from "@assets/icons/Gear";
 import Profile from "@assets/icons/Profile";
 import SearchFlame from "@assets/icons/SearchFlame";
-import Trophy from "@assets/icons/Trophy";
 
 const MainLayout = () => {
   return (
@@ -55,21 +55,21 @@ const MainLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="tournaments" // my players
         options={{
           tabBarIcon: ({ focused }) => (
             <TabButton isSelected={focused}>
-              <Gear />
+              <CreateNew />
             </TabButton>
           ),
         }}
       />
       <Tabs.Screen
-        name="tournaments" // my players
+        name="settings"
         options={{
           tabBarIcon: ({ focused }) => (
             <TabButton isSelected={focused}>
-              <Trophy />
+              <Gear />
             </TabButton>
           ),
         }}
