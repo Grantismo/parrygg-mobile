@@ -168,7 +168,7 @@ exports[`ProfilePage renders correctly 1`] = `
           <View
             style={
               {
-                "height": 80,
+                "height": 90,
               }
             }
           />

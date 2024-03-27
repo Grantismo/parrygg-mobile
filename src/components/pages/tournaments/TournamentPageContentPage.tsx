@@ -133,7 +133,7 @@ const TournamentPageContentPage = () => {
   };
 
   return (
-    <Background>
+    <Background scroll>
       <Nav title="Page Content" showBack />
       <View style={tw`w-full h-full`}>
         <DraggableFlatList

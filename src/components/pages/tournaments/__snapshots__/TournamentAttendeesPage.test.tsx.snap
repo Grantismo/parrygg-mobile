@@ -168,7 +168,7 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
           <View
             style={
               {
-                "height": 80,
+                "height": 90,
               }
             }
           />
@@ -199,10 +199,8 @@ exports[`TournamentAttendeesPage renders correctly 1`] = `
             <View
               style={
                 {
-                  "paddingBottom": 24,
                   "paddingLeft": 24,
                   "paddingRight": 24,
-                  "paddingTop": 24,
                   "width": "100%",
                 }
               }

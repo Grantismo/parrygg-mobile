@@ -27,7 +27,7 @@ interface Props extends ViewProps {
   showFooter?: boolean;
 }
 
-const NAV_HEIGHT = 80;
+const NAV_HEIGHT = 90;
 const SCROLL_COLLAPSE_HEIGHT = 34;
 
 function getNav(childArray: ReactNode[]) {
