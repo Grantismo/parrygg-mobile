@@ -17,8 +17,10 @@ const MyPlayersPage = () => {
         <Plus color="#1B1B1B" style={tw`mr-2`} />
         <Text color="black">Follow New Player</Text>
       </Button>
-      <PlayerResult />
-      <PlayerResult />
+      <View>
+        <PlayerResult />
+        <PlayerResult />
+      </View>
     </Background>
   );
 };
