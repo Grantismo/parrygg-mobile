@@ -186,6 +186,7 @@ exports[`TournamentPageContentPage renders correctly 1`] = `
                   "marginBottom": 16,
                 },
                 {
+                  "marginTop": 16,
                   "width": "100%",
                 },
               ]
@@ -204,7 +205,7 @@ exports[`TournamentPageContentPage renders correctly 1`] = `
                     "backgroundColor": "rgba(56, 52, 42, 0.38)",
                   },
                   {
-                    "borderRadius": 10,
+                    "borderRadius": 14,
                   },
                 ]
               }
@@ -261,7 +262,7 @@ exports[`TournamentPageContentPage renders correctly 1`] = `
                     false,
                     false,
                     {
-                      "borderRadius": 10,
+                      "borderRadius": 14,
                     },
                     undefined,
                   ]

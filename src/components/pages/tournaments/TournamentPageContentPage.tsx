@@ -53,7 +53,7 @@ const PageContentSectionForm = ({
   return (
     <CollapsableCard
       ref={ref}
-      style={tw`w-full px-5 pt-3.5 pb-4.5 rounded-lg`}
+      style={tw`w-full px-4.5 pt-[17px] pb-[19px] rounded-lg mb-5`}
       header={(open) => {
         return (
           <View style={tw`w-full flex flex-row items-center justify-between`}>
@@ -63,7 +63,7 @@ const PageContentSectionForm = ({
                 onPressIn={drag}
                 disabled={disabled}
               >
-                <DragHandle style={tw`mr-2`} color="white" />
+                <DragHandle style={tw`mr-3`} color="#777777" />
               </TouchableOpacity>
               <Text>{title}</Text>
             </View>
@@ -76,6 +76,7 @@ const PageContentSectionForm = ({
       <View style={tw`pt-6`}>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
           <Input
+            size="md"
             value={title}
             name="sectionTitle"
             label="Section Title"
@@ -83,6 +84,7 @@ const PageContentSectionForm = ({
             required
           />
           <Input
+            size="md"
             name="sectionContent"
             label="Section Content"
             placeholder="Text or markup"
@@ -97,13 +99,13 @@ const PageContentSectionForm = ({
               color="red"
               title="Delete"
               style={tw`flex-1 mr-2`}
-              pressableStyle={tw`py-2`}
+              pressableStyle={tw`py-3`}
             />
             <Button
               size="sm"
               title="Save"
               style={tw`flex-1`}
-              pressableStyle={tw`py-2`}
+              pressableStyle={tw`py-3`}
               onPress={handleSubmit(onSubmit)}
             />
           </View>
@@ -140,7 +142,7 @@ const TournamentPageContentPage = () => {
           keyExtractor={(s) => s}
           renderItem={renderItem}
         />
-        <Button style={tw`w-full`}>
+        <Button size="lg" style={tw`w-full mt-4`}>
           <Plus color="#1B1B1B" style={tw`mr-2`} />
           <Text color="black">Add Section</Text>
         </Button>

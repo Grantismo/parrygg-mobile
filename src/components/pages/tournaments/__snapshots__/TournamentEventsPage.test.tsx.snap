@@ -329,7 +329,7 @@ exports[`CreateTournamentPage renders correctly 1`] = `
                     "backgroundColor": "rgba(56, 52, 42, 0.38)",
                   },
                   {
-                    "borderRadius": 10,
+                    "borderRadius": 14,
                   },
                 ]
               }
@@ -386,7 +386,7 @@ exports[`CreateTournamentPage renders correctly 1`] = `
                     false,
                     false,
                     {
-                      "borderRadius": 10,
+                      "borderRadius": 14,
                     },
                     undefined,
                   ]

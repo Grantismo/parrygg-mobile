@@ -63,6 +63,7 @@ const TournamentSettingsPage = () => {
             placeholder="10501 FGCU Blvd, Fort Myers"
           />
           <Button
+            size="lg"
             style={tw`w-full`}
             title="Save Changes"
             onPress={handleSubmit(onSubmit)}

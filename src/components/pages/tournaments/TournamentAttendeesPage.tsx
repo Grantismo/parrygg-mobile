@@ -32,17 +32,17 @@ const TournamentAttendeesPage = () => {
   };
 
   const attendees = [
-    { name: "blorppppp", description: "Grant W (he/him)" },
-    { name: "destinybond", description: "Mitchell E. (he/him)" },
-    { name: "DSJ", description: "Adam J. (he/him)" },
-    { name: "GetCrabby", description: "Geoff (he/him)" },
-    { name: "Schwang", description: "Hannah S. (she/her)" },
+    { name: "blorppppp", description: "Grant W" },
+    { name: "destinybond", description: "Mitchell E." },
+    { name: "DSJ", description: "Adam J." },
+    { name: "GetCrabby", description: "Geoff" },
+    { name: "Schwang", description: "Hannah S." },
   ];
   return (
     <Background scroll style={tw`p-0`}>
       <Nav title="Attendees" showBack />
       <View style={tw`w-full p-6`}>
-        <Button style={tw`w-full`}>
+        <Button size="lg" style={tw`w-full`}>
           <Plus color="#1B1B1B" style={tw`mr-2`} />
           <Text color="black">Add Attendee</Text>
         </Button>
@@ -50,15 +50,17 @@ const TournamentAttendeesPage = () => {
       </View>
 
       <View style={tw`flex-row w-full`}>
-        <View style={tw`flex-col bg-[#0A0A0A] p-3 rounded-r w-42`}>
-          <Text>
+        <View style={tw`flex-col bg-[#0A0A0A] p-3 rounded-r w-38 mt-1`}>
+          <Text style={tw`text-sm`}>
             Attendees <Text color="accent">(45)</Text>
           </Text>
           {attendees.map((a) => {
             return (
               <View key={a.name} style={tw`flex-col mt-3`}>
-                <Text numberOfLines={1}>{a.name}</Text>
-                <Text color="secondary" numberOfLines={1}>
+                <Text numberOfLines={1} style={tw`text-sm`}>
+                  {a.name}
+                </Text>
+                <Text color="secondary" numberOfLines={1} style={tw`text-sm`}>
                   {a.description}
                 </Text>
               </View>
@@ -67,32 +69,32 @@ const TournamentAttendeesPage = () => {
         </View>
         <View style={tw`flex-col p-3`}>
           <View style={tw`flex-row`}>
-            <Text color="green" style={tw`mr-2 mt-1`}>
+            <Text color="green" style={tw`mr-3.5 mt-1 text-sm ml-1`}>
               Paid
             </Text>
-            <View style={tw`flex-col items-center justify-center mr-2`}>
+            <View style={tw`flex-col items-center justify-center mr-3.5`}>
               <Image
-                style={tw`h-8 w-12`}
-                src="https://imgur.com/dO2poBH.jpeg"
+                style={tw`h-6 w-10 rounded-2xs`}
+                src="https://i.imgur.com/ETSVJpG.png"
               />
               <View style={tw`flex-row mt-1`}>
                 <Profile height={6} color="white" />
               </View>
             </View>
-            <View style={tw`flex-col items-center justify-center mr-2`}>
+            <View style={tw`flex-col items-center justify-center mr-3.5`}>
               <Image
-                style={tw`h-8 w-12`}
-                src="https://imgur.com/dO2poBH.jpeg"
+                style={tw`h-6 w-10 rounded-2xs`}
+                src="https://i.imgur.com/ETSVJpG.png"
               />
               <View style={tw`flex-row mt-1`}>
                 <Profile style={tw`mr-1`} height={6} width={6} color="white" />
                 <Profile height={6} width={6} color="white" />
               </View>
             </View>
-            <View style={tw`flex-col items-center justify-center mr-2`}>
+            <View style={tw`flex-col items-center justify-center mr-4`}>
               <Image
-                style={tw`h-8 w-12`}
-                src="https://imgur.com/dO2poBH.jpeg"
+                style={tw`h-6 w-10 rounded-2xs`}
+                src="https://i.imgur.com/ETSVJpG.png"
               />
               <View style={tw`flex-row mt-1`}>
                 <Profile style={tw`mr-1`} height={6} width={6} color="white" />
