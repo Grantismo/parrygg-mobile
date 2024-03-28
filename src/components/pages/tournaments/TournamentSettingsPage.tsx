@@ -33,7 +33,7 @@ const TournamentSettingsPage = () => {
     <Background>
       <Nav title="Settings" showBack renderLeft={<Trash color="#777777" />} />
 
-      <View style={tw`mt w-full h-full`}>
+      <View style={tw`w-full h-full`}>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
           <Input
             name="tournamentName"

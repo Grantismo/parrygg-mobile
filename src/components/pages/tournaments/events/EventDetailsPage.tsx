@@ -30,6 +30,7 @@ const EventDetailsPage = () => {
       <TournamentBreadcrumb />
       <View style={tw`p-6 w-full`}>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
+          <Input name="name" label="Event Name" placeholder="Melee Singles" />
           <Input
             name="description"
             label="Event description"
@@ -38,16 +39,10 @@ const EventDetailsPage = () => {
             textAlignVertical="top"
             multiline
           />
-          <Input name="name" label="Event Name" placeholder="Melee Singles" />
           <DateTimeInput
             name="startDate"
             label="Event Start Date"
             placeholder="mm/dd/yyyy hh:mm"
-          />
-          <Input
-            name="address"
-            label="Venue Address"
-            placeholder="10501 FGCU Blvd, Fort Myers"
           />
           <Input name="price" label="Price" placeholder="$0.00" />
           <Input name="playersCap" label="Players Cap" placeholder="0" />

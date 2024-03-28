@@ -13,9 +13,9 @@ import Seeding from "@assets/icons/Seeding";
 
 const ManageEventPage = () => {
   return (
-    <Background style={tw`p-0 justify-start`}>
+    <Background style={tw`p-0 justify-start`} collapsedNav>
       {/* TODO: Replace placeholder title */}
-      <Nav title="SSBU: Singles" showBack collapsed />
+      <Nav title="SSBU: Singles" showBack />
       <TournamentBreadcrumb />
       <View style={tw`grow p-6`}>
         <SettingsButton
