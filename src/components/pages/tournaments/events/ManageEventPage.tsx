@@ -34,7 +34,7 @@ const ManageEventPage = () => {
           path="/tournaments/events/brackets"
         />
 
-        <Button color="red" title="Delete Event" />
+        <Button size="lg" color="red" title="Delete Event" />
       </View>
     </Background>
   );

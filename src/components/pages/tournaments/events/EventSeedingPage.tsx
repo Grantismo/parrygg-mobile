@@ -34,7 +34,7 @@ const AttendeeSeedCard = ({
   };
 }) => {
   return (
-    <View style={tw`border border-[#777777] rounded-lg my-1.5`}>
+    <View style={tw`border border-[#777777] rounded-lg my-1.5 `}>
       <LinearGradient
         style={tw`w-full p-2 rounded-lg`}
         start={[0, 1]}
@@ -47,13 +47,13 @@ const AttendeeSeedCard = ({
           onPressIn={drag}
           disabled={disabled}
         >
-          <View style={tw`flex-row items-center justify-center`}>
+          <View style={tw`flex-row items-center justify-center p-1`}>
             <ProfilePicture style={tw`mr-2 h-8 w-8 border`} />
             <Text>{attendee.name}</Text>
           </View>
           <View style={tw`flex-row items-center justify-center`}>
             <Text>{seed}</Text>
-            <DragHandle color="#777777" style={tw`ml-2`} />
+            <DragHandle color="#777777" style={tw`ml-3 mr-2`} />
           </View>
         </TouchableOpacity>
       </LinearGradient>
@@ -94,7 +94,7 @@ const EventSeedingPage = () => {
       <TournamentBreadcrumb />
       <View style={tw`w-full p-6`}>
         <Button size="lg" title="Mark All As Seeded" />
-        <Text>
+        <Text style={tw`my-2`}>
           42 <Text color="secondary">Unseeded Registrants</Text>
         </Text>
         <NestableDraggableFlatList

@@ -41,7 +41,7 @@ const EventButton = ({
 }: EventButtonParams) => {
   return (
     <SettingsButton path="/tournaments/events/manage">
-      <View style={tw`w-full flex flex-row items-center justify-between`}>
+      <View>
         <View style={tw`flex-row items-center justify-center`}>
           <TouchableOpacity hitSlop={10} onPressIn={drag} disabled={disabled}>
             <DragHandle style={tw`mr-3`} color="#777777" />

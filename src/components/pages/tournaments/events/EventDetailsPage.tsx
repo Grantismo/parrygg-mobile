@@ -47,6 +47,7 @@ const EventDetailsPage = () => {
           <Input name="price" label="Price" placeholder="$0.00" />
           <Input name="playersCap" label="Players Cap" placeholder="0" />
           <Button
+            size="lg"
             style={tw`w-full`}
             title="Save Changes"
             onPress={handleSubmit(onSubmit)}
