@@ -49,7 +49,7 @@
     "react-native": "0.73.6",
     "react-native-big-calendar": "^4.10.0",
     "react-native-calendars": "github:Grantismo/react-native-calendars",
-    "react-native-draggable-flatlist": "^4.0.1",
+    "react-native-draggable-flatlist": "github:Forget-X/react-native-draggable-flatlist#nested-onscroll",
     "react-native-element-dropdown": "github:Grantismo/react-native-element-dropdown",
     "react-native-gesture-handler": "~2.14.0",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",

@@ -3,7 +3,9 @@ import React, {
   ReactElement,
   ReactNode,
   isValidElement,
+  useEffect,
   useRef,
+  useState,
 } from "react";
 import {
   View,
@@ -12,8 +14,10 @@ import {
   ViewStyle,
   Image,
   Animated,
+  ScrollResponderEvent,
 } from "react-native";
 import { NestableScrollContainer } from "react-native-draggable-flatlist";
+import { ScrollView } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import Nav from "@/components/base/navigation/Nav";
@@ -50,7 +54,6 @@ const ScrollContentView = ({
   ...props
 }: Props) => {
   const scrollY = useRef(new Animated.Value(0)).current;
-
   const childArray = Children.toArray(children);
   const nav: ReactElement | undefined = getNav(childArray);
   const collapseNavPercent = collapsedNav
@@ -71,10 +74,7 @@ const ScrollContentView = ({
         />
       )}
       <NestableScrollContainer
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-          { useNativeDriver: false },
-        )}
+        onScrollOffsetChange={(offset: number) => scrollY.setValue(offset)}
         scrollEventThrottle={5}
         {...props}
       >

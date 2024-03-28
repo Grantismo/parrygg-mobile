@@ -8895,10 +8895,9 @@ react-native-big-calendar@^4.10.0:
   optionalDependencies:
     moment "^2.29.4"
 
-react-native-draggable-flatlist@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-draggable-flatlist/-/react-native-draggable-flatlist-4.0.1.tgz#2f027d387ba4b8f3eb0907340e32cb85e6460df2"
-  integrity sha512-ZO1QUTNx64KZfXGXeXcBfql67l38X7kBcJ3rxUVZzPHt5r035GnGzIC0F8rqSXp6zgnwgUYMfB6zQc5PKmPL9Q==
+"react-native-draggable-flatlist@github:Forget-X/react-native-draggable-flatlist#nested-onscroll":
+  version "4.0.0"
+  resolved "https://codeload.github.com/Forget-X/react-native-draggable-flatlist/tar.gz/b3692521b1856e3e240cf7a737dd97934602a880"
   dependencies:
     "@babel/preset-typescript" "^7.17.12"
 
