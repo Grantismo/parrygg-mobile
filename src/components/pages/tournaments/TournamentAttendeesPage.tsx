@@ -37,9 +37,9 @@ const TournamentAttendeesPage = () => {
             </Text>
           )}
           {index > 0 && (
-            <View style={tw`flex-col items-center justify-center w-14`}>
+            <View style={tw`flex-col items-center justify-center w-14 `}>
               <Image
-                style={tw`h-8 w-12`}
+                style={tw`h-6 w-10 rounded-2xs mb-1`}
                 src="https://i.imgur.com/ETSVJpG.png"
               />
               <View style={tw`flex-row mt-1`}>
@@ -81,13 +81,14 @@ const TournamentAttendeesPage = () => {
       </View>
 
       <View style={tw`flex-row w-full`}>
-        <View style={tw`flex-col bg-[#0A0A0A] p-3 rounded-r w-38 mt-1`}>
-          <Text style={tw`text-sm`}>
-            Attendees <Text color="accent">(45)</Text>
+        <View style={tw`flex-col bg-[#0A0A0A] p-3 rounded-r w-38`}>
+          <Text style={tw`text-sm mt-2.5`}>
+            <Text color="secondary">Total</Text>{" "}
+            <Text color="accent">(45)</Text>
           </Text>
           {attendees.map((a) => {
             return (
-              <View key={a.name} style={tw`flex-col mt-3`}>
+              <View key={a.name} style={tw`flex-col mt-4`}>
                 <Text numberOfLines={1} style={tw`text-sm`}>
                   {a.name}
                 </Text>

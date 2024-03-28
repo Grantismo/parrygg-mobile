@@ -96,14 +96,14 @@ const PageContentSectionForm = ({
           />
           <View style={tw`flex-row`}>
             <Button
-              size="sm"
+              size="base"
               color="red"
               title="Delete"
-              style={tw`flex-1 mr-2`}
+              style={tw`flex-1 mr-3.5`}
               pressableStyle={tw`py-3`}
             />
             <Button
-              size="sm"
+              size="base"
               title="Save"
               style={tw`flex-1`}
               pressableStyle={tw`py-3`}
