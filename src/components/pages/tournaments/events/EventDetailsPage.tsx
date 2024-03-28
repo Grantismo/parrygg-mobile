@@ -25,10 +25,10 @@ const EventDetailsPage = () => {
   // Game - Dropdown
 
   return (
-    <Background style={tw`p-0 justify-start`} scroll>
-      <Nav title="Event Details" showBack collapsed />
+    <Background style={tw`p-0 justify-start`} collapsedNav>
+      <Nav title="Event Details" showBack />
       <TournamentBreadcrumb />
-      <View style={tw`grow p-6`}>
+      <View style={tw`p-6 w-full`}>
         <Form<FormData> {...{ register, setValue, validation, errors }}>
           <Input
             name="description"

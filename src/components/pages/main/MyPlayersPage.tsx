@@ -11,7 +11,7 @@ import Plus from "@assets/icons/Plus";
 
 const MyPlayersPage = () => {
   return (
-    <Background scroll>
+    <Background>
       <Nav title="My Players" showBack />
       <Button size="lg" style={tw`w-full mb-6`}>
         <Plus color="#1B1B1B" style={tw`mr-2`} />

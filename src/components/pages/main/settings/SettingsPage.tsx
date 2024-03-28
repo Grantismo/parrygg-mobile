@@ -12,7 +12,7 @@ import ProfileIcon from "@assets/icons/Profile";
 
 const SettingsPage = () => {
   return (
-    <Background scroll>
+    <Background>
       <Nav title="Settings" />
       <View style={tw`grow w-full pb-2`}>
         <View

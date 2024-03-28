@@ -5,7 +5,8 @@ import {
   View,
   Image,
 } from "react-native";
-import DraggableFlatList, {
+import {
+  NestableDraggableFlatList,
   RenderItemParams,
   ShadowDecorator,
 } from "react-native-draggable-flatlist";
@@ -39,7 +40,7 @@ const EventButton = ({
   dragProps: { drag, disabled },
 }: EventButtonParams) => {
   return (
-    <SettingsButton path="">
+    <SettingsButton path="/tournaments/events/manage">
       <View style={tw`w-full flex flex-row items-center justify-between`}>
         <View style={tw`flex-row items-center justify-center`}>
           <TouchableOpacity hitSlop={10} onPressIn={drag} disabled={disabled}>
@@ -69,10 +70,10 @@ const TournamentEventsPage = () => {
   };
   return (
     <Background style={tw`p-0 justify-start`}>
-      <Nav title="Manage Events" showBack collapsed />
+      <Nav title="Manage Events" showBack />
       <TournamentBreadcrumb />
       <View style={tw`h-full w-full p-6`}>
-        <DraggableFlatList
+        <NestableDraggableFlatList
           data={events}
           onDragEnd={({ data }) => setEvents(data)}
           keyExtractor={(s) => s.title}

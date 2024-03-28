@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import { FieldErrors, RegisterOptions, useForm } from "react-hook-form";
 import { GestureResponderEvent, TouchableOpacity, View } from "react-native";
-import DraggableFlatList, {
+import {
+  NestableDraggableFlatList,
   RenderItemParams,
   ShadowDecorator,
 } from "react-native-draggable-flatlist";
@@ -133,10 +134,10 @@ const TournamentPageContentPage = () => {
   };
 
   return (
-    <Background scroll>
+    <Background>
       <Nav title="Page Content" showBack />
       <View style={tw`w-full h-full`}>
-        <DraggableFlatList
+        <NestableDraggableFlatList
           data={sections}
           onDragEnd={({ data }) => setSections(data)}
           keyExtractor={(s) => s}

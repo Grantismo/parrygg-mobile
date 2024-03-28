@@ -30,7 +30,7 @@ const TournamentSettingsPage = () => {
   };
 
   return (
-    <Background scroll>
+    <Background>
       <Nav title="Settings" showBack renderLeft={<Trash color="#777777" />} />
 
       <View style={tw`mt w-full h-full`}>

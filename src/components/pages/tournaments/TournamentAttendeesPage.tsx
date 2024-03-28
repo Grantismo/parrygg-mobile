@@ -70,7 +70,7 @@ const TournamentAttendeesPage = () => {
   };
 
   return (
-    <Background scroll style={tw`p-0`}>
+    <Background style={tw`p-0`}>
       <Nav title="Attendees" showBack />
       <View style={tw`w-full px-6`}>
         <Button size="lg" style={tw`w-full`}>

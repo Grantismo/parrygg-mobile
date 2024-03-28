@@ -18,7 +18,7 @@ const CalendarPage = () => {
   };
 
   return (
-    <Background scroll>
+    <Background>
       <Nav title="Calendar" />
       <View style={tw`grow w-full pb-2`}>
         <Calendar onPressEvent={onDayPress} />

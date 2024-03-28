@@ -101,7 +101,7 @@ const CalendarDatePage = ({ timestamp }: Props) => {
   const date = timestampToDate(timestamp);
 
   return (
-    <Background scroll>
+    <Background>
       <Nav title="Calendar" showBack />
       <View
         style={tw`w-full bg-[#161616] rounded-lg border border-[#777777] flex-row items-center justify-between p-2`}

@@ -69,7 +69,7 @@ const CalendarTournamentPage = ({ timestamp, tournamentId }: Props) => {
   const date = timestampToDate(timestamp);
 
   return (
-    <Background scroll style={tw`p-0`}>
+    <Background style={tw`p-0`}>
       <Nav title={format(date, "d MMMM yyyy")} showBack />
       <ImageSep />
       <Image style={tw`w-full h-48 `} src="https://imgur.com/o3yTFTq.png" />

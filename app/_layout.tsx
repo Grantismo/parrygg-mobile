@@ -3,6 +3,7 @@ import {
   Inter_500Medium,
   Inter_600SemiBold,
 } from "@expo-google-fonts/inter";
+import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { SplashScreen, Stack } from "expo-router";
 import {
   setStatusBarBackgroundColor,
@@ -49,17 +50,23 @@ const RootLayout = () => {
   }
   setStatusBarStyle("light");
   setStatusBarBackgroundColor("#0A0A0A", false);
+  const DarkTheme = {
+    ...DefaultTheme,
+    colors: { ...DefaultTheme.colors, background: "#1b1b1b" },
+  };
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <SafeAreaProvider
-        style={
-          tw`-mt-[1px]` /* Remove 1 pixel space between the SafeAreaView and upper bound */
-        }
-      >
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        </Stack>
-      </SafeAreaProvider>
+      <ThemeProvider value={DarkTheme}>
+        <SafeAreaProvider
+          style={
+            tw`-mt-[1px]` /* Remove 1 pixel space between the SafeAreaView and upper bound */
+          }
+        >
+          <Stack>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          </Stack>
+        </SafeAreaProvider>
+      </ThemeProvider>
     </GestureHandlerRootView>
   );
 };

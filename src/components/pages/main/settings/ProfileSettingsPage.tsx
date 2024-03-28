@@ -26,7 +26,7 @@ const ProfileSettingsPage = () => {
   const onSubmit = (data: FormData) => {};
 
   return (
-    <Background scroll>
+    <Background>
       <Nav title="Profile Settings" showBack />
       <View style={tw`grow w-full pb-2`}>
         <Form<FormData> {...{ register, setValue, validation, errors }}>

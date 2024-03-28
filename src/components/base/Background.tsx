@@ -11,9 +11,9 @@ import {
   ViewProps,
   ViewStyle,
   Image,
-  ScrollView,
   Animated,
 } from "react-native";
+import { NestableScrollContainer } from "react-native-draggable-flatlist";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import Nav from "@/components/base/navigation/Nav";
@@ -23,11 +23,12 @@ import { Images } from "@assets/assets";
 interface Props extends ViewProps {
   style?: StyleProp<ViewStyle>;
   children: ReactNode;
-  scroll?: boolean;
   showFooter?: boolean;
+  collapsedNav?: boolean;
 }
 
 const NAV_HEIGHT = 90;
+const COLLAPSED_NAV_HEIGHT = 57;
 const SCROLL_COLLAPSE_HEIGHT = 34;
 
 function getNav(childArray: ReactNode[]) {
@@ -42,16 +43,23 @@ function getNav(childArray: ReactNode[]) {
   return nav;
 }
 
-const ScrollContentView = ({ style, children, ...props }: Props) => {
+const ScrollContentView = ({
+  collapsedNav,
+  style,
+  children,
+  ...props
+}: Props) => {
   const scrollY = useRef(new Animated.Value(0)).current;
 
   const childArray = Children.toArray(children);
   const nav: ReactElement | undefined = getNav(childArray);
-  const collapseNavPercent = scrollY.interpolate({
-    inputRange: [0, SCROLL_COLLAPSE_HEIGHT],
-    outputRange: [0, 100],
-    extrapolate: "clamp",
-  });
+  const collapseNavPercent = collapsedNav
+    ? new Animated.Value(100)
+    : scrollY.interpolate({
+        inputRange: [0, SCROLL_COLLAPSE_HEIGHT],
+        outputRange: [0, 100],
+        extrapolate: "clamp",
+      });
 
   return (
     <View style={tw`relative`}>
@@ -62,7 +70,7 @@ const ScrollContentView = ({ style, children, ...props }: Props) => {
           {...nav.props}
         />
       )}
-      <ScrollView
+      <NestableScrollContainer
         onScroll={Animated.event(
           [{ nativeEvent: { contentOffset: { y: scrollY } } }],
           { useNativeDriver: false },
@@ -71,32 +79,22 @@ const ScrollContentView = ({ style, children, ...props }: Props) => {
         {...props}
       >
         {/* Empty view to allow smooth scrolling as nav animates */}
-        <View style={{ height: NAV_HEIGHT }} />
+        <View
+          style={{ height: collapsedNav ? COLLAPSED_NAV_HEIGHT : NAV_HEIGHT }}
+        />
         <View style={[tw`px-6`, style]}>{childArray}</View>
-      </ScrollView>
-    </View>
-  );
-};
-
-const DefaultView = ({ style, children, ...props }: Props) => {
-  const childArray = Children.toArray(children);
-  const nav: ReactElement | undefined = getNav(childArray);
-  return (
-    <View {...props}>
-      {nav && <Nav {...nav.props} />}
-      <View style={[tw`px-6 h-full`, style]}>{childArray}</View>
+      </NestableScrollContainer>
     </View>
   );
 };
 
 const Background = ({
-  scroll,
   showFooter,
   style: bgStyle,
   children: bgChildren,
+  collapsedNav = false,
   ...bgProps
 }: Props) => {
-  const ContentView = scroll ? ScrollContentView : DefaultView;
   return (
     <View style={tw`bg-[#1b1b1b]`} {...bgProps}>
       <View style={tw`absolute inset-x-0 top-0 h-full`}>
@@ -106,11 +104,12 @@ const Background = ({
         />
       </View>
       <SafeAreaView style={[tw`h-full flex flex-col`]}>
-        <ContentView
+        <ScrollContentView
+          collapsedNav={collapsedNav}
           style={[tw`flex flex-col items-center justify-center`, bgStyle]}
         >
           {bgChildren}
-        </ContentView>
+        </ScrollContentView>
       </SafeAreaView>
     </View>
   );
